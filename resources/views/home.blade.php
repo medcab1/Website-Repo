@@ -113,135 +113,20 @@ ambulance booking app
 <!-- Our Services -->
 
 <!-- Why Choose use Start-->
-<section class="choose-us">
-    <div class="container">
-        <div class="choose-us-container">
-            <h1 class="title-text text-center mb-5 ">Why Choose Us</h1>
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose1.png')}}" alt="Afforatble" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">Affordable</h3>
-                            <p class="p-text" style="text-align:justify;">We offer affordable ambulance services    without compromising on quality. Our
-                                transparent pricing ensures that you only pay for the services you need.,
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose2.png')}}" alt="Experienced Staff" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">Experienced Staff</h3>
-                            <p class="p-text" style="text-align:justify;">Our certified healthcare professionals have years of experience and state-of-the-art equipment to provide you with top-notch emergency care.
-                        </p>
-                        </div>
-                    </div>
-                </div><div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose3.png')}}" alt="Fast Response Time" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">Fast Response Time</h3>
-                            <p class="p-text" style="text-align:justify;">Our staff is trained to provide quick and efficient emergency medical
-                            services, ensuring that you receive the care you need in a timely manner.
-                        </p>
-                        </div>
-                    </div>
-                </div><div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose4.png')}}" alt="24/7 Availability" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">24/7 Availability</h3>
-                            <p class="p-text" style="text-align:justify;">Medical emergencies can happen anytime, anywhere. That's why our
-                            ambulance services are available 24/7 to respond promptly to your call.
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose5.png')}}" alt="GPS-Enabled Tracking" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">GPS-Enabled Tracking</h3>
-                            <p class="p-text" style="text-align:justify;">You can track the location of your ambulance in real-time through our
-                            GPS-enabled tracking system.
-                            </p>
-                        </div>
-                    </div>
-                </div><div class="col-lg-4 col-md-6 d-flex-center align-items-start">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/choose6.png')}}" alt="Variety of Ambulance Services" class="choose-img ">
-                        <div class="choose-body-desc">
-                            <h3 class="sub-title mb-3">Variety of Ambulance Services</h3>
-                            <p class="p-text" style="text-align:justify;">We offer a wide range of ambulance services. We have the right
-                            ambulance equipped with the latest technology for every medical need.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </div>
-</section>
+@include('include.why_choose_us')
 <!-- Why Choose use End-->
 
 <!-- Booking Steps -->
-<section class="booking-step">
-    <div class="container">
-        <div class="booking-step-container">
-            <h1 class="title-text text-center mb-5 text-white ">How to Book</h1>
-            <div class="row gy-3">
-                <div class="col-lg-3 col-md-6 d-flex-center">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/booking-step1.png')}}" alt="booking-step-1" class="booking-step-img ">
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex-center">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/booking-step2.png')}}" alt="booking-step-2" class="booking-step-img ">
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex-center">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/booking-step3.png')}}" alt="booking-step-3" class="booking-step-img ">
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex-center">
-                    <div class="choose-box">
-                        <img src="{{url('/assets/image/booking-step4.png')}}" alt="booking-step-4" class="booking-step-img ">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('include.booking_preview')
 <!--Booking Steps end  -->
 
 <!--Vedio Section Start-->
-<section class="Vedio-display">
-    <div class="container">
-        <div class="vedio-container">
-            <div class="row gy-3">
-                <div class="col-12 d-flex-center">
-                    <div class="vedio-box w-100 h-100">
-                    
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r70nZ8zGmUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('include.video')
 <!-- Vedio Section End-->
 
 
 <!-- Review section -->
-@include('include.testimonial')
+@include('include.reviews')
 <!-- Review Section -->
 
 <!-- dowmload banner -->
