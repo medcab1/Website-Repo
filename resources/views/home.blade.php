@@ -129,7 +129,6 @@ ambulance booking app
 @include('include.video')
 <!-- Vedio Section End-->
 
-
 <!-- Review section -->
 @include('include.reviews')
 <!-- Review Section -->

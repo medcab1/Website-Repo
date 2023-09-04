@@ -79,10 +79,10 @@
     <meta name="facebook-domain-verification" content="gkmkranozdqpn214pnyc49xieh5zfs" />
 
     <!-- Latest compiled JavaScript -->
-    <link rel="stylesheet" href="{{ url('css/custom.css') }}?<?php echo time(); ?>">
+    <!-- <link rel="stylesheet" href="{{ url('css/custom.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/utill.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('css/responsive.css') }}?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{ url('css/style.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('css/style.css') }}?<?php echo time(); ?>"> -->
 
 
     <!-- Google Fonts -->
