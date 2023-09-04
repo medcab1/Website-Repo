@@ -27,7 +27,7 @@
   border: none;
 }
 .navbar-toggler .navbar-toggler-icon {
-  background-image:  url("../images/toggler-icon.png");
+  background-image:  url("../assets/website-images/toggler-icon.png");
 }
 .navbar-toggler:focus{
   box-shadow: none;

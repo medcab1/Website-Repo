@@ -23,193 +23,90 @@ ambulance booking app
 <script src="https://cdn.jsdelivr.net/npm/geolocator/dist/geolocator.min.js"></script>
 
 
-<section class="home-top-section">
-    <div class="home-top-img">
-       
-    </div>
-    <div class="container main-container ">
-        <div class="row justify-content-center flex-row-reverse gy-5">
-            <div class="col-sm-12 col-lg-7 d-flex align-items-start">
-                <div class="home-top-text p-3">
-                    <h1>One Stop Solution</h1>
-                    <h3>for all of your</h3>
-                    <h1 class="cap-text">Ambulance Needs</h1>
-                </div>
-            </div>  
-            <div class="col-sm-12 col-lg-5 d-flex justify-content-center ">
-                <div class="card pick-drop pick-drop-form-container mb-4">
-                    <form method="post" action="{{URL::to('/search')}}"  id="loc-form">
-                        @csrf    
-                        <div class="book-type d-flex align-items-center justify-content-between" >
-                            <div class="form-checkbox d-flex-center" onclick="toggleRadio('normal')">
-                                <input  type="radio" name="booking-type" id="normal" value="0" class="booking-type-radio d-none" checked >
-                                <label class="form-check-label booking-type-btn booking-type-active"  >
-                                    Emergency
-                                </label>
-                            </div>
-                            <div class="form-checkbox d-flex-center" onclick="toggleRadio('rental')">
-                                <input  type="radio" name="booking-type" value="1" class="booking-type-radio d-none"  id="rental">
-                                <label class="form-check-label booking-type-btn" data-bs-toggle="modal" data-bs-target="#rentalTimePeriod">
-                                   Rental 
-                                </label>
-                            </div>
-                            <div class="form-checkbox d-flex-center" onclick="toggleRadio('bulk')">
-                                <input  type="radio" name="booking-type" value="2" class="booking-type-radio d-none" id="bulk" >
-                                <label class="form-check-label booking-type-btn" >
-                                    Bulk
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleDropdownFormEmail1">PickUp Location</label>
-                            <div class="input-group pick-group justify-content-center align-items-center bg-light-gray">
-                                <img src="{{url('/assets/image/pickup-icon.png')}}" alt="Pick Up Icon" style="margin-left:10px;" >
-                                <input type="text" class="form-control pick b-none input-focus-none p-0 pr-2"  name="pick"  id="pickup" placeholder="Enter Pickup location here">
-                                <i class="fa-solid fa-location-crosshairs control-icon"  id="current_location"></i>
-                                <i class="fa-solid fa-xmark reset-input control-icon"></i>
-                                <input type="hidden" id="lat" name="pick_lat" value="lat">
-                                <input type="hidden" id="lng" name="pick_lng" value="lng">
-                            </div>
-                        </div>
-                        <div class="form-group p-relative drop-form-group">
-                            <label for="">Drop Location</label>
-                            <div class="input-group drop-group justify-content-center align-items-center bg-light-gray gx-2">
-                                <img src="{{url('/assets/image/drop-icon.png')}}" alt="Drop Icon" style="height:16px;width:16px;">
-                                <input type="text" class="form-control b-none input-focus-none" id="drop" name="drop" placeholder="Enter Desination location here" disabled>
-                                <i class="fa-solid fa-xmark drop-reset-input control-icon"></i>
-                            </div>
-                            <input type="hidden" name="drop_lat" id="drop_lat"  value="lat">
-                            <input type="hidden" name="drop_lng" id="drop_lng"  value="lng">
-                            <div class="suggestion" id="popup_sugg">
-                                <p style="color:gray;font-style:italic; margin:10px;margin-bottom:0px;">Nearest Hospitals:</p>
-                                <hr class="m-0">
-                                <div class="suggestion-box popup-box"></div>
-                            </div>
-                        </div>
-                        <div class="form-group p-relative duration-group" style="display:none;">
-                            <label for="">Booking Period</label>
-                            <input type="text" >
-                        </div>
-                        <input type="text" name="distance" id="distance" hidden>
-                        <div class="input-group  " id="schedule-box" style="border:1px solid gray;border-radius:.375rem;border-color:#ced4da;display:none;">
-                            <label class="input-group-btn" for="txtDate">
-                                <span class="btn btn-default">
-                                    <i class="fa-regular fa-clock text-color"></i>
-                                </span>
-                            </label>
-                           
-                            <input id="txtDate" name="schedule-time" type="text" class="form-control date-input b-none " title="date" style="border:none;display:none" value=
-                            '<?php echo time(); ?>'/>
-                        </div>
-                      
-                    <!--Schedule Rental booking time Modal start -->
-                        <div class="modal" id="rentalTimePeriod" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content m-auto" style="width:361px!important;">
-                                    <div class="modal-header border-0">
-                                    <h6 class="modal-title text-secondary" id="exampleModalCenterTitle" >Select Booking Time Period</h6>
-                                   
-                                </div>
-                                <div class="modal-body ">
-                                    <div class="schedule-box">
-                                        <p class="text-secondary">Select no. of hours/ days you want to book an ambulance for</p>
-                                        <div class="book-time-period-type">
-                                            <div class=" d-flex align-items-center" style="gap:20px;">
-                                                <div class="form-checkbox d-flex-center">
-                                                    <input  type="radio" name="booking-period" id="by-hour" data-id="hours" value="24" class="booking-period-radio"  checked>
-                                                    <label class="form-check-label text-gray" >
-                                                        Hours
-                                                    </label>
-                                                </div>
-                                                <div class="form-checkbox d-flex-center">
-                                                    <input  type="radio" name="booking-period" value="31"  data-id="days" class="booking-period-radio"  id="by-day" >
-                                                    <label class="form-check-label text-gray">
-                                                    Days 
-                                                    </label>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                        <!-- hours select box -->
-                                        <div class="duration-select-box select-hours " data-class="select-hours" id="hours" >
-                                            <select name="sel-hours" required >
-                                                <option value="1" >Select Hours</option> 
-                                            </select>
-                                        </div>
-                                        <!-- Hourse select box -->
-
-                                        <!-- Days select box -->
-                                        <div class="duration-select-box select-days" data-class="select-days" id="days">
-                                            <select name="sel-days" required>
-                                                <option value="1">Select Days</option>
-                                            </select>
-                                        </div>
-                                        <!-- Days select box -->
-                                    </div>
-                                </div>
-                                <div class="modal-footer flex-nowrap border-0">
-                                    <button type="button" class="m-btn medcab-btn-transparent" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="m-btn w-100 medcab-btn" id="duration-btn">Confirm</button>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    <!-- Schedule Rental booking time Modal end -->
-                    <div class="search-btn-outer w-100">
-                        <span class="book-now-watch currDateTime rounded p-2">
-                            <i class="fa-regular fa-clock" style="font-size:1.5rem;"></i>
-                        </span>
-                        <button type="submit" id="submit-btn" class="btn btn-primary pl-2"> Search Ambulance</button>
-                    </div>  
-
-                    </form>
-                    <a href="tel:18008908208" class="emgy-btn">
-                            <label for="" class="emgy-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </label>
-                            <span class="emgy-text">
-                                Call Emergency 18008-908-208
-                            </span>
-                    </a>
-                    <a href="{{route('check-hospital-service')}}" class="emgy-btn" >
-                        <label for="" class="emgy-icon">
-                            <i class="fa-solid fa-plus"></i>
-                        </label>
-                        <span class="emgy-text">
-                            Check Hospitals Availability
-                        </span>
-                </a>
-                </div>
-            </div>
-          
+   <!-- Header -->
+   <header class="header">
+      <div class="header-small-hero">
+        <h1 class="header-text">
+          <span>One Stop Solution</span><br />
+          for all of your<br />
+          <span>Ambulance Needs</span>
+        </h1>
+        <div class="header-small-heroImage">
+            <img src="{{asset('/assets/website-images/logo.png')}}" alt="profile Pic" class="img-fluid">
         </div>
-    </div>
-    <div class="container">
-        <div class="row facility gy-4">
-            <div class="col-md-4 d-flex-center">
-                <div class="facility-box">
-                    <div class="facility-box-content bg-trans">
-                        <span>GPS-Enabled Ambulance</span>
-                    </div>
-                </div>
+      </div>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <div class="header-booking p-4">
+            <div class="booking-option text-white mb-3">
+              <a href="#" class="border-1 rounded-5 active">Emergency</a>
+              <a href="#" class="'border-1 rounded-5">Bulk</a>
+              <a href="#" class="'border-1 rounded-5">Rent</a>
             </div>
-            <div class="col-md-4 d-flex-center">
-                <div class="facility-box">
-                    <div class="facility-box-content bg-solid">
-                        <span>All India<br/> Coverage</span>
-                    </div>
+            <form class="header-bookingForm">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Pickup Location</label
+                >
+                <div class="input-wrapper">
+                  <span>
+                    <img src="./images/location.png" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control shadow-none outline-none"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter Pickup Address Here"
+                  />
                 </div>
-            </div>
-            <div class="col-md-4 d-flex-center">
-                <div class="facility-box">
-                    <div class="facility-box-content bg-trans">
-                        <span>Cost Effective</span>
-                    </div>
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Drop Location</label
+                >
+                <div class="input-wrapper">
+                  <span><img src="./images/drop-locatino.png" alt="" /></span>
+                  <input
+                    type="text"
+                    class="form-control shadow-none outline-none"
+                    id="exampleInputPassword1"
+                    placeholder="Enter Destination Adress here"
+                  />
                 </div>
+              </div>
+              <div class="mt-5 booking-submit">
+                <button class="border rounded p-1 booking-time">
+                  <span><img src="./images/Access time.png" alt="" /></span>
+                </button>
+                <button type="submit" class="btn">Search Ambulance</button>
+              </div>
+            </form>
+          </div>
+          <div class="header-cta">
+            <div class="header-ctaBox mt-4">
+              <span><img src="./images/call.png" alt="" /></span>
+              <a href="#">Call Emergency 18008-908-208</a>
             </div>
+            <div class="header-ctaBox mt-4">
+              <span><img src="./images/hospital-cehck.png" alt="" /></span>
+              <a href="#">Check Hospitals Availability</a>
+            </div>
+          </div>
         </div>
-    </div>
-    
-</section>
+        <div class="header-right">
+          <h1 class="header-text">
+            <span>One Stop Solution</span><br />
+            for all of your<br />
+            <span>Ambulance Needs</span>
+          </h1>
+        </div>
+      </div>
+      <div class="header-image">
+        <img src="./images/website-gif-final.gif" class="img-fluid" alt="" />
+      </div>
+    </header>
+
 
 <!-- Our Services -->
 @include('include.service')

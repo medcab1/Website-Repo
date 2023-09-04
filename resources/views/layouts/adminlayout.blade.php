@@ -83,6 +83,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{url('styles/nav.css')}}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{url('styles/reset.css')}}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{url('styles/header.css')}}?<?php echo time(); ?>">
+
     <style>
         #login-solid-btn {
             display: flex !important;
@@ -138,7 +140,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <span>
-                    <img src="../images/logo.png" class="mb-1" alt="" />
+                    <img src="{{asset('/assets/website-images/logo.png')}}" class="mb-1" alt="" />
+                    <!-- <img src="../images/logo.png" class="mb-1" alt="" /> -->
                 </span>
                 MedCab</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
