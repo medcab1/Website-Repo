@@ -161,16 +161,7 @@
 </head>
 
 <body>
-    <!-- Socila media link side bar -->
-    <div class="icon-bar">
-        <a href="https://www.facebook.com/Medcabs" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/medcab.in/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://youtube.com/@MedCab" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://twitter.com/medcab_care" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/med-cab/" class="linkedin"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-    </div>
-    <!-- Socila media link side bar -->
+    
 
     <!-- Navigation Bar -->
     <!-- ***** Header Area Start ***** -->

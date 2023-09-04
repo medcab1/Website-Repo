@@ -50,7 +50,7 @@ ambulance booking app
                 >
                 <div class="input-wrapper">
                   <span>
-                    <img src="./images/location.png" alt="" />
+                    <img src="{{asset('assets/website-images/location.png')}}" alt="" />
                   </span>
                   <input
                     type="text"
@@ -66,7 +66,7 @@ ambulance booking app
                   >Drop Location</label
                 >
                 <div class="input-wrapper">
-                  <span><img src="./images/drop-locatino.png" alt="" /></span>
+                  <span><img src="{{asset('assets/website-images/drop-locatino.png')}}" alt="" /></span>
                   <input
                     type="text"
                     class="form-control shadow-none outline-none"
@@ -77,7 +77,7 @@ ambulance booking app
               </div>
               <div class="mt-5 booking-submit">
                 <button class="border rounded p-1 booking-time">
-                  <span><img src="./images/Access time.png" alt="" /></span>
+                  <span><img src="{{asset('assets/website-images/Access time.png')}}" alt="" /></span>
                 </button>
                 <button type="submit" class="btn">Search Ambulance</button>
               </div>
@@ -85,11 +85,11 @@ ambulance booking app
           </div>
           <div class="header-cta">
             <div class="header-ctaBox mt-4">
-              <span><img src="./images/call.png" alt="" /></span>
+              <span><img src="{{asset('assets/website-images/call.png')}}" alt="" /></span>
               <a href="#">Call Emergency 18008-908-208</a>
             </div>
             <div class="header-ctaBox mt-4">
-              <span><img src="./images/hospital-cehck.png" alt="" /></span>
+              <span><img src="{{asset('assets/website-images/hospital-cehck.png')}}" alt="" /></span>
               <a href="#">Check Hospitals Availability</a>
             </div>
           </div>
