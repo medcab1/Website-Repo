@@ -906,7 +906,7 @@ inputs.forEach((input, index1) => {
                         $("#otpForm").html(data.message);
                         $('#welcome-user').append("<b>"+data.consumer_name+"</b>");
                         // alert(data.message);
-                        window.location.replace('{{route('Home')}}');
+                        window.location.replace("{{route('Home')}}");
                     }
                     else{
                        // console.log(data);
@@ -936,7 +936,7 @@ inputs.forEach((input, index1) => {
         alert("{{session('consumer_mob')}}");
         e.preventDefault();
         $.ajax({
-            url:'{{route('login_verification.Resendotp')}}',
+            url:"{{route('login_verification.Resendotp')}}",
             type:'post',
             data:{mob:"{{session('consumer_mob')}}",},
             success:function(response){
