@@ -32,7 +32,7 @@ ambulance booking app
           <span>Ambulance Needs</span>
         </h1>
         <div class="header-small-heroImage">
-            <img src="{{asset('/assets/website-images/logo.png')}}" alt="profile Pic" class="img-fluid">
+            <img src="{{asset('/assets/website-images/website-gif-final.gif')}}" alt="profile Pic" class="img-fluid">
         </div>
       </div>
       <div class="header-wrapper">
@@ -103,7 +103,7 @@ ambulance booking app
         </div>
       </div>
       <div class="header-image">
-        <img src="./images/website-gif-final.gif" class="img-fluid" alt="" />
+        <img src="{{asset('/assets/website-images/website-gif-final.gif')}}" class="img-fluid" alt="banner" />
       </div>
     </header>
 

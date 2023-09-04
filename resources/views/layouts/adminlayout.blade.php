@@ -83,15 +83,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{url('styles/nav.css')}}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{url('styles/reset.css')}}?<?php echo time(); ?>">
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="{{url('styles/header.css')}}?<?php echo time(); ?>">
-=======
-    
-    
-    
     <!-- saurabh adding css-->
     <link rel="stylesheet" href="{{url('styles/footer.css')}}?<?php echo time(); ?>">
->>>>>>> Stashed changes
 
     <style>
         #login-solid-btn {
@@ -158,28 +152,28 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{URL::route('Home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/ourServices.html">Our Services</a>
+                        <a class="nav-link" href="#">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/ambulance.html">Ambulances</a>
+                        <a class="nav-link" href="{{route('Ambulances')}}">Ambulances</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/hospitals.html">Hospitals</a>
+                        <a class="nav-link" href="{{route('Hospitals')}}">Hospitals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Join Us</a>
+                        <a class="nav-link" href="{{route('JoinUs')}}">Join Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/blog1.html">Blogs</a>
+                        <a class="nav-link" href="{{route('Blogs')}}">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="{{route('AboutUs')}}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="{{route('ContactUs')}}">Contact Us</a>
                     </li>
                     <li class="nav-ctn-book">
                         <a class="nav-link rounded bg-white nav-booknow me-lg-2 mb-2 mb-lg-0 px-3 py-1" href="#" tabindex="-1" aria-disabled="true">Book Now</a>
