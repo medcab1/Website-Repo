@@ -1,0 +1,66 @@
+.hospitals .section-1 {
+  padding: 8rem;
+}
+
+.hospitals .text {
+  gap: 6rem;
+}
+
+.hospitals .image img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.hospitals .title {
+  font-size: var(--fs-main-heading);
+  font-weight: 700;
+}
+.hospitals .info {
+  font-size: var(--fs-primary-text);
+  color: var(--section-heading-clr);
+}
+
+.hospitals .grid-container-box .grid-item h5 {
+  font-size: var(--fs-title);
+}
+
+.hospitals .grid-container-box .grid-item p {
+  font-size: var(--fs-secondary-text);
+}
+
+.hospitals .download-app {
+  margin: auto;
+}
+
+@media all and (max-width: 1100px) {
+  .hospitals .section-1 {
+    padding: 5rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .hospitals .section-1 {
+    flex-direction: column-reverse;
+  }
+
+  .hospitals .section-1 .text,
+  .hospitals .section-1 .image {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .hospitals .section-1 .text {
+    gap: 3rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .hospitals .section-1 {
+    padding: 2rem;
+  }
+  .hospitals .grid-container-box .grid-item h5 {
+    font-size: var(--fs-primary-text);
+  }
+  
+}

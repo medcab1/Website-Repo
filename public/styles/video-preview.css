@@ -1,0 +1,12 @@
+.video-preview {
+  margin-top: 2em;
+  height: min(70vh,80vw);
+  /* change after video resource */
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+.video-preview p {
+  font-size: var(--fs-main-heading);
+  color: white;
+}

@@ -1,0 +1,156 @@
+footer * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.footer {
+    /* padding: 4rem 8rem; */
+    background-color: black;
+    color: rgba(255, 255, 255, 0.829) !important;
+    text-decoration: none;
+    padding: 8rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.797) !important;
+    font-size: var(--fs-secondary-text);
+}
+
+.footer p {
+    margin-bottom: 0 !important;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.829) !important;
+    font-size: var(--fs-secondary-text);
+
+}
+
+.footer h6,
+.footer span {
+    color: rgba(255, 255, 255, 0.829) !important;
+
+}
+
+.footer section div {
+    border-color: var(--border-clr);
+}
+
+
+.footer section {
+    border: 1px solid black;
+}
+
+.footer section .info .show {
+    width: 100%;
+    white-space: nowrap;
+    /* justify-content: space-between; */
+    overflow-x: hidden;
+}
+
+.footer section .infoCard {
+    width: 25%;
+    /* border: 1px solid greenyellow; */
+    display: inline-block;
+    margin-bottom: 2rem;
+
+}
+
+.footer section .info .infoCard p {
+    /* line-height: 0.5rem; */
+    margin: 0;
+    font-weight: lighter;
+}
+
+.footer section .downloadApp .buttons {
+    /* width: 40%; */
+    display: flex;
+}
+
+.footer section .downloadApp .buttons img {
+    height: 5rem;
+}
+
+.footer section .downloadApp .socials {
+    width: 60%;
+}
+
+.footer .elem img {
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+.footer .elem p {
+    margin-bottom: 0;
+}
+
+
+.footer .availableIn {
+    /* width: ; */
+    height: fit-content;
+}
+
+/* .footer .cities {
+    width: fit-content;  
+} */
+
+.footer .buttons button img {
+    height: 3rem;
+}
+
+.footer .cities #hideShow {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.footer .address {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media all and (max-width: 700px) {
+    .footer .downloadApp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .downloadApp .socials {
+        justify-content: center !important;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .footer {
+        padding: 5rem;
+    }
+    .footer section .infoCard {
+        width: 33%;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .footer section .infoCard {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .footer {
+        padding: 5rem 1rem;
+    }
+    .footer .address .elem:last-child{
+        flex-direction: column;
+    }
+
+    .footer section .infoCard {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .footer section .downloadApp .buttons {
+        flex-direction: column;
+    }
+}

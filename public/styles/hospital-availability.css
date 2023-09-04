@@ -1,0 +1,96 @@
+.hospital-availability {
+  background-color: #e5f1ff;
+  margin-top: 5em;
+}
+.hospital-availability .facilities {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 5rem 0;
+  /* margin: auto ; */
+}
+.hospital-availability .facilities h1 {
+  margin: 0;
+  font-size: var(--fs-main-heading);
+}
+
+.hospital-availability .grid-container {
+  /* border: 1px solid black; */
+  /* width: 75%; */
+  display: block;
+  /* grid-template-columns: auto auto auto auto; */
+  /* grid-template-columns: repeat(4, 1fr); */
+
+  /* gap: 3rem; */
+}
+
+.hospital-availability .grid-item {
+  /* border: 1px solid black; */
+  background-color: #e5f1ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* width: 15rem; */
+  padding: 4rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.hospital-availability a {
+  text-decoration: none;
+}
+.hospital-availability h5 {
+  margin-top: 1rem;
+  font-size: var(--fs-primary-text);
+  color: var(--heading-clr);
+  font-weight: 700;
+}
+.hospital-availability p {
+  display: none;
+}
+.hospital-availability .owl-carousel .owl-item:nth-child(odd) {
+  margin-top: -5rem;
+}
+.hospital-availability .owl-stage-outer {
+  padding: 5rem 0;
+  padding-right: 1rem;
+}
+
+.hospital-availability .btn-view a {
+  background: var(--dark-blue-clr);
+}
+@media all and (max-width: 1200px) {
+  .hospital-availability .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media all and (max-width: 980px) {
+  .hospital-availability .owl-stage-outer {
+    padding: 0;
+  }
+}
+@media all and (max-width: 780px) {
+  .hospital-availability .owl-carousel .owl-item:nth-child(odd) {
+    margin-top: 0rem;
+  }
+}
+@media all and (max-width: 650px) {
+  .hospital-availability .grid-container {
+    width: 100%;
+    /* margin: 2rem; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    /* border: 1px solid; */
+  }
+
+  .hospital-availability .grid-item {
+    transform: scale(0.8);
+  }
+}
+@media all and (max-width: 480px) {
+    
+}

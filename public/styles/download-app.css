@@ -1,0 +1,70 @@
+.download-app {
+  /* border: 10px solid black; */
+  /* background-color: var(--primary-clr); */
+  background-image: url("../images/section-5_our-services_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: auto;     */
+  gap: 5rem;
+  width: 80%;
+  padding: 4em 0;
+  margin: 4rem 2em;
+}
+
+.download-app .label h3 {
+  font-size: var(--fs-main-heading);
+  color: var(white-clr);
+}
+
+.download-app .label .image {
+  width: fit-content;
+}
+
+.download-app .label .image img {
+  height: 2rem;
+}
+
+.download-app .content {
+  gap: 5rem;
+  margin: 0 1em;
+}
+
+.download-app .phones {
+  width: 100%;
+}
+.download-app .phones img {
+  width: 40%;
+}
+.download-app .downloadBtns {
+  color: var(--border-clr);
+  font-size: var(--fs-primary-text);
+}
+@media all and (max-width: 1200px) {
+  .download-app {
+    width: 90%;
+  }
+
+  .section-6 .content .downloadBtns .user {
+    gap: 0 !important;
+  }
+}
+@media all and (max-width: 640px) {
+  .download-app .phones {
+    justify-content: center;
+  }
+  .download-app .content {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 360px) {
+  .download-app {
+    padding: 1em;
+  }
+  .download-app .label h3 {
+    font-size: var(--fs-primary-text);
+  }
+  .download-app .downloadBtns {
+    font-size: var(--fs-secondary-text);
+  }
+}

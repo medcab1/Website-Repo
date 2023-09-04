@@ -1,0 +1,66 @@
+.navbar {
+  padding: 0.5rem 4rem;
+  background: var(--primary-clr);
+  color: var(--nav-link);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar .nav-link {
+  color: var(--nav-link-clr);
+  margin: 0 0.5rem;
+}
+.navbar .nav-link.active {
+  color: var(--white-clr);
+}
+.navbar-brand {
+  font-size: clamp(2rem, 2vw, 2.5rem);
+}
+.navbar-brand,
+.navbar-brand:hover,
+.nav-item:hover .nav-link {
+  color: var(--white-clr);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image:  url("../images/toggler-icon.png");
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .nav-booknow {
+  color: var(--primary-clr);
+}
+.nav-ctn-login .nav-link {
+  color: var(--white-clr);
+  margin: 0 0.4rem;
+}
+.nav-ctn-login:hover a {
+  background: var(--white-clr);
+  color: var(--primary-clr);
+}
+
+@media all and (max-width: 1100px) {
+  .navbar {
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (max-width: 780px) {
+}
+
+@media all and (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar .navbar-nav {
+    font-size: var(--fs-secondary-text);
+  }
+}

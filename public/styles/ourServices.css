@@ -1,0 +1,305 @@
+:root {
+  --primary-clr: #c4364e;
+  --secondary-clr: #159d89;
+  --green-clr: #5eb689;
+  --white-clr: #fff;
+  --nav-link-clr: #f89e9e;
+  --dark-grey-clr: #252527;
+  --border-light-clr: #e2e2e2;
+  --border-clr: #41404d;
+  --dark-blue-clr: #07164b;
+  --section-heading-clr: #41404d;
+  --light-text-clr: #40444f;
+}
+
+.ourServices * {
+  color: var(--border-clr);
+}
+
+/* Section 1 */
+.ourServices p {
+  margin-bottom: 0;
+}
+
+.ourServices .serviceHead {
+  background-image: url(../images/handShake.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* border: 1px solid green; */
+  height: fit-content;
+  padding: 10rem 0;
+}
+
+.ourServices .serviceHead img {
+  width: 100%;
+  height: 100%;
+}
+
+.ourServices .serviceHead h1 {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: var(--white-clr);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 4px 8px #0f1f5a;
+  font-size: var(--fs-main-heading);
+}
+
+/* section-2
+.ourServices .section-2 {
+    color: var(white-clr) !important;
+} */
+
+.ourServices .section-2 p {
+  font-size: var(--fs-primary-text);
+}
+.ourServices .section-2 .as {
+  background-color: var(--primary-clr);
+}
+
+.ourServices .section-2 .chas {
+  background-color: var(--dark-blue-clr);
+}
+
+/* section 1 and 2 */
+@media all and (max-width: 1100px) {
+  /* .ourServices .serviceHead h1 {
+    font-size: 2.5rem;
+  } */
+}
+
+@media all and (max-width: 768px) {
+  .ourServices .serviceHead {
+    padding: 6rem 0;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+  .ourServices .section-2 img {
+    height: 3rem;
+  }
+}
+@media all and (max-width: 480px) {
+  .ourServices .section-2 p {
+    font-size: var(--fs-secondary-text);
+  }
+}
+
+/* section - 3  */
+
+.ourServices .section-3 {
+  background-color: #f5f5fa;
+  padding: 5rem 0;
+}
+.ourServices .section-3 .label {
+  font-size: var(--fs-main-heading);
+}
+.ourServices .section-3 .content p {
+  font-size: var(--fs-secondary-text);
+}
+.ourServices .section-3 .right-content .one {
+  font-size: var(--fs-primary-text);
+}
+.ourServices .section-3 .right-content .two,
+.ourServices .section-3 .right-content .three {
+  margin: 1em 0;
+  font-size: var(--fs-secondary-text);
+}
+.ourServices .section-3 .left-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* padding: 0 5rem 0 0 !important; */
+}
+
+.ourServices .section-3 .left-content .ambuCard {
+  height: 100%;
+  /* width: fit-content; */
+  padding: 0 1rem;
+}
+
+.ourServices .section-3 .right-content > div {
+  /* border: 2px solid blue; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ourServices .section-3 .right-content {
+  /* padding: 2rem; */
+  height: auto;
+  /* border: 2px solid red; */
+}
+
+.ourServices .section-3 .right-content .three {
+  /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ourServices .section-3 .right-content .three img {
+  height: 3rem;
+}
+
+.ourServices .section-3 .right-content .three .card-three {
+  width: max-content;
+}
+
+.ourServices .section-3 .download-button button {
+  background: var(--primary-clr);
+}
+
+/* @media all and (max-width: 1150px) {
+    
+
+} */
+
+@media all and (max-width: 1050px) {
+ 
+
+  .ourServices .section-3 .left-content {
+    gap: 1rem;
+  }
+
+  .ourServices .section-3 .left-content img {
+    height: 3rem;
+  }
+
+  .ourServices .section-3 .content .right-content {
+    padding: 1rem;
+  }
+
+  .ourServices .section-3 .content .right-content .three img {
+    height: 3rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .ourServices .section-3 .content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    /* padding:0 2rem; */
+  }
+
+  .ourServices .section-3 .content .left-content {
+    width: 100% !important;
+    padding: 2em;
+    place-items: center;
+  }
+
+  .ourServices .section-3 .content .left-content .ambuCard {
+    width: 100%;
+  }
+
+  .ourServices .section-3 .content .right-content {
+    width: 100% !important;
+    padding: 2em;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .ourServices .section-3 .content {
+    margin: 2rem 0 !important;
+  }
+
+  .ourServices .section-3 .right-content .three {
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin: 2em 0;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .ourServices .section-3 .right-content .three .card-three {
+    width: 20%;
+  }
+}
+
+/* @media all and (max-width: 430px) {
+    
+} */
+
+@media all and (max-width: 360px) {
+  .ourServices .section-3 .content .left-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ourServices .section-3 .right-content .three .card-three {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .ourServices .section-3 .content .left-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+/* faqs */
+
+.section-5 {
+  padding: 0 4em;
+}
+.section-5 .label {
+  font-size: var(--fs-main-heading);
+}
+.section-5 .accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+.section-5 .accordion-item p {
+  font-size: var(--fs-secondary-text);
+}
+.section-5 .accordion-button,
+.section-5 .accordion-body {
+  background-color: #f2f2f2;
+}
+
+.section-5 .accordion-button::after {
+  background-image: none;
+  content: "+";
+  color: var(--primary-clr);
+  font-size: 2rem;
+  height: auto;
+  width: auto;
+  margin: 0 0 0 1rem;
+  /* background-image: url('../images/Plus.png'); */
+  /* height: 2rem; */
+  /* display: none; */
+}
+.section-5 .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "−";
+  color: var(--primary-clr);
+  font-size: 2rem;
+  height: auto;
+  width: auto;
+  /* background-image: url('../images/Minus.png'); */
+  /* display: none; */
+}
+
+@media all and (max-width: 480px) {
+  .section-5 {
+    padding: 0 2em;
+  }
+  .accordion-item:first-of-type .accordion-button {
+    padding: 1em 0.8em;
+  }
+}

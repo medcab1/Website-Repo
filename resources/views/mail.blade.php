@@ -1,0 +1,2 @@
+<p>Dear {{$name}} ,<br/><br/>Thank you for contacting us.<br/><br/> Our Team has recieved your equiry About Health/Ambulance Booking services and Will get in touch with you by email or call.<br/><br/>If You have any other questions in the mean time,feel free  to contact us by phone on<a href="tel: +91 5223512772">+91 5223512772</a> or by email at <a href='mailto: info@medcab.in'>info@medcab.in</a>.<br/><br/><br/><br/>Best regards<br/><br/> +91 8755672479<br/>MedCare Care Pvt. Ltd.<br/>Rajsha Tower, 3/9B, Vibhuti Khand, Gomti Nagar, Lucknow,
+Uttar Pradesh, 226010 </p>

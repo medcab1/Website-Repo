@@ -1,0 +1,258 @@
+:root
+{
+	--theme: #c5354f;
+	--theme-light: #f9e4e4;
+	--black: #434349;
+	--success: #42a646;
+	--e2: #e2e2e2;
+	--red: #E42222;
+	--pending: #D8712A;
+	--f2:#F2F2F2;
+	--orange-1: #D8712A;
+	--muted:#7E7E7E;
+}
+.btn-outline-primary
+{
+	border-color: var(--theme);
+	color: var(--theme);
+}
+.card form .input-group .input-group-text
+{
+	background: unset !important;
+	border-right: none;
+	padding-right: 5px;
+}
+.card form .input-group input
+{
+	border-left: none;
+	padding: 10px 15px;
+	padding-left: 4px;
+}
+.rectangle-dot
+{
+	position: relative;
+	width: 15px;
+	height: 15px;
+	border: 2px solid red;
+	border-radius: 2px;
+}
+.rectangle-dot::after
+{
+	position: absolute;
+	content: '';
+	width: 5px;
+	height: 5px;
+	background: red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/*------ map -----*/
+.map-area
+{
+	height: 480px;
+	background-color: grey;
+}
+/*--------*/
+.bulk-page-section .card2 
+.img-thumb
+{
+	width: 120px;
+	height: 120px;
+	flex: 0 0 16%;
+}
+.bulk-page-section .card2 
+.basic-info-wrapper
+{
+	flex: 0 0 78%;
+}
+.bulk-page-section .card2 
+.quantity
+{
+	width: 40px;
+	text-align: center;
+}
+.card2 .quantity .minus,
+.card2 .quantity .plus
+{
+	width: 40px;
+	height: 40px;
+	background-color: var(--theme-light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 800;
+	color: var(--theme);
+}
+.card2 input
+{
+	border-radius: 0;
+	text-align: center;
+	max-width: 80px;
+}
+
+.btn-theme-light
+{
+	background-color: var(--theme-light);
+	padding: 10px 20px;
+	font-weight: 600;
+}
+.card2  .quantity .minus:hover,
+.card2  .quantity .plus:hover,
+.btn-theme-light:hover
+{
+	background-color: var(--theme);
+	color: #fff;
+}
+/*--------- booking page ------*/
+.booking-tab-bar
+{
+	position: relative;
+}
+.booking-tab-bar::after
+{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background-color: #D9D9D9;
+	bottom: 0;
+	z-index: 1	;
+}
+.booking-tab-bar .nav-link
+{
+	font-weight: 600;
+	color: var(--black);
+	border:none;
+	background-color:transparent;
+	
+}
+.booking-tab-bar .nav-link.active
+{
+	border-bottom: 2px solid var(--success);
+	color: var(--success);
+	z-index: 9;
+}
+.pickup
+{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid var(--success);
+	margin-right: 8px;
+flex-shrink:0;
+}
+.pickup::after
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--success);
+	left: 3px;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}
+.drop::after
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background-color: var(--red);
+	left: 3px;
+	top: 50%;
+left:50%;
+	transform: translate(-50%,-50%);
+
+}
+.drop::before
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	width: 2px;
+	height: 30px;
+	background-color: var(--e2);
+	left: 7px;
+	top: -30px;
+	z-index: -1;
+
+}
+.drop
+{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--red);
+	margin-right: 8px;
+flex-shrink:0;	
+}
+h3 > .dot
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--e2);
+	margin-right: 8px;
+}
+.rectangle
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	background-color: var(--e2);
+	margin-right: 8px;
+
+}
+.booking-type
+{
+	border-radius: 20px;
+	padding: 10px 20px;
+}
+.dot-small
+{
+	position: relative;
+	font-weight: 400;
+}
+.dot-small::before
+{
+	position: absolute;
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: var(--e2);
+	left: -16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.disabled-card
+{
+	background-color: var(--f2);
+}
+.star
+{
+	color: var(--orange-1);
+}
+/*----- invoice page ------*/
+.rider-profile-details .img-thumb
+{
+	border-radius: 50%;
+	background-color: var(--e2);
+}
+.booking-details .drop::before
+{
+	height: 44px;
+	top: -50px;
+
+}

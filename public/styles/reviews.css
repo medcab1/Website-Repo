@@ -1,0 +1,28 @@
+.reviews{
+    padding: 5rem 4rem;
+}
+.reviews-carousel{
+    width: 80%;
+    margin: auto;
+}
+.reviews-carousel .image{
+    height: 100px;
+    width: 100px;
+    background: #ccc;
+    border-radius: 50%;
+    /* display: inline-block; */
+    margin: auto;
+}
+
+.reviews-carousel .item{
+    width: 80%;
+}
+.reviews-carousel .owl-item{
+    display: grid;
+    place-items: center;
+}
+@media all and (max-width: 480px) {
+    .reviews{
+        padding: 2rem 0rem;
+    }
+}

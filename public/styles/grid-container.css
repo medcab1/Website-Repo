@@ -1,0 +1,101 @@
+/* section-4 */
+/* grid container */
+
+.grid-container-box {
+  width: 100%;
+  background-color: #e5f1ff;
+}
+
+.grid-container-box a {
+  text-decoration: none;
+}
+.grid-container-box .facilities .label h3 {
+  font-size: var(--fs-main-heading);
+}
+.grid-container-box .facilities .label p {
+  font-size: var(--fs-primary-text);
+}
+
+.grid-container-box .facilities {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 5rem 0;
+  /* margin: auto ; */
+}
+
+.grid-container-box .grid-container {
+  /* border: 1px solid black;  */
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 3rem;
+}
+
+.grid-container-box .grid-item {
+  /* border: 1px solid black; */
+  background-color: #e5f1ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.grid-container-box .grid-item h5 {
+  font-size: var(--fs-primary-text);
+}
+.grid-container-box .grid-item p {
+  font-size: var(--fs-secondary-text);
+}
+
+@media all and (max-width: 420px) {
+  .grid-container-box .grid-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .grid-container-box .grid-item {
+    /* padding: 0; */
+  }
+}
+
+@media all and (max-width: 900px) {
+  .grid-container-box .grid-container {
+    gap: 2rem;
+  }
+
+  .grid-container-box .grid-item {
+    /* font-size: 0.9rem; */
+  }
+
+  .grid-container-box .grid-item img {
+    height: 6rem;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .grid-container-box .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: 650px) {
+  .grid-container-box .grid-container {
+    width: 100%;
+    /* margin: 2rem; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    /* border: 1px solid; */
+  }
+
+  .grid-container-box .grid-item {
+    transform: scale(0.8);
+  }
+}
