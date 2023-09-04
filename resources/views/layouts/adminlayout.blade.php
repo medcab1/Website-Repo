@@ -79,6 +79,13 @@
     <link rel="stylesheet" href="{{url('css/responsive.css')}}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{url('css/style.css')}}?<?php echo time(); ?>">
 
+    <!-- Crousel Styles -->
+    <link rel="stylesheet" href="{{url('styles/owl-styles/owl.carousel.min.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url('styles/owl-styles/owl.theme.default.min.css')}}"
+    />
+
     <!-- Bootstrap:added -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{url('styles/nav.css')}}?<?php echo time(); ?>">
@@ -86,6 +93,10 @@
     <link rel="stylesheet" href="{{url('styles/header.css')}}?<?php echo time(); ?>">
     <!-- saurabh adding css-->
     <link rel="stylesheet" href="{{url('styles/footer.css')}}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{url('styles/our-services.css')}}?<?php echo time(); ?>">
+
+    
+
 
     <style>
         #login-solid-btn {
@@ -305,6 +316,8 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_KEY')}}&libraries=places&callback=initMap"></script>
 <script src="{{url('js/custom.js')}}?<?php echo time(); ?>"></script>
 
+
+
 <!-- footer -->
 <script src="{{url('js/footer.js')}}?<?php echo time(); ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -313,5 +326,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Crousel -->
+    <script src="{{url('js/carousel.js')}}"?<?php echo time(); ?>"></script>
+    <script src="{{url('js/OwlCarousel/owl.carousel.js')}}"?<?php echo time(); ?>"></script>
+    <script src="{{url('js/OwlCarousel/owl.carousel.min.js')}}"?<?php echo time(); ?>"></script>
 
 </html>
