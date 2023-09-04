@@ -12,25 +12,25 @@
       >
         <div class="item">
           <img
-            src="asset('assets/website-images/book-ambulance-1.png')"
+            src="{{asset('assets/website-images/book-ambulance-1.png')}}"
             alt="screenshot of booking process"
           />
         </div>
         <div class="item">
           <img
-            src="asset('assets/website-images/book-ambulance-2.png')"
+            src="{{asset('assets/website-images/book-ambulance-2.png')}}"
             alt="screenshot of booking process"
           />
         </div>
         <div class="item">
           <img
-            src="asset('assets/website-images/book-ambulance-3.png')"
+            src="{{asset('assets/website-images/book-ambulance-3.png')}}"
             alt="screenshot of booking process"
           />
         </div>
         <div class="item">
           <img
-            src="asset('assets/website-images/book-ambulance-4.png')"
+            src="{{asset('assets/website-images/book-ambulance-4.png')}}"
             alt="screenshot of booking process"
           />
         </div>
