@@ -112,6 +112,11 @@ ambulance booking app
 @include('include.service')
 <!-- Our Services -->
 
+<!-- hospital availability -->
+@include('include.hospital_availability')
+<!-- hospital availability -->
+
+
 <!-- Why Choose use Start-->
 @include('include.why_choose_us')
 <!-- Why Choose use End-->

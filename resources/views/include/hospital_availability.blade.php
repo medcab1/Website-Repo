@@ -29,7 +29,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -42,7 +42,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -55,7 +55,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -68,7 +68,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -81,7 +81,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -94,7 +94,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -107,7 +107,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -120,7 +120,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -133,7 +133,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
@@ -146,7 +146,7 @@
             <div class="grid-item shadow">
               <div>
                 <img
-                  src="asset('assets/website-images/MRI.png')}}"
+                  src="{{asset('assets/website-images/MRI.png')}}"
                   class="mb-lg-4 mb-sm-2"
                   alt="x-ray"
                 />
