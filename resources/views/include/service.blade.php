@@ -22,47 +22,47 @@
           <a href="#" class="read-more">Read More</a>
         </div>
         <div class="our-servicesCard item">
-          <h2>Basic Ambulace</h2>
-          <img src="./images/Component 11-1.png" alt="" />
+          <h2>Air Ambulace</h2>
+          <img src="{{asset('assets/website-images/Component 11-1.png')}}" alt="" />
           <p>
             Designed to transport critically ill patients who require
             specialized medical care during transportation.
           </p>
           <div class="service-icons">
-            <div class="icon"><img src="./images/Group 72.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 161.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 81.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 148.png" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 72.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 161.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 81.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 148.png')}}" alt="" /></div>
           </div>
           <a href="#" class="read-more">Read More</a>
         </div>
         <div class="our-servicesCard item">
-          <h2>Basic Ambulace</h2>
-          <img src="./images/Component 11-1.png" alt="" />
+          <h2>Air Ambulace</h2>
+          <img src="{{asset('assets/website-images/Component 11-1.png')}}" alt="" />
           <p>
             Designed to transport critically ill patients who require
             specialized medical care during transportation.
           </p>
           <div class="service-icons">
-            <div class="icon"><img src="./images/Group 72.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 161.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 81.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 148.png" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 72.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 161.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 81.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 148.png')}}" alt="" /></div>
           </div>
           <a href="#" class="read-more">Read More</a>
         </div>
         <div class="our-servicesCard item">
-          <h2>Advance Ambulace</h2>
-          <img src="./images/Component 11-2.png" alt="" />
+          <h2>Air Ambulace</h2>
+          <img src="{{asset('assets/website-images/Component 11-1.png')}}" alt="" />
           <p>
             Designed to transport critically ill patients who require
             specialized medical care during transportation.
           </p>
           <div class="service-icons">
-            <div class="icon"><img src="./images/Group 72.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 161.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 81.png" alt="" /></div>
-            <div class="icon"><img src="./images/Group 148.png" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 72.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 161.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 81.png')}}" alt="" /></div>
+            <div class="icon"><img src="{{asset('assets/website-images/Group 148.png')}}" alt="" /></div>
           </div>
           <a href="#" class="read-more">Read More</a>
         </div>
