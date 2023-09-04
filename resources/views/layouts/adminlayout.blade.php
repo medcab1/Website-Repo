@@ -83,7 +83,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{url('styles/nav.css')}}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{url('styles/reset.css')}}?<?php echo time(); ?>">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="{{url('styles/header.css')}}?<?php echo time(); ?>">
+=======
+    
+    
+    
+    <!-- saurabh adding css-->
+    <link rel="stylesheet" href="{{url('styles/footer.css')}}?<?php echo time(); ?>">
+>>>>>>> Stashed changes
 
     <style>
         #login-solid-btn {
@@ -302,5 +310,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_KEY')}}&libraries=places&callback=initMap"></script>
 <script src="{{url('js/custom.js')}}?<?php echo time(); ?>"></script>
+
+<!-- footer -->
+<script src="{{url('js/footer.js')}}?<?php echo time(); ?>"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 
 </html>

@@ -1,120 +1,161 @@
-  <!-- Footer Area -->
-  <footer>
-    <div class="footer-container pt-5 pb-5">
-        <div class="container">
-                <div class="footer-main d-flex justify-content-space-between mb-3">
-                    <img src="{{asset('assets/image/logo.png')}}" alt="Medcab Logo" class="logo">
-                    <button class="footer-download-btn">Download MedCab App</button>
-                </div>
-                <div class="row footer-menu justify-content-space-between gy-3">
-                        <div class="col-md-2 col-6">
-                            <div class="footer-item w-100">
-                                <h4 class="links-heading">Quick Links</h4>
-                                <ul>
-                                    <li><a href="{{URL::route('Home')}}">Home</a></li>
-                                    <li><a href="{{URL::route('AboutUs')}}">About Us</a></li>
-                                    <li><a href="{{URL::route('Hospitals')}}">Hospitals</a></li>
-                                    <li><a href="{{URL::route('Ambulances')}}">Ambulances</a></li>
-                                    <li><a href="{{URL::route('JoinUs')}}">Join Us</a></li>
-                                    <li><a href="{{URL::route('Blogs')}}">Blogs</a></li>
-                                    <li><a href="{{URL::route('ContactUs')}}">Contact Us</a></li>
-                                    <li><a href="{{URL::route('SiteMap')}}">Sitemap</a></li>
-                                </ul>
-                            </div>
 
+<!-- footer -->
+    <footer class="footer">
+        <section class="d-flex flex-column align-items-center">
+            <div class="cityNames d-flex flex-column w-100 py-4 border-bottom ">
+                <div class="d-flex justify-content-between w-100">
+
+
+                    <div class="cities d-flex flex-column w-100">
+                        <div id="hideShow">
+                            <p class="secondary-text"><span class="primary-text fw-bold px-2">AVAILABLE IN </span>City Name | City Name | City Name | City Name | City Name | City Name | City Name
+                             | City
+                                Name
+                                | City Name | City Name | City Name | City Name | City Name | City Name | City Name |
+                                City Name | City Name | City Name | City Name | City Name | City Name | City Name | City
+                                Name
+                                | City Name | City Name | City Name | City Name | City Name | City Name | City Name |
+                                City Name | City Name | City Name | City Name | City Name</p>
                         </div>
-                        <div class="col-md-2 col-6">
-                            <div class="footer-item">
-                            <h4 class="links-heading">Info.</h4>
-                                <ul>
-                                    <!--<li><a href="#">Privacy Policy</a></li>-->
-                                    <li><a href="{{URL::route('Customer.Privacy&Policy')}}">Customer Privacy & Policy</a></li>
-                                    <li><a href="{{URL::route('Driver.Privacy&Policy')}}">Driver Privacy & Policy</a></li>
-                                    <li><a href="{{URL::route('Partner.Privacy&Policy')}}">Partner Privacy & Policy</a></li>
-                                    <li><a href="{{URL::route('Customer.Cancel&Refund')}}">Customer Cancelation & Refund Policy</a></li>
-                                    <li><a href="{{URL::route('Driver.Cancel&Refund')}}">Driver Cancelation & Refund Policy</a></li>
-                                    <li><a href="{{URL::route('Term&Condition')}}">Terms & Conditions</a></li>
-                                    <li><a href="{{URL::route('Service_Level_Agreement')}}">Service Level Agreement</a></li>
-                                </ul>
-                            </div>
 
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="footer-item">
-                                <h4 class="links-heading">locations</h4>
-                                <div class="row location gy-2 p-2 pl-3s">
-                                    <div class="col-4">
-                                    <ul class="location-links">
-                                        <?php
-                                        
-                                        $cities =DB::table('city_content')->get(['city_name','city_id','city_title_sku']);
-        
-                                        ?>
-                                        @for($i=0;$cities->count()>$i;$i++)
-                                            @if($i==10)
-                                                @break
-                                            @endif
-                                            <li><a href="{{URL::route('CityContent',['title'=>$cities[$i]->city_title_sku])}}">Ambulance in {{$cities[$i]->city_name}}</a></li>
-                                        @endfor 
-                                     </ul>
-                                    </div>
 
-                                    <div class="col-4">
-                                    <ul class="location-links">
-                                        @for($i=10;$cities->count()>$i;$i++)
-                                            @if($i>=10 && $i<20)
-                                            <li><a href="{{URL::route('CityContent',['title'=>$cities[$i]->city_title_sku])}}">Ambulance in {{$cities[$i]->city_name}}</a></li>
-                                            @elseif($i==21)
-                                                @break;
-                                            @endif
-                                        @endfor 
-                                    </ul>
-                                    </div>
 
-                                    <div class="col-4">
-                                    <ul class="location-links">
-                                        @for($i=20;$cities->count()>$i;$i++)
-                                            @if($i>19 && $i<30)
-                                            <li><a href="{{URL::route('CityContent',['title'=>$cities[$i]->city_title_sku])}}">Ambulance in {{$cities[$i]->city_name}}</a></li>
-                                            @elseif($i==31)
-                                                @break;
-                                            @endif
-                                        @endfor
-                                     </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <button onclick="show()" id="hideShowBtn" class="btn text-white shadow-none secondary-text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#cityCollapse" aria-expanded="false"
+                            aria-controls="cityCollapse">Show more</button>
+                    </div>
                 </div>
-                <hr style="border-color:white;margin:2.5rem 0;"/>
-                <div class=" row footer-details justify-content-start d-flex gx-3 gy-1">
-                    <div class="col-lg-3 col-md-4 col-sm-6 footer-address">
-                        <span class="info-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                        </span>
-                        <span><a href="https://goo.gl/maps/rpDiV523AhxECdPi6">Rajsha Tower, 3/9B, Vibhuti Khand, Gomti Nagar,<br/> Lucknow, Uttar Pradesh, 226010</a> </span>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-6 footer-contact">
-               
-                        <span class="info-icon">
-                        <i class="fa-solid fa-phone"></i>
-                        </span>
-                        <span><a href="tel: +91 18008908208">18008908208</a></span>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 footer-mail">
-                        <span class="info-icon">
-                        <i class="fa-solid fa-envelope"></i>
-
-                        </span>
-                        <span><a href="mailto: info@medcab.in">info@medcab.in</a></span>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12  text-right footer-mail">
-                        <span><a href="https://medcabprivatelimited.com/">Copyright © 2023 MedCab  | Powered by MedCab Private Limited</a></span>
-                    </div>    
+            </div>
+            <div class="bookAmbulance d-flex flex-column align-items-center py-4 w-100 border-bottom">
+                <div>
+                    <h6 class="primary-text fw-bold py-3 text-center">BOOK AMBULANCE</h6>
                 </div>
-        </div>
-    </div>
-</footer>
+                <div class="text-center">
+                    <a href="">Basic Ambulace |</a>
+                    <a href="">Advance Ambulace |</a>
+                    <a href="">ICU Ambulace |</a>
+                    <a href="">E-Ambulace |</a>
+                    <a href="">Medical First Responder |</a>
+                    <a href="">Rent Ambulace |</a>
+                    <a href="">Bulk Ambulace</a>
+                </div>
+            </div>
+            <div class="info w-100 d-flex flex-column py-4 border-bottom">
+                <div class="show mb-2">
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="infoCard">
+                        <h6 class="primary-text fw-bold">INFO</h6>
+                        <p>Privacy Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Cancellation Policy</p>
+                        <p>Guidelines</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                </div>
+
+                <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button>
+
+
+            </div>
+            <div class="downloadApp d-flex w-100 py-4 border-bottom justify-content-between">
+                <div class="buttons">
+                    <button class="btn shadow-none"><img src="../images/playBtn.png" alt="play store"></button>
+                    <button class="btn shadow-none"><img src="../images/appBtn.png" alt=""></button>
+                </div>
+                <div class="socials d-flex gap-3 align-items-center justify-content-end gap-1 py-4">
+                    <img src="../images/icons/facebook.png" alt="">
+                    <img src="../images/icons/insta.png" alt="">
+                    <img src="../images/icons/insta.png" alt="">
+                    <img src="../images/icons/linkedin.png" alt="">
+                    <img src="../images/icons/linkedin.png" alt="">
+                    <img src="../images/icons/twitter.png" alt="">
+                </div>
+            </div>
+            <div class="contact d-flex justify-content-center w-100 py-4 border-bottom">
+                <p class="text-center"><span><a href="">Contact Us |</a><a href=""> Terms of Use |</a><a href=""> Privacy
+                            Policy |</a><a href=""> Refund
+                            Policy |</a><a href=""> Service Legal Agreement for Vendor/ Driver
+                            |</a><a href="">
+                            Career |</a><a href=""> Mobile
+                            App |</a><a href=""> Media
+                            Coverage |</a><a href=""> B2B
+                            Partner</a></span></p>
+            </div>
+            <div class="address d-flex w-100 py-4 border-bottom justify-content-center">
+                <div class="elem d-flex align-items-center">
+                    <img src="../images/icons/location.png" alt="loc">
+                    <p> 2/141 Vishal Khand Gomti Nagar, Lucknow, Uttar Pradesh, 226010</p>
+                </div>
+                <div class="elem d-flex align-items-center">
+                    <img src="../images/icons/call.png" alt="loc">
+                    <p> 8755672479</p>
+                </div>
+                <div class="elem d-flex align-items-center">
+                    <img src="../images/icons/mail.png" alt="loc">
+                    <p> info@medcabprivatelimited.com</p>
+                </div>
+            </div>
+            <div class="copyright  d-flex align-items-center justify-content-center w-100 py-4">
+                <p class="text-center">Copyright 2022 Medcab Care Private Limited</p>
+            </div>
+
+        </section>
+    </footer>
   <!-- end footer area -->
 

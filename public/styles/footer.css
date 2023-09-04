@@ -45,7 +45,8 @@ footer * {
 
 .footer section .info .show {
     width: 100%;
-    white-space: nowrap;
+    display: block;
+    white-space: nowrap !important;
     /* justify-content: space-between; */
     overflow-x: hidden;
 }
@@ -53,7 +54,7 @@ footer * {
 .footer section .infoCard {
     width: 25%;
     /* border: 1px solid greenyellow; */
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 2rem;
 
 }
@@ -110,6 +111,14 @@ footer * {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+
+/* show more buttons */
+/* #hideShowBtn:active, #infoBtn:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+} */
 
 @media all and (max-width: 700px) {
     .footer .downloadApp {
