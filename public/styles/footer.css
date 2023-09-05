@@ -44,7 +44,7 @@ footer * {
     text-transform: uppercase;
 }
 
-.footer .bookAmbulance-content{
+.footer .bookAmbulance-content {
     text-align: justify;
 }
 
@@ -116,13 +116,20 @@ footer * {
     flex-wrap: wrap;
     gap: 2rem;
 }
-.footer section .info .show{
+
+.footer section .info .show {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.footer .contact p{
+
+.footer .contact p {
     text-align: justify;
 }
+
+button:focus:not(:focus-visible) {
+    border: none;
+}
+
 /* show more buttons */
 /* #hideShowBtn:active, #infoBtn:active {
     border: none !important;
@@ -149,13 +156,15 @@ footer * {
     .footer section .infoCard {
         width: 50%;
     }
-    .footer section .info .show{
-        grid-template-columns: repeat(2,1fr);
+
+    .footer section .info .show {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .footer section .info .show{
+
+    .footer section .info .show {
         gap: 1em;
     }
-    
+
 }
 
 @media all and (max-width: 580px) {
@@ -163,10 +172,12 @@ footer * {
         width: 50%;
         /* margin: 0 2em; */
     }
-    .footer section .downloadApp .buttons{
+
+    .footer section .downloadApp .buttons {
         flex-direction: row;
     }
-    .footer .downloadApp .buttons .btn{
+
+    .footer .downloadApp .buttons .btn {
         margin: 1em 0;
     }
 }
@@ -175,19 +186,24 @@ footer * {
     .footer {
         padding: 2rem 3rem;
     }
+
     .footer section .infoCard {
         width: 100%;
         text-align: center;
         margin: 0;
     }
+
     .footer .address .elem:last-child {
         flex-direction: column;
     }
-    .footer section .info .show{
+
+    .footer section .info .show {
         grid-template-columns: 1fr;
     }
 }
 
-button:focus:not(:focus-visible) {
-    border: none;
+@media all and (max-width: 360px) {
+    .footer section .downloadApp .buttons {
+        flex-direction: column;
+    }
 }
