@@ -53,7 +53,11 @@ Route::get('/Ambulances',function(){
     return view('ambulance');
 })->name('Ambulances');
 
-// Ambulances Page Route
+Route::get('/our_services', function() {
+    return view('our_services');
+})->name('OurServices');
+
+// Join_us Page Route
 Route::get('/joinUs',function(){
     return view('joinUs');
 })->name('JoinUs');

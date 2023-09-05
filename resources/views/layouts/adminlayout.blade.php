@@ -186,7 +186,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ URL::route('Home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Services</a>
+                        <a class="nav-link" href="{{ route('OurServices') }}">Our Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('Ambulances') }}">Ambulances</a>

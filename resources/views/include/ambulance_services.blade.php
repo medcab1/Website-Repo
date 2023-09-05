@@ -1,4 +1,8 @@
 <!-- ambulance services -->
+@php
+$get_ambulance_categories = DB::table('ambulance_category')
+ ->get();
+@endphp
 <section class="ourServices d-flex flex-column align-items-center">
     
     <section class="ambulance-services section-3 d-flex flex-column align-items-center">
@@ -8,52 +12,21 @@
             </div>
             <div class="content px-md-5 w-100 d-flex gap-5 mt-5 mb-5">
                 <div class="left-content w-50">
-                    <div
+                    @foreach($get_ambulance_categories as $key)
+                    <div id="" 
                         class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Basic Ambulance</p>
+                        <div class="ambuImage">
+                            <img class="" src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $key->ambulance_category_icon }}" alt="ambulance" />
+                        </div>
+                        <p>{{$key->ambulance_category_name}}</p>
                     </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Advance Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>ICU Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Advance Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Transfer Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Transfer Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>ICU Ambulance</p>
-                    </div>
-                    <div
-                        class="ambuCard justify-content-center d-flex flex-column align-items-center text-center py-4 py-sm-3 rounded-4 bg-white">
-                        <img class="" src="{{asset('assets/website-images/Component 11.png')}}" alt="ambulance" />
-                        <p>Transfer Ambulance</p>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="right-content w-50 rounded-4 d-flex flex-column justify-content-evenly gap-4">
                     <div class="bg-white rounded-4 py-4 px-2">
                         <div class="one d-flex flex-column align-items-center">
                             <img src="{{asset('assets/website-images/Component 11.png')}}" alt="" />
-                            <h4 class="fw-bold text-center">Advance Ambulance</h4>
+                            <h4 class="fw-bold text-center">{{$key->ambulance_category_name}}</h4>
                         </div>
                         <div class="two">
                             <p class="text-center">
@@ -100,3 +73,9 @@
     </section>
 
 <!-- ambulance services -->
+
+
+
+
+
+
