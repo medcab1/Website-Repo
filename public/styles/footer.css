@@ -44,6 +44,10 @@ footer * {
     text-transform: uppercase;
 }
 
+.footer .bookAmbulance-content{
+    text-align: justify;
+}
+
 .footer section .info .show {
     width: 100%;
     display: block;
@@ -112,8 +116,14 @@ footer * {
     flex-wrap: wrap;
     gap: 2rem;
 }
-
-
+.footer section .info .show{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.footer .contact p{
+    text-align: justify;
+}
 /* show more buttons */
 /* #hideShowBtn:active, #infoBtn:active {
     border: none !important;
@@ -138,31 +148,37 @@ footer * {
     }
 
     .footer section .infoCard {
-        width: 33%;
+        width: max-content;
     }
+    .footer section .info .show{
+        gap: 1em;
+    }
+    
 }
 
 @media all and (max-width: 580px) {
     .footer section .infoCard {
         width: 50%;
+        /* margin: 0 2em; */
+    }
+    .footer section .downloadApp .buttons{
+        flex-direction: row;
+    }
+    .footer .downloadApp .buttons .btn{
+        margin: 1em 0;
     }
 }
 
 @media all and (max-width: 400px) {
     .footer {
-        padding: 5rem 1rem;
+        padding: 2rem 3rem;
     }
-
-    .footer .address .elem:last-child {
-        flex-direction: column;
-    }
-
     .footer section .infoCard {
         width: 100%;
-        margin-bottom: 1rem;
+        text-align: center;
+        margin: 0;
     }
-
-    .footer section .downloadApp .buttons {
+    .footer .address .elem:last-child {
         flex-direction: column;
     }
 }

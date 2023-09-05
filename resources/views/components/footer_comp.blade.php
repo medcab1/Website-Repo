@@ -27,7 +27,7 @@ $CategoryData = DB::table('ambulance_category')->get();
                 <div>
                     <h6 class="primary-text fw-bold py-3 text-center">BOOK AMBULANCE</h6>
                 </div>
-                <div class="text-center">
+                <div class="bookAmbulance-content">
                     @foreach ($CategoryData as $category)
                         <a href="">{{ $category->ambulance_category_name }} |</a>
                     @endforeach
@@ -118,7 +118,7 @@ $CategoryData = DB::table('ambulance_category')->get();
                 </div>
             </div>
             <div class="contact d-flex justify-content-center w-100 py-4 border-bottom">
-                <p class="text-center"><span><a href="">Contact Us |</a><a href=""> Terms of Use |</a><a href=""> Privacy
+                <p class=""><span><a href="">Contact Us |</a><a href=""> Terms of Use |</a><a href=""> Privacy
                             Policy |</a><a href=""> Refund
                             Policy |</a><a href=""> Service Legal Agreement for Vendor/ Driver
                             |</a><a href="">
