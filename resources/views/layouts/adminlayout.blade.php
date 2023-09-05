@@ -353,9 +353,6 @@
 <script
     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
 </script>
-<script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&callback=initMap">
-</script>
 <script src="{{ url('js/custom.js') }}?<?php echo time(); ?>"></script>
 
 

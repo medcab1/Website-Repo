@@ -8,6 +8,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
+                        <!--  -->
                         <a href="{{URL::to('/')}}" class="logo">
                             <img src="{{ URL::route('Home') }}/assets/image/logo.png" alt="Medcab-logo" >
                         </a>

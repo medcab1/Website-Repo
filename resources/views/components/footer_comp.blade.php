@@ -1,5 +1,10 @@
 
 <!-- footer -->
+@php
+$cityData = DB::table('city')->get();
+
+$CategoryData = DB::table('ambulance_category')->get();
+@endphp
     <footer class="footer">
         <section class="d-flex flex-column align-items-center">
             <div class="cityNames d-flex flex-column w-100 py-4 border-bottom ">
@@ -7,16 +12,14 @@
 
 
                     <div class="cities d-flex flex-column w-100">
-                        <div id="hideShow">
-                            <p class="secondary-text"><span class="primary-text fw-bold px-2">AVAILABLE IN </span>City Name | City Name | City Name | City Name | City Name | City Name | City Name
-                             | City
-                                Name
-                                | City Name | City Name | City Name | City Name | City Name | City Name | City Name |
-                                City Name | City Name | City Name | City Name | City Name | City Name | City Name | City
-                                Name
-                                | City Name | City Name | City Name | City Name | City Name | City Name | City Name |
-                                City Name | City Name | City Name | City Name | City Name</p>
-                        </div>
+                    <div id="hideShow">
+                    <p class="secondary-text"><span class="primary-text fw-bold px-2">AVAILABLE IN </span>
+                        @foreach ($cityData as $city)
+                            {{ $city->city_name }} |
+                        @endforeach
+                    </p>
+                </div>
+
 
 
 
@@ -31,14 +34,11 @@
                     <h6 class="primary-text fw-bold py-3 text-center">BOOK AMBULANCE</h6>
                 </div>
                 <div class="text-center">
-                    <a href="">Basic Ambulace |</a>
-                    <a href="">Advance Ambulace |</a>
-                    <a href="">ICU Ambulace |</a>
-                    <a href="">E-Ambulace |</a>
-                    <a href="">Medical First Responder |</a>
-                    <a href="">Rent Ambulace |</a>
-                    <a href="">Bulk Ambulace</a>
+                    @foreach ($CategoryData as $category)
+                        <a href="">{{ $category->ambulance_category_name }} |</a>
+                    @endforeach
                 </div>
+
             </div>
             <div class="info w-100 d-flex flex-column py-4 border-bottom">
                 <div class="show mb-2">
@@ -115,16 +115,15 @@
             </div>
             <div class="downloadApp d-flex w-100 py-4 border-bottom justify-content-between">
                 <div class="buttons">
-                    <button class="btn shadow-none"><img src="../images/playBtn.png" alt="play store"></button>
-                    <button class="btn shadow-none"><img src="../images/appBtn.png" alt=""></button>
+                    <button class="btn shadow-none"><img src="{{ asset('assets/website-images/playBtn.png') }}" alt="play store"></button>
+                    <button class="btn shadow-none"><img src="{{ asset('assets/website-images/appBtn.png') }}" alt="app Store"></button>
                 </div>
                 <div class="socials d-flex gap-3 align-items-center justify-content-end gap-1 py-4">
-                    <img src="../images/icons/facebook.png" alt="">
-                    <img src="../images/icons/insta.png" alt="">
-                    <img src="../images/icons/insta.png" alt="">
-                    <img src="../images/icons/linkedin.png" alt="">
-                    <img src="../images/icons/linkedin.png" alt="">
-                    <img src="../images/icons/twitter.png" alt="">
+                <img src="{{ asset('assets/website-images/icons/facebook.png') }}" alt="Facebook">
+                <img src="{{ asset('assets/website-images/icons/linkedin.png') }}" alt="linkedin">
+                <img src="{{ asset('assets/website-images/icons/insta.png') }}" alt="insta">
+                <img src="{{ asset('assets/website-images/icons/linkedin.png') }}" alt="linkedin">
+                <img src="{{ asset('assets/website-images/icons/twitter.png') }}" alt="twitter">
                 </div>
             </div>
             <div class="contact d-flex justify-content-center w-100 py-4 border-bottom">
@@ -139,15 +138,15 @@
             </div>
             <div class="address d-flex w-100 py-4 border-bottom justify-content-center">
                 <div class="elem d-flex align-items-center">
-                    <img src="../images/icons/location.png" alt="loc">
+                <img src="{{ asset('assets/website-images/icons/location.png') }}" alt="loc">
                     <p> 2/141 Vishal Khand Gomti Nagar, Lucknow, Uttar Pradesh, 226010</p>
                 </div>
                 <div class="elem d-flex align-items-center">
-                    <img src="../images/icons/call.png" alt="loc">
+                <img src="{{ asset('assets/website-images/icons/call.png') }}" alt="call">
                     <p> 8755672479</p>
                 </div>
                 <div class="elem d-flex align-items-center">
-                    <img src="../images/icons/mail.png" alt="loc">
+                <img src="{{ asset('assets/website-images/icons/mail.png') }}" alt="mail">
                     <p> info@medcabprivatelimited.com</p>
                 </div>
             </div>

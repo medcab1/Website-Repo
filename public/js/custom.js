@@ -414,7 +414,6 @@ function setBookingTime(){
 			second: 'numeric', // numeric, 2-digit
 		});
 		var dt=current.toLocaleString('hi-IN');
-		console.log(dt);
 		$('#txtDate').val(dt);
 		$('#txtDate').attr("title",dateTime);   	
 		$('#book-now-time').html(dateTime);   	
@@ -1237,7 +1236,6 @@ function showToast(message){
 	$('#toast').html(message);
 	// alert(message);
 	$('#toast').removeClass('hidden').fadeIn(400);
-	console.log($('#toast'));
     setTimeout(function() {
       $('#toast').fadeOut(400, function() {
         $(this).addClass('hidden');

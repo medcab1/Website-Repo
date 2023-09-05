@@ -3,7 +3,7 @@
      <section class="section-6 download-app d-flex flex-column align-items-center">
          <div class="label d-flex align-items-center">
              <div class="image me-3">
-                 <img src="{{asset('assets/website-images/runningAmbulance.png')}}" alt="" />
+                 <img src="{{asset('assets/website-images/runningAmbulance.jpg')}}" alt="" />
              </div>
              <h3 class="text-center text-white fw-bold mb-0">
                  Download MedCab App
