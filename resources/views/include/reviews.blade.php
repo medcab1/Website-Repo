@@ -4,7 +4,8 @@
       <h1 class="main-heading">Reviews</h1>
       <div class="reviews-carousel owl-carousel-reviews owl-theme owl-carousel">
         <div class="item">
-          <div class="image"></div>
+          <div class="image"><img src="{{ asset('assets/image/kajal.jpeg') }}" alt="images">
+</div>
           <div class="reviews-content secondary-text">
             <p class="mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,7 +17,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="image"></div>
+          <div class="image"><img src="{{ asset('assets/image/manisha.jpeg') }}" alt="manisha"></div>
           <div class="reviews-content secondary-text">
             <p class="mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,7 +29,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="image"></div>
+          <div class="image"><img src="{{ asset('assets/image/zakir.jpeg') }}" alt="zakir"></div>
           <div class="reviews-content secondary-text">
             <p class="mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,7 +41,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="image"></div>
+          <div class="image"><img src="{{ asset('assets/image/aadesh.jpeg') }}" alt="aadesh"></div>
           <div class="secondary-text review-content">
             <p class="mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

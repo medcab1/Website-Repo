@@ -960,4 +960,7 @@ inputs.forEach((input, index1) => {
     
 
 </script>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&callback=initMap">
+</script>
 @endsection
