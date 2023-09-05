@@ -17,6 +17,7 @@ use App\Http\Controllers\DriverController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HospitalController;
+use App\Http\Controllers\FacilitiesController;
 use App\View\Components\footer;
 
 
@@ -118,6 +119,11 @@ Route::get('/service-level-agreement',function(){
         Route::post('hospital-services/{category_name}/{city}','HospitalServiceCity')->name('services-category-city');
         Route::get('search-city','CitySearch')->name('search-city');
 
+
+    });
+    // Includes page data show saurabh .....//
+    Route::controller(FacilitiesController::class)->group(function () {
+        Route::get('hospital-availability','GetHospitalAvailableData')->name('get-hospital-data');
 
     });
 

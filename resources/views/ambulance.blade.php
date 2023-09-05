@@ -9,53 +9,43 @@ ambulance, ICU ambulance, Boat ambulance, Water ambulance, Dead body ambulance,
 e-rickshaw ambulance")
 
 <!-- Start Blog Banner Section -->
-<section class="hospitals-top section-padding ">
-    <div class="hospitals-banner bg-white">
-    <div class="container ">
-        <div class="row gy-4 ">
-            <div class="col-lg-6 col-md-12 ">
-                <div class="banner-text-left text-left" style="text-align:left;">
-                    <h1 class="banner-heading">
-                    Ambulance Service
-                    </h1>
-                   
-                    <p class="p-text">
-                    Welcome to MedCab's ambulance services, where we prioritize your health and safety. Our ambulance services are designed to meet your urgent medical needs with utmost care and precision. Our services are available 24/7 and we pride ourselves on our state-of-the-art equipment and highly experienced staff.
-                    <br/>
-                    <br/>
-                    We offer a variety of ambulance services, including basic life support, advanced life support, critical care transport, etc. Our services are tailored to meet the unique needs of each patient and we strive to provide compassionate and reliable care.
-                    <br/>
-                    <br/>
-                    At MedCab, we understand the importance of timely and efficient medical care, which is why we go the extra mile to provide exceptional service. Trust MedCab to take care of your medical transportation needs and experience the difference.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 d-flex-center">
-                <div class="  h-100 w-100" style="bg-color:#F89E9E;">
-                    <img src="{{url('/assets/image/ambulances-img.png')}}" alt="Ambulance Image" class="w-100">
-                </div>
-            </div>
+
+<!-- ambulance header -->
+<header class="ambulance-header d-flex">
+      <div class="left d-flex flex-column align-items-start">
+        <h1 class="main-heading">Ambulances</h1>
+        <div class="d-flex flex-column gap-4">
+          <p class="primary-text">
+            Choose the ambulance that best fits your needs and book online
+            through our App or website.
+          </p>
+          <p class="primary-text">
+            With a hassle-free booking process that makes it easy to get the
+            medical transport you require
+          </p>
         </div>
-    </div> 
-    </div>
-    <div class="container"> 
-        
-    </div>
+      </div>
+      <div class="right">
+        <img src="{{asset('assets/website-images/ambulance-header-img.png')}}" alt="" />
+      </div>
+    </header>
+    <!-- ambulance header -->
 
-</section>
+    <!-- ambulance services -->
+    @include('include.ambulance_services')
+    <!-- ambulance services -->
 
-<!-- Services -->
-<div class="top-curve-img ">
-    <img src="{{url('/assets/image/top-curve-img.png')}}" alt="Curve BG" class="w-100" alt="">
-</div>
-@include('include.service')
-<!-- Services -->
+    <!-- customer support -->
+    @include('include.customer_support')
+    <!-- customer support -->
 
-<!-- Supports section -->
-@include('include.support_section')
-<!-- Supports section -->
+    <!-- how to book -->
+    @include('include.booking_preview')
+    <!-- how to book -->
 
-<!-- dowmload banner -->
-@include('include.download_banner');
- <!-- dowmload banner --> 
+    <!-- download banner -->
+    @include('include.download_banner')
+    <!-- download banner -->
+
+
 @endsection

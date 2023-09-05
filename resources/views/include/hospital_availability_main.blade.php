@@ -1,4 +1,8 @@
   <!-- check hospital availability -->
+  @php
+  $get_hospital_data = DB::table('hospital_service_category')
+    ->get();
+    @endphp
   <section class="ourServices d-flex flex-column align-items-center">
       <section class="section-4 grid-container-box d-flex justify-content-center">
           <div class="facilities gap-3">
@@ -13,177 +17,17 @@
                   </p>
               </div>
               <div class="grid-container">
+                @foreach($get_hospital_data as $key)
                   <a href="#">
                       <div class="grid-item shadow">
                           <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
+                              <img src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $key->hospital_serv_cat_icon }}" class="mb-lg-4 mb-sm-2" alt="" />
                           </div>
-                          <h5 class="">MRI Scan</h5>
+                          <h5 class="">{{$key->hospital_serv_cat_name}}</h5>
                           <p>Check Availability of both AC and Non-AC</p>
                       </div>
                   </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
-                  <a href="#">
-                      <div class="grid-item shadow">
-                          <div>
-                              <img src="{{asset('assets/website-images/MRI.png'}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
-                          </div>
-                          <h5 class="">MRI Scan</h5>
-                          <p>Check Availability of both AC and Non-AC</p>
-                      </div>
-                  </a>
+                  @endforeach
               </div>
           </div>
       </section>
