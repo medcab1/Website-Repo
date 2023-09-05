@@ -9,20 +9,14 @@ $CategoryData = DB::table('ambulance_category')->get();
         <section class="d-flex flex-column align-items-center">
             <div class="cityNames d-flex flex-column w-100 py-4 border-bottom ">
                 <div class="d-flex justify-content-between w-100">
-
-
                     <div class="cities d-flex flex-column w-100">
                     <div id="hideShow">
-                    <p class="secondary-text"><span class="primary-text fw-bold px-2">AVAILABLE IN </span>
+                    <p class="secondary-text text-justify"><span class="secondary-text fw-bold">AVAILABLE IN </span>
                         @foreach ($cityData as $city)
                             {{ $city->city_name }} |
                         @endforeach
                     </p>
                 </div>
-
-
-
-
                         <button onclick="show()" id="hideShowBtn" class="btn text-white shadow-none secondary-text" type="button"
                             data-bs-toggle="collapse" data-bs-target="#cityCollapse" aria-expanded="false"
                             aria-controls="cityCollapse">Show more</button>
@@ -107,11 +101,8 @@ $CategoryData = DB::table('ambulance_category')->get();
                         <p>Terms & Conditions</p>
                     </div>
                 </div>
-
                 <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse"
                     data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button>
-
-
             </div>
             <div class="downloadApp d-flex w-100 py-4 border-bottom justify-content-between">
                 <div class="buttons">
@@ -153,7 +144,6 @@ $CategoryData = DB::table('ambulance_category')->get();
             <div class="copyright  d-flex align-items-center justify-content-center w-100 py-4">
                 <p class="text-center">Copyright 2022 Medcab Care Private Limited</p>
             </div>
-
         </section>
     </footer>
   <!-- end footer area -->

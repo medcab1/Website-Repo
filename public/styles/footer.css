@@ -8,7 +8,7 @@ footer * {
 
 .footer {
     /* padding: 4rem 8rem; */
-    background-color: black;
+    background-color: #1e1e1e;
     color: rgba(255, 255, 255, 0.829) !important;
     text-decoration: none;
     padding: 8rem;
@@ -39,8 +39,9 @@ footer * {
 }
 
 
-.footer section {
-    border: 1px solid black;
+.footer .cityNames p {
+    text-align: justify;
+    text-transform: uppercase;
 }
 
 .footer section .info .show {
@@ -135,6 +136,7 @@ footer * {
     .footer {
         padding: 5rem;
     }
+
     .footer section .infoCard {
         width: 33%;
     }
@@ -150,7 +152,8 @@ footer * {
     .footer {
         padding: 5rem 1rem;
     }
-    .footer .address .elem:last-child{
+
+    .footer .address .elem:last-child {
         flex-direction: column;
     }
 
@@ -162,4 +165,8 @@ footer * {
     .footer section .downloadApp .buttons {
         flex-direction: column;
     }
+}
+
+button:focus:not(:focus-visible) {
+    border: none;
 }
