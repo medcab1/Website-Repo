@@ -22,7 +22,7 @@
 }
 
 .ourServices .serviceHead {
-  background-image: url(../images/handShake.png);
+  background-image: url(../assets/website-images/handShake.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,6 +205,8 @@
   .ourServices .section-3 .content .left-content .ambuCard {
     width: 100%;
   }
+
+
 
   .ourServices .section-3 .content .right-content {
     width: 100% !important;
