@@ -23,7 +23,7 @@ const showMoreInfo = () => {
         infoCard.style.display = "block";
         btn.innerHTML = "Show less";
     } else {
-        info.style = "display: block; white-space: nowrap;";
+        info.style = "display: block;overflow:hidden";
         infoCard.style.display = "inline-block";
         btn.innerHTML = "Show more";
     }
