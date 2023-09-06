@@ -56,8 +56,7 @@ ambulance? Call MedCab at 18008-908-208.")
                 <div class="col-lg-4 col-md-10 text-break p-0">
                     <div class="blog-right ">
                         <h3>Must Read</h3>
-                        <div class="read-blog-list">
-                        
+                        <div class="read-blog-list">        
                             @for($c=5;$c<=10;$c++)
                             <div class="read-blog-item">
                                 <img src="{{$base_url.$blogs[$c]->blog_thumbnail}}" alt="{{$blogs[$i]->blog_title}}">
@@ -66,7 +65,6 @@ ambulance? Call MedCab at 18008-908-208.")
                                 </a>
                             </div>
                             @endfor
-                            
                         </div>
                         <div class="subscribe">
                            <img src="{{URL::to('assets/image/corner.png')}}" alt="Corner BG" class="corner-img" alt=""> 
@@ -104,8 +102,6 @@ ambulance? Call MedCab at 18008-908-208.")
                 }
                  }
                  ?>
-
-                
             </div>
         </div>
         <div class="read-more-blog w-100 d-flex-center mt-5 d-done">

@@ -16,8 +16,8 @@
     flex-grow: 1;
 }
 .header-booking {
-    box-shadow: 0px 3px 10px 0 rgb(255, 212, 212);
-    border: 1px solid var(--border-light-clr);
+    box-shadow: -3px 3px 4px 0px #ffd4d4;
+    border: 2px solid #e5dddd;
     border-radius: 1rem;
     background: white;
 }
@@ -67,8 +67,8 @@
     gap: 1rem;
 }
 .booking-submit .booking-time {
-  width: 5em;
-  height: 5em;
+    width: 5em;
+    height: 5em;
     background-color: #fff;
     /* flex-grow: 1; */
 }
@@ -80,8 +80,8 @@
     flex-grow: 6;
 }
 .header-ctaBox {
-    box-shadow: 0px 3px 10px 0 rgb(255, 212, 212);
-    border: 1px solid var(--border-light-clr);
+    box-shadow: -3px 3px 4px 0px #ffd4d4;
+    border: 2px solid #e5dddd;
     border-radius: 10rem;
     padding: 0.8rem 1rem;
     display: flex;
@@ -216,7 +216,7 @@
     .header-ctaBox a {
         font-size: 5vw;
     }
-    .header .booking-submit img{
-      width: 50%;
+    .header .booking-submit img {
+        width: 50%;
     }
 }

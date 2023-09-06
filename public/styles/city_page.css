@@ -8,8 +8,20 @@
     /* height: 100%; */
     object-fit: cover;
 }
-.cityPage .header-bookingForm input{
-    padding: .5em;
+.cityPage .header-bookingForm input {
+    padding: 0.5em;
+}
+
+.cityAbout {
+    display: flex;
+    padding-right: 8em;
+    gap: 5em;
+}
+.cityAbout-image {
+    width: 100%;
+}
+.cityAbout-text {
+    width: 100%;
 }
 @media all and (min-width: 780px) {
     .cityPage {
