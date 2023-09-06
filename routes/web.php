@@ -53,7 +53,7 @@ Route::get('/Ambulances',function(){
     return view('ambulance');
 })->name('Ambulances');
 
-Route::get('/our_services', function() {
+Route::get('/ourservices', function() {
     return view('our_services');
 })->name('OurServices');
 
@@ -102,6 +102,10 @@ Route::get('/service-level-agreement',function(){
     return  View('sla');
  })->name('Service_Level_Agreement');
 
+//  @Uttam 
+Route::get('/city',function(){
+    return view('city_page');
+})->name('City');
 
     //................................ Routes Start For Websites.................................//
 
