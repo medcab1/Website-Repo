@@ -43,10 +43,6 @@ route::get('/no-access',function(){
 
 });
 
-// Hospitals Page Route
-Route::get('/hospitals',function(){
-    return view('hospitals');
-})->name('Hospitals');
 
 // Ambulances Page Route
 Route::get('/Ambulances',function(){
@@ -126,6 +122,8 @@ Route::get('/city',function(){
         Route::get('hospital-services/{category_name}','HospitalServicesCategory')->name('services-category');
         Route::post('hospital-services/{category_name}/{city}','HospitalServiceCity')->name('services-category-city');
         Route::get('search-city','CitySearch')->name('search-city');
+      // Hospitals Page Route
+         Route::get('/hospitals', 'hospital_services')->name('Hospitals');
 
 
     });

@@ -11,12 +11,16 @@
                  </h1>
                  <h4 class="">Download MedCab App</h4>
                  <div class="btns d-flex gap-3">
-                     <button class="btn px-0">
-                         <img src="{{asset('assets/website-images/Google Play.png')}}" alt="" />
-                     </button>
-                     <button class="btn px-0">
-                         <img src="{{asset('assets/website-images/app-store.png')}}" alt="" />
-                     </button>
+                     <a href="https://play.google.com/store/apps/details?id=com.medcab.consumer" target="_blank">
+                         <button class="btn px-0">
+                             <img src="{{asset('assets/website-images/Google Play.png')}}" alt="" />
+                         </button>
+                     </a>
+                     <a href="https://apps.apple.com/in/app/medcab/id6449100704" target="_blank">
+                         <button class="btn px-0">
+                             <img src="{{asset('assets/website-images/app-store.png')}}" alt="" />
+                         </button>
+                     </a>
                  </div>
              </div>
          </div>

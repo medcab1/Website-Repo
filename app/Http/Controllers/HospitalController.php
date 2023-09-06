@@ -21,6 +21,16 @@ class HospitalController extends Controller
         return view('hospital_pages.hospital_services')->with(compact('data'));
     }
 
+
+    // saurabh
+    public function hospital_services() {
+        $get_data = DB::table('hospital_service_category')
+            ->get();
+
+        return view('hospitals')->with(compact('get_data'));
+    }
+    // saurabh
+
     public function HospitalServicesCategory($category_name)
     {
         $service_data = DB::table('hospital_service_category')

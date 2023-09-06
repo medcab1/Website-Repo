@@ -1,9 +1,6 @@
 
 <!-- our services (updated) -->
-<<<<<<< Updated upstream
-=======
 <!--  -->
->>>>>>> Stashed changes
 
 <!--  -->
   <section class="our-services w-100 padding">
