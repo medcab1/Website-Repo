@@ -1,6 +1,6 @@
 
     <!-- Reviews Section -->
-    <section class="reviews">
+    <section class="reviews w-100">
       <h1 class="main-heading">Reviews</h1>
       <div class="reviews-carousel owl-carousel-reviews owl-theme owl-carousel">
         <div class="item">

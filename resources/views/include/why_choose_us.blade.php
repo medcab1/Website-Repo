@@ -1,6 +1,6 @@
 
     <!-- Why choose us -->
-    <section class="why-us mt-3">
+    <section class="why-us w-100">
       <h1 class="main-heading">Why Choose Us</h1>
       <div class="why-usCards">
         <div class="why-usCard">

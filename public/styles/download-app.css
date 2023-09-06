@@ -7,9 +7,9 @@
   background-size: 100% 100%;
   /* height: auto;     */
   gap: 5rem;
-  width: 80%;
+  width: 100%;
   padding: 4em 0;
-  margin: 4rem 2em;
+  /* margin: 4rem 2em; */
 }
 
 .download-app .label h3 {
@@ -67,4 +67,11 @@
   .download-app .downloadBtns {
     font-size: var(--fs-secondary-text);
   }
+}
+
+
+.section-4-5 {
+  margin: auto;
+  background-image: none;
+  padding: 5rem 0 !important;
 }

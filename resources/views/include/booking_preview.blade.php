@@ -1,6 +1,6 @@
 
     <!-- How to Book Ambulance -->
-    <section class="booking-preview">
+    <section class="booking-preview padding">
       <h1 class="main-heading">How to Book Ambulance</h1>
       <a
         href="#"

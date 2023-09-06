@@ -12,9 +12,11 @@
   --light-text-clr: #40444f;
 }
 
+
 .ourServices * {
   color: var(--border-clr);
 }
+
 
 /* Section 1 */
 .ourServices p {
@@ -133,9 +135,13 @@
 }
 
 .ourServices .section-3 .right-content {
-  /* padding: 2rem; */
+  /* padding: 0 4rem; */
   height: auto;
   /* border: 2px solid red; */
+}
+
+.ourServices .section-3 .right-content .two {
+  padding: 0 2rem;
 }
 
 .ourServices .section-3 .right-content .three {
@@ -143,11 +149,12 @@
     grid-template-columns: repeat(5, 1fr); */
   display: flex;
   place-items: center;
-  gap: 1rem;
+  gap: 2rem;
   font-size: 0.8rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding: 0 2rem;
 }
 
 .ourServices .section-3 .right-content .three img {
@@ -156,6 +163,13 @@
 
 .ourServices .section-3 .right-content .three .card-three {
   width: max-content;
+}
+
+@media all and (max-width: 500px)
+{
+  .ourServices .section-3 .right-content .three .card-three {
+    width: 33% !important;
+  }
 }
 
 .ourServices .section-3 .download-button button {

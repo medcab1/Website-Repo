@@ -1,14 +1,8 @@
 
 <!-- our services (updated) -->
-@php
-  $ambulance_facility = DB::table('ambulance_facilities')
-  -> join('ambulance_category','ambulance_facilities.ambulance_facilities_category_type','=','ambulance_category.ambulance_category_type')
-  -> get();
-  @endphp
-  @dd($ambulance_facility)
 
 <!--  -->
-  <section class="our-services">
+  <section class="our-services w-100 padding">
       <h1 class="our-services-heading text-center">Our Services</h1>
       <div
         class="our-servicesCards owl-carousel owl-carousel-services owl-theme"

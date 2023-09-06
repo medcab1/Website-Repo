@@ -4,7 +4,7 @@ $get_hospital_data = DB::table('hospital_service_category')
   ->get();
   @endphp
 
-<div class="hospital-availability d-flex justify-content-center">
+<div class="hospital-availability hospital-availability-main d-flex justify-content-center">
       <div class="facilities gap-3">
         <div class="label mb-3">
           <h1 class="main-heading">Check Hospital Availability</h1>

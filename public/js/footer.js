@@ -22,9 +22,11 @@ const showMoreInfo = () => {
         info.style = "display: grid; ";
         infoCard.style.display = "block";
         btn.innerHTML = "Show less";
-    } else {
+    } else { 
         info.style = "display: block;overflow:hidden";
         infoCard.style.display = "inline-block";
         btn.innerHTML = "Show more";
     }
+
 };
+

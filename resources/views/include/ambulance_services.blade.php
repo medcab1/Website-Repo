@@ -5,7 +5,7 @@ $get_ambulance_categories = DB::table('ambulance_category')
 @endphp
 <section class="ourServices d-flex flex-column align-items-center">
     
-    <section class="ambulance-services section-3 d-flex flex-column align-items-center">
+    <section class="ambulance-services section-3 d-flex flex-column align-items-center padding">
 
         <div class="label">
                 <h3 class="text-center fw-bold">Ambulance Services</h3>

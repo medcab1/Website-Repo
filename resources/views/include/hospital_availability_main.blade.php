@@ -4,7 +4,7 @@
   ->get();
   @endphp
 
-  <section class="ourServices d-flex flex-column align-items-center">
+  <section class="ourServices w-100">
 
     <section class="section-4 grid-container-box d-flex justify-content-center">
       <div class="facilities gap-3">

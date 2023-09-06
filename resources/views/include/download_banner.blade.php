@@ -1,5 +1,5 @@
  <!-- download app -->
- <section class="ourServices d-flex flex-column align-items-center">
+ <section class="ourServices d-flex flex-column align-items-center padding">
      <section class="section-6 download-app d-flex flex-column align-items-center">
          <div class="label d-flex align-items-center">
              <div class="image me-3">
