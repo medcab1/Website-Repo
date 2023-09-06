@@ -9,15 +9,14 @@ ambulance, ICU ambulance, Boat ambulance, Water ambulance, Dead body ambulance,
 e-rickshaw ambulance") -->
 
 <!-- Header -->
-<header class="header">
+
+<section class="header cityPage">
     <div class="header-wrapper">
         <div class="header-left">
-            <div class="header-small-hero">
-                <h1 class="header-text">
-                    <span>One Stop Solution</span><br />
-                    for all of your<br />
-                    <span>Ambulance Needs</span>
-                </h1>
+            <div class="cityPage-title">
+                <h1 class="main-heading  text-start m-0">Ambulance Services</h2>
+                    <h1 class="main-heading  text-start m-0 mb-4 fw-light">in Rishikesh</h2>
+
             </div>
             <div class="header-booking p-4">
                 <div class="booking-option text-white mb-3">
@@ -42,7 +41,7 @@ e-rickshaw ambulance") -->
                             <input type="text" class="form-control shadow-none outline-none" id="exampleInputPassword1" placeholder="Enter Destination Adress here" />
                         </div>
                     </div>
-                    <div class="mt-5 booking-submit">
+                    <div class="mt-2 booking-submit">
                         <button class="border rounded p-1 booking-time">
                             <span><img src="{{asset('assets/website-images/Access time.png')}}" alt="" /></span>
                         </button>
@@ -61,18 +60,11 @@ e-rickshaw ambulance") -->
                 </div>
             </div>
         </div>
-        <div class="header-right">
-            <h1 class="header-text">
-                <span>One Stop Solution</span><br />
-                for all of your<br />
-                <span>Ambulance Needs</span>
-            </h1>
+        <div class="city-HeaderImage">
+            <img src="{{asset('/assets/website-images/city-image.png')}}" class="img-fluid" alt="banner" />
         </div>
     </div>
-    <div class="header-image">
-        <img src="{{asset('/assets/website-images/website-gif-final.gif')}}" class="img-fluid" alt="banner" />
-    </div>
-</header>
+</section>
 
 
 @endsection

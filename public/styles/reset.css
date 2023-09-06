@@ -16,7 +16,7 @@
   --blog-back: #ECF3F2;
 
   /* Font size */
-  --fs-header: clamp(1.4rem, 1.5vw, 1.4rem);
+  --fs-header: clamp(1.6rem, 1.5vw, 1.4rem);
   --fs-main-heading: clamp(2.4rem, 5vw, 4rem);
   --fs-sub-heading: clamp(2rem, 4vw, 3rem);
   --fs-title: clamp(2rem, 4vw, 2.3rem);

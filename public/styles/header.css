@@ -49,9 +49,9 @@
   gap: 1rem;
 }
 .header-bookingForm input {
-  font-size: var(--fs-header);
+  font-size: 1.5rem;
   background: none;
-  padding: 1rem;
+  padding: .6em;
   outline: none;
   border: none;
 }
@@ -59,7 +59,7 @@
   background: none;
 }
 .header-bookingForm input::placeholder {
-  font-size: var(--fs-header);
+  font-size: 1.5rem;
   color: #7e7e7e;
 }
 .booking-submit {

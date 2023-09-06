@@ -75,7 +75,7 @@ ambulance booking app
                   />
                 </div>
               </div>
-              <div class="mt-5 booking-submit">
+              <div class="mt-3 booking-submit">
                 <button class="border rounded p-1 booking-time">
                   <span><img src="{{asset('assets/website-images/Access time.png')}}" alt="" /></span>
                 </button>

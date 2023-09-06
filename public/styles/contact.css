@@ -58,20 +58,20 @@
   color: black;
 }
 
-input {
+.contact-us input {
   height: 5rem;
 }
 
-input[type] {
+.contact-us input[type] {
   font-size: var(--fs-primary-text);
 }
 
-textarea {
+.contact-us textarea {
   font-size: var(--fs-primary-text);
   height: 10rem;
 }
 
-button {
+.contact-us button {
   height: 5rem;
 
 }
@@ -79,7 +79,7 @@ button {
 
 @media all and (max-width: 500px) {
 
-  h1 {
+  .contact-us h1 {
     font-size: 3rem !important;
   }
 }
