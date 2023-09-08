@@ -28,14 +28,29 @@
 
 .blog-one .filter-blogs {
     padding: 8rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
+}
 
+@media all and (max-width: 730px) {
+    .blog-one .filter-blogs {
+        padding: 5rem 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (max-width: 330px) {
+    .blog-one .filter-blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .blog-one .filter-blogs button {
     font-size: var(--fs-primary-text);
     color: var(--light-text-clr);
-    padding: 1rem 5rem;
+    padding: 1rem ;
 }
 
 .blog-one .filter-blogs .active,
@@ -91,12 +106,12 @@
 }
 
 .article-section .article .desc p {
-    font-size: var(--fs-secondary-text);
+    font-size: var(--fs-primary-text);
     color: var(--light-text-clr)
 }
 
 .article-section .article .desc a {
-    font-size: var(--fs-secondary-text);
+    font-size: var(--fs-primary-text);
     color: var(--primary-clr)
 }
 

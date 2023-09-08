@@ -14,7 +14,7 @@ ambulance? Call MedCab at 18008-908-208.")
         <div class="first-image">
             <h3>Read Our Achievements</h3>
         </div>
-        <div class="filter-blogs d-flex justify-content-center">
+        <div class="filter-blogs">
             <button class="btn border rounded-4 active">View All</button>
             <button class="btn border rounded-4">Healthcare</button>
             <button class="btn border rounded-4">Ambulances</button>
@@ -70,10 +70,10 @@ ambulance? Call MedCab at 18008-908-208.")
                     <form class="d-flex flex-column gap-5">
                         <div class="mb-3 d-flex flex-column gap-5">
                             <h2 class="text-center primary-text fw-bold">Stay Updated</h2>
-                            <label for="exampleInputEmail1" class="form-label text-center w-100 secondary-text">Subscribe to Medcab newsletter</label>
-                            <input type="email" class="form-control secondary-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email id" />
+                            <label for="exampleInputEmail1" class="form-label text-center w-100 primary-text">Subscribe to Medcab newsletter</label>
+                            <input type="email" class="form-control primary-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email id" />
                         </div>
-                        <button type="submit" class="btn btn-danger w-100 secondary-text text-white">
+                        <button type="submit" class="btn btn-danger w-100 primary-text text-white">
                             Subscribe
                         </button>
                     </form>

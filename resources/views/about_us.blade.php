@@ -7,11 +7,10 @@ service provider in India, emergency medical transportation")
 @section('main')
 <!-- About Us Section Start -->
 <section class="about-section padding">
-    <div class="about-header">
-        <img src="{{asset('assets/website-images/about-header.png')}}" width="100%" alt="India Map" class="about-block-img">
-        <div class="about-top">
-            <h2 class="title-text">Beyond the Sirens</h2>
-            <h1 class="">Discover Who We Are</h1>
+    <div class="about-header blog-one">
+        <div class="about-top first-image">
+            <h3 class="title-text">Beyond the Sirens</h3>
+            <h3 class="">Discover Who We Are</h3>
         </div>
     </div>
     <div class="container">
@@ -44,7 +43,7 @@ service provider in India, emergency medical transportation")
             </div>
         </div>
         <div class="about-mission about-block">
-            <div class="row flex-row-reverse">
+            <div class="row flex-row-reverse align-items-center">
                 <div class="col-md-5 p-3">
                     <div class="about-img-block">
                         <img src="{{asset('assets/image/mission.png')}}" alt="Our Mission" class="about-block-img">
