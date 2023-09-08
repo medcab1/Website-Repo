@@ -155,7 +155,9 @@ body {
 }
 
 .primary-cta {
+  display: inline-block;
   padding: 0.8em 3em;
+  color: var(--white-clr);
   background: var(--primary-clr);
   font-size: var(--fs-secondary-text);
   border-radius: 10rem;

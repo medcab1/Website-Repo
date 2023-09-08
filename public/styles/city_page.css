@@ -14,14 +14,58 @@
 
 .cityAbout {
     display: flex;
-    padding-right: 8em;
-    gap: 5em;
+    flex-direction: column;
+    /* padding-right: 5em; */
+    gap: 2em;
 }
 .cityAbout-image {
+    height: max(50vw, 40vh);
     width: 100%;
+}
+.cityAbout-image img {
+    width: 100%;
+    height: 100%;
 }
 .cityAbout-text {
     width: 100%;
+    padding: 0 5em;
+}
+.cityAbout-text p {
+    font-size: var(--fs-secondary-text);
+}
+
+/* city routes styling */
+.cityRoutes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    color: #747874;
+}
+.cityRoutes .route {
+    width: max-content;
+}
+.cityRoutes .route.active {
+    color: var(--primary-clr);
+    border-bottom: 2px solid var(--primary-clr);
+}
+.routeData {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    color: var(--primary-clr);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.cityAbout .hospitalLists {
+    font-size: 1.6rem;
+    color: #747874;
+    margin: 1em 0;
+    text-align: justify;
+}
+.cityAbout .hospitalLists span:first-child {
+    font-weight: 600;
 }
 @media all and (min-width: 780px) {
     .cityPage {
@@ -35,10 +79,19 @@
     .cityPage .header-wrapper {
         gap: 6em;
     }
+    .cityAbout {
+        flex-direction: row;
+        gap: 4em;
+    }
+    .cityAbout-image {
+        height: auto;
+    }
     .cityPage .city-HeaderImage img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+    }
+    .cityAbout-text p {
+        font-size: var(--fs-primary-text);
     }
 }
 

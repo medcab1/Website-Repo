@@ -44,7 +44,7 @@
   margin-bottom: 1em;
   font-weight: 700;
 }
-.primary-cta {
+.app-preview .primary-cta {
   display: inline-block;
   margin: 1em 0;
   font-size: var(--fs-primary-text);

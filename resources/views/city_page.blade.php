@@ -8,7 +8,7 @@ Number, ambulance number, air ambulance, BLS, advance life support, patient tran
 ambulance, ICU ambulance, Boat ambulance, Water ambulance, Dead body ambulance,
 e-rickshaw ambulance") -->
 
-<!-- Header -->
+<!-- City Header -->
 
 <section class="header cityPage">
     <div class="header-wrapper">
@@ -65,7 +65,9 @@ e-rickshaw ambulance") -->
         </div>
     </div>
 </section>
+<!-- City Header -->
 
+<!-- City About  -->
 <section class='cityAbout'>
     <div class="cityAbout-image">
         <img src="{{asset('/assets/website-images/city-image.png')}}" alt="banner" />
@@ -78,6 +80,59 @@ e-rickshaw ambulance") -->
     </div>
     </div>
 </section>
+<!-- City About  -->
 
+<!-- Ambulance Service -->
+@include('include.ambulance_services')
+<!-- Ambulance Service -->
+
+<!-- City Top Routes -->
+<section class="cityAbout ">
+    <div class="cityAbout-text">
+        <h1 class="main-heading text-start">Top Routes</h1>
+        <div class="cityRoutes primary-text">
+            <a href="#">
+                <div class="route active">
+                    <p class="">Taxi from</p>
+                    <p>Rishikesh to Delhi</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="route ">
+                    <p class="">Taxi from</p>
+                    <p>Rishikesh to Lucknow</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="route ">
+                    <p class="">Taxi from</p>
+                    <p>Rishikesh to Kanpur</p>
+                </div>
+            </a>
+        </div>
+        <div class="routeData">
+            <p class="distance">
+                <span>Distance:</span>
+                <span>225.5 km</span>
+            </p>
+            <p class="time">
+                <span>Estimated Time:</span>
+                <span>4 hr 46 min</span>
+            </p>
+        </div>
+        <div class="hospitalLists">
+            <span>Hospitals Avialiable in Delhi : </span>
+            <span>Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital |Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital</span>
+        </div>
+        <div class="primary-cta">Book Now</div>
+    </div>
+    <div class="cityAbout-image">
+        <img src="{{asset('/assets/website-images/city-image.png')}}" alt="banner" />
+    </div>
+</section>
+<!-- City Top Routes -->
+
+<!-- Faqs -->
 @include('include.faqs')
+<!-- Faqs -->
 @endsection
