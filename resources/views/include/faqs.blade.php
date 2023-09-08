@@ -1,6 +1,6 @@
 @php
-    $get_city_faq = DB::table('city_faq')
-    ->get();
+$get_city_faq = DB::table('city_faq')
+->get();
 @endphp
 <!-- faqs -->
 <section class="section-5 padding">
@@ -10,7 +10,7 @@
         </h3>
     </div>
     <div class="accordion" id="accordionExample">
-        <?php for($i=0; $i <=5; $i++) { ?>
+        <?php for ($i = 0; $i <= 5; $i++) { ?>
             <div class="accordion-item">
                 <h2 class="accordion-header mb-2" id="headingTwo">
                     <button class="accordion-button shadow-none collapsed rounded-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -30,23 +30,11 @@
                         <p class="ms-3">
                             {{$get_city_faq[$i]->city_faq_ans}}
                         </p>
+
                     </div>
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body d-flex align-items-start rounded-4">
-                    <img src="{{asset('assets/website-images/A.png')}}" alt="a" />
-                    <p class="ms-3">
-                        {{$key->city_faq_ans}}
-                    </p>
                 </div>
             </div>
-<<<<<<< HEAD
-       <?php } ?>   
-=======
-        </div>
-        @endforeach
->>>>>>> 48b3eded3ac5f756016ea6a68a86ee04805f0abc
+        <?php } ?>
     </div>
 </section>
 

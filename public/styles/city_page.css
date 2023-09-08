@@ -35,6 +35,9 @@
 }
 
 /* city routes styling */
+.topRoutes {
+    flex-direction: column-reverse;
+}
 .cityRoutes {
     display: grid;
     grid-template-columns: 1fr 1fr;

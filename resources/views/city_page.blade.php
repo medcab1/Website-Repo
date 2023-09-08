@@ -87,7 +87,7 @@ e-rickshaw ambulance") -->
 <!-- Ambulance Service -->
 
 <!-- City Top Routes -->
-<section class="cityAbout ">
+<section class="cityAbout topRoutes">
     <div class="cityAbout-text">
         <h1 class="main-heading text-start">Top Routes</h1>
         <div class="cityRoutes primary-text">
