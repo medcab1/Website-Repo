@@ -3,9 +3,6 @@
     margin-top: 5em;
 }
 
-.hospital-availability-main {
-    padding: 8rem 0 !important;
-}
 
 .hospital-availability-2 {
     background-color: white;
@@ -17,10 +14,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     /* padding: 5rem 0; */
     /* margin: auto ; */
 }
+
+.hospital-availability-2 .facilities {
+    width: 100%;
+}
+
 .hospital-availability .facilities h1 {
     margin: 0;
     font-size: var(--fs-main-heading);
@@ -47,6 +49,7 @@
     padding: 4rem;
     border-radius: 1rem;
     font-size: 1rem;
+    border: 5px solid green;
 }
 
 .hospital-availability a {

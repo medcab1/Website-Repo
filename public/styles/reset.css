@@ -44,7 +44,13 @@ body::-webkit-scrollbar {
 }
 
 .padding {
-  padding: 5rem 10rem !important;
+  padding: 5rem 15rem !important;
+}
+
+@media all and (max-width: 1150px) {
+  .padding {
+    padding: 5rem 10rem !important;
+  }
 }
 
 @media all and (max-width: 1000px)
@@ -58,6 +64,13 @@ body::-webkit-scrollbar {
 {
   .padding {
     padding: 5rem 3rem !important;
+  }
+}
+
+@media all and (max-width: 400px)
+{
+  .padding {
+    padding: 5rem 1rem !important;
   }
 }
 
@@ -195,3 +208,8 @@ body {
 }
 
 @media all and (max-width: 480px) {}
+
+
+.join-us-col-clr {
+  color: #40444F !important;
+}

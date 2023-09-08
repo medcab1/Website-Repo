@@ -5,11 +5,11 @@
     align-items: center;
 }
 .blog-one {
-    width: 90%;
+    width: 100%;
 }
 
 .blog-one .first-image {
-    background-image: url(../images/blog-head.png);
+    background-image: url(../assets/website-images/blog-head.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@
 }
 
 .blog-one .filter-blogs {
-    padding: 4em 0;
-    gap: 1em;
+    padding: 8rem 0;
+    gap: 2rem;
 
 }
 
@@ -149,11 +149,11 @@
 
 .article-section-more .article {
     flex-direction: column !important;
-    padding: 2em;
+    /* padding: 2em; */
 }
 
 .article-section-more .article {
-    width: 80%;
+    width: 100%;
 }
 
 .article-section-more .article .image {

@@ -8,7 +8,7 @@ services to hospitals with 24/7 customer support in all over India.")
 
 
 <!-- hospitals header -->
-<section class="hospitals w-100">
+<section class="hospitals w-100 padding">
   <section class="section-1 d-flex w-100">
     <div class="text w-50 d-flex flex-column justify-content-evenly">
       <div class="title">
@@ -42,7 +42,7 @@ services to hospitals with 24/7 customer support in all over India.")
 
 
 <!-- check hospital availability -->
-<section class="hospital-availability-2 grid-container-box section-2 d-flex justify-content-center ">
+<section class="hospital-availability-2 grid-container-box section-2 d-flex justify-content-center w-100 padding ">
   <div class="facilities gap-3">
     <div class="label mb-md-5 mb-sm-3 d-flex flex-column align-items-center gap-5">
       <img src="{{asset('assets/website-images/hospital.png')}}" alt="hospital">
