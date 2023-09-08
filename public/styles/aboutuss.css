@@ -13,62 +13,8 @@ body {
 html {
   font-size: 55.5%;
 }
-.navbar {
-  padding: 0.5rem 4rem;
-  background: #c4364e;
-  color: var(--nav-link);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.navbar-nav {
-  margin-left: auto;
-}
-.navbar .nav-link {
-  color: var(--nav-link-clr);
-  margin: 0 0.5rem;
-}
-.navbar .nav-link.active {
-  color: var(--white-clr);
-}
-.navbar-brand {
-  font-size: clamp(2rem, 2vw, 2.5rem);
-}
-.navbar-brand,
-.navbar-brand:hover,
-.nav-item:hover .nav-link {
-  color: var(--white-clr);
-}
-.navbar-collapse {
-  flex-grow: 0;
-}
-.navbar .nav-booknow {
-  color: var(--primary-clr);
-}
-.nav-ctn-login .nav-link {
-  color: var(--white-clr);
-  margin: 0 0.4rem;
-}
-.nav-ctn-login:hover a {
-  background: var(--white-clr);
-  color: var(--primary-clr);
-}
 
-@media all and (max-width: 1100px) {
-  .navbar {
-    font-size: 1.25rem;
-  }
-}
-
-@media all and (max-width: 780px) {
-}
-
-@media all and (max-width: 480px) {
-  .navbar {
-    padding: 0.5rem  1rem;
-}
-}
-
-/* Nav Bar closed*/
+/* about section start */
 .about-section{
   width: 100%;
 }
@@ -78,6 +24,11 @@ html {
   width: 100%;
   /* transform: translate(-50%,-50%); */
 }
+
+.about-header .first-image {
+  background-image: url('../assets/website-images/about-header.png') !important;
+}
+
 .about-top{
   width: 100%;
   position: absolute;
@@ -113,7 +64,20 @@ html {
  justify-content: center;
   align-items: center;
 }
-.about-block-img{
+
+.about-img-block-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.about-block-img-2{
+  width: auto;
+  height: 100%;
+}
+
+.about-block-img {
   min-width: 100%;
   height: auto;
 }
