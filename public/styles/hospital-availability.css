@@ -1,6 +1,7 @@
 .hospital-availability {
     background-color: #e5f1ff;
     margin-top: 5em;
+
 }
 
 
@@ -32,6 +33,7 @@
     /* border: 1px solid black; */
     /* width: 75%; */
     display: block;
+    border: 2px solid;
     /* grid-template-columns: auto auto auto auto; */
     /* grid-template-columns: repeat(4, 1fr); */
 

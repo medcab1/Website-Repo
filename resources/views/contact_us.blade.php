@@ -73,21 +73,13 @@ Ambulance Helpline Number")
     </div>
   </div>
 
-  <div class="contact-loc row gy-4 mb-5">
-    <div class="col-lg-6 p-0">
+  <div class="contact-loc mb-5">
+    <div class="">
       <div class="contact-left-img h-70 d-flex-center p-4">
-        <img src="{{asset('assets/website-images/frame32703.png')}}" width="100%" alt="Contact Us banner" />
+        <img src="{{asset('assets/website-images/map.png')}}" width="100%" alt="Contact Us banner" />
       </div>
     </div>
-    <div class="col-lg-6 p-0">
-      <div class="link px-3 d-flex flex-column">
-        <a class="d-inline-block mb-3 mt-3 primary-text" href="default.asp"><img src="{{asset('assets/website-images/frame72 (1).png')}}" alt="address" href="mailto:webmaster@example.com" />Third Floor Rajsha Tower Vibhuti Khand Gomti Nagar, Lucknow,
-          Uttar Pradesh 226010</a><br />
-        <a class="d-inline-block mb-3 primary-text" href="default.asp"><img src="{{asset('assets/website-images/frame72 (2).png')}}" alt="address" href="mailto:webmaster@example.com" />+91 8755672479</a> <br />
-        <a class="d-inline-block mb-3 primary-text" href="default.asp">
-          <img src="{{asset('assets/website-images/frame72 (3).png')}}" alt="address" href="mailto:webmaster@example.com" />info@medcabprivaelimited.com</a><br />
-      </div>
-    </div>
+
   </div>
 </section>
 

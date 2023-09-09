@@ -1,4 +1,3 @@
-
 @extends('layouts.adminlayout')
 @section('title','Types of Ambulance Services | MedCab Ambulance App')
 @section('main')
@@ -11,41 +10,41 @@ e-rickshaw ambulance")
 <!-- Start Blog Banner Section -->
 
 <!-- ambulance header -->
-<header class="ambulance-header d-flex">
-      <div class="left d-flex flex-column align-items-start">
-        <h1 class="main-heading">Ambulances</h1>
-        <div class="d-flex flex-column gap-4">
-          <p class="primary-text">
-            Choose the ambulance that best fits your needs and book online
-            through our App or website.
-          </p>
-          <p class="primary-text">
-            With a hassle-free booking process that makes it easy to get the
-            medical transport you require
-          </p>
-        </div>
-      </div>
-      <div class="right">
-        <img src="{{asset('assets/website-images/ambulance-header-img.png')}}" alt="" />
-      </div>
-    </header>
-    <!-- ambulance header -->
+<header class="ambulance-header row">
+  <div class="left col-5 d-flex flex-column align-items-start">
+    <h1 class="main-heading">Ambulances</h1>
+    <div class="d-flex flex-column gap-4">
+      <p class="primary-text">
+        Choose the ambulance that best fits your needs and book online
+        through our App or website.
+      </p>
+      <p class="primary-text">
+        With a hassle-free booking process that makes it easy to get the
+        medical transport you require
+      </p>
+    </div>
+  </div>
+  <div class="right col-7">
+    <img src="{{asset('assets/website-images/ambulance-header-img.png')}}" alt="" />
+  </div>
+</header>
+<!-- ambulance header -->
 
-    <!-- ambulance services -->
-    @include('include.ambulance_services')
-    <!-- ambulance services -->
+<!-- ambulance services -->
+@include('include.ambulance_services')
+<!-- ambulance services -->
 
-    <!-- customer support -->
-    @include('include.customer_support')
-    <!-- customer support -->
+<!-- customer support -->
+@include('include.customer_support')
+<!-- customer support -->
 
-    <!-- how to book -->
-    @include('include.booking_preview')
-    <!-- how to book -->
+<!-- how to book -->
+@include('include.booking_preview')
+<!-- how to book -->
 
-    <!-- download banner -->
-    @include('include.download_banner')
-    <!-- download banner -->
+<!-- download banner -->
+@include('include.download_banner')
+<!-- download banner -->
 
 
 @endsection
