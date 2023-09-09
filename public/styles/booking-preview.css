@@ -6,6 +6,7 @@
 
 .booking-preview .primary-cta {
   background: var(--border-clr);
+  font-size: var(--fs-primary-text);
 }
 
 .booking-previewCarousel {

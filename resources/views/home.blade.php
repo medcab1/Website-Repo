@@ -37,14 +37,14 @@ ambulance booking app
     </div>
     <div class="header-wrapper">
         <div class="header-left">
-            <div class="header-booking p-4">
+            <div class="header-booking">
                 <div class="booking-option text-white mb-3">
                     <a href="#" class="border-1 rounded-5 active">Emergency</a>
                     <a href="#" class="'border-1 rounded-5">Bulk</a>
                     <a href="#" class="'border-1 rounded-5">Rent</a>
                 </div>
                 <form class="header-bookingForm">
-                    <div class="mb-4">
+                    <div class="mb-4 mt-4">
                         <label for="exampleInputEmail1" class="form-label">Pickup Location</label>
                         <div class="input-wrapper">
                             <span>
@@ -53,7 +53,7 @@ ambulance booking app
                             <input type="text" class="form-control shadow-none outline-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Pickup Address Here" />
                         </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-5">
                         <label for="exampleInputPassword1" class="form-label">Drop Location</label>
                         <div class="input-wrapper">
                             <span><img src="{{asset('assets/website-images/drop-locatino.png')}}" alt="" /></span>

@@ -10,10 +10,10 @@ $get_city_faq = DB::table('city_faq')
         </h3>
     </div>
     <div class="accordion" id="accordionExample">
-        <?php for ($i = 0; $i <= 5; $i++) { ?>
+        <?php for ($i = 0; $i < 5; $i++) { ?>
             <div class="accordion-item">
-                <h2 class="accordion-header mb-2" id="headingTwo">
-                    <button class="accordion-button shadow-none collapsed rounded-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2 class="accordion-header mb-2" id="heading{{$i+1}}">
+                    <button class="accordion-button shadow-none collapsed rounded-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$i+1}}" aria-expanded="false" aria-controls="collapse{{$i+1}}">
                         <div class="d-flex align-items-center">
                             <img src="{{asset('assets/website-images/Q.png')}}" alt="q" />
                             <strong>
@@ -24,7 +24,7 @@ $get_city_faq = DB::table('city_faq')
                         </div>
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div id="collapse{{$i+1}}" class="accordion-collapse collapse" aria-labelledby="heading{{$i+1}}" data-bs-parent="#accordionExample">
                     <div class="accordion-body d-flex align-items-start rounded-4">
                         <img src="{{asset('assets/website-images/A.png')}}" alt="a" />
                         <p class="ms-3">
@@ -35,32 +35,6 @@ $get_city_faq = DB::table('city_faq')
                 </div>
             </div>
         <?php } ?>
-        
-    <?php for($i = 0; $i < 5; $i++) { ?>
-
-        <div class="accordion-item">
-            <h2 class="accordion-header mb-2" id="headingTwo">
-                <button class="accordion-button shadow-none collapsed rounded-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="d-flex align-items-center">
-                        <img src="{{asset('assets/website-images/Q.png')}}" alt="q" />
-                        <strong>
-                            <p class="ms-3">
-                                {{$get_city_faq[$i]->city_faq_que}}
-                            </p>
-                        </strong>
-                    </div>
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body d-flex align-items-start rounded-4">
-                    <img src="{{asset('assets/website-images/A.png')}}" alt="a" />
-                    <p class="ms-3">
-                        {{$get_city_faq[$i]->city_faq_ans}}
-                    </p>
-                </div>
-            </div>
-        </div>
-    <?php } ?>
     </div>
 </section>
 

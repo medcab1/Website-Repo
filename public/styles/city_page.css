@@ -70,6 +70,89 @@
 .cityAbout .hospitalLists span:first-child {
     font-weight: 600;
 }
+
+/* How to Book Ambulance */
+.bookAmbulance {
+    width: 90%;
+    margin: 5em auto;
+}
+.bookAmbulance h2 {
+    margin: 1.2em 0;
+}
+.bookAmbulance p,
+.bookAmbulance li {
+    font-size: 1.6rem;
+    color: var(--border-clr);
+}
+
+.bookAmbulance ul .step {
+    margin: 1em 0;
+}
+.bookingSteps .step {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.bookingSteps .step .step_num {
+    flex-shrink: 0;
+}
+.bookAmbulance .bookingSteps .step_num {
+    background: var(--dark-blue-clr);
+    font-size: 1.5rem;
+    color: var(--white-clr);
+    padding: 0.25em 1em;
+    border-radius: 10rem;
+    width: max-content;
+}
+
+/* Emergency Number in City */
+.emergency_ambulance_city {
+    justify-content: center;
+    margin: 2em auto;
+    padding: 4em 2em;
+    gap: 1em;
+}
+.emergency_ambulance_city .label {
+    display: none;
+}
+.emergency_ambulance_city .right-section {
+    border-radius: 2rem;
+    padding: 2em;
+}
+.emergency_ambulance_city p {
+    font-size: 1.6rem;
+    color: var(--border-clr);
+}
+
+/* @overwrite faqs styles */
+.emergency_ambulance_city .section-5 {
+    width: 100%;
+    padding: 4em 0 !important;
+}
+.emergency_ambulance_city .accordion-item:not(:last-child) {
+    margin-bottom: 2em !important;
+}
+/* Emergency Number in City */
+
+/* Here media query is used for bigger screen  */
+@media all and (min-width: 1080px) {
+    .cityPage {
+        padding: 0 0 5em 10em;
+    }
+
+    .cityPage .header-left {
+        width: 60%;
+    }
+
+    .cityPage .header-booking,
+    .cityPage .header-cta {
+        width: 80%;
+    }
+    .cityPage .city-HeaderImage {
+        width: 100%;
+        flex-grow: 2;
+    }
+}
 @media all and (min-width: 780px) {
     .cityPage {
         padding: 0 0 5em 10em;
@@ -96,23 +179,18 @@
     .cityAbout-text p {
         font-size: var(--fs-primary-text);
     }
-}
 
-@media all and (min-width: 1080px) {
-    .cityPage {
-        padding: 0 0 5em 10em;
-    }
-
-    .cityPage .header-left {
-        width: 60%;
-    }
-
-    .cityPage .header-booking,
-    .cityPage .header-cta {
+    .bookAmbulance {
         width: 80%;
     }
-    .cityPage .city-HeaderImage {
-        width: 100%;
-        flex-grow: 2;
+
+    .bookAmbulance ul .step {
+        margin: 2.5em 0;
+    }
+    .emergency_ambulance_city {
+        gap: 4em;
+    }
+    .emergency_ambulance_city .right-section {
+        padding: 5em;
     }
 }

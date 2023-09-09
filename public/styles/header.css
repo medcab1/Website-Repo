@@ -27,6 +27,7 @@
     border: 2px solid #e5dddd;
     border-radius: 1rem;
     background: white;
+    padding: 2em;
 }
 .header .booking-option a {
     display: inline-block;
@@ -82,6 +83,7 @@
 .booking-submit button[type="submit"] {
     background: var(--primary-clr);
     font-size: var(--fs-header);
+    font-weight: 600;
     color: var(--white-clr);
     padding: 1rem 0;
     flex-grow: 6;
@@ -98,6 +100,7 @@
     font-size: clamp(1.4rem, 1.5vw, 1.6rem);
 }
 .header-ctaBox a {
+    font-weight: 600;
     color: var(--primary-clr);
     text-decoration: none;
 }
