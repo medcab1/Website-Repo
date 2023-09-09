@@ -13,7 +13,7 @@ $get_ambulance_categories = DB::table('ambulance_category')
         <div class="content px-md-5 w-100 d-flex gap-5 mt-5 mb-5">
             <div class="left-content w-50">
                 @foreach($get_ambulance_categories as $key)
-                <div id="" class="ambuCard justify-content-center d-flex flex-column align-items-center text-center justify-content-around gap-3 py-4 py-sm-3 rounded-4 bg-white">
+                <div id="" class="ambuCard d-flex flex-column justify-content-between align-items-center text-center justify-content-around gap-3 py-4 py-sm-3 rounded-4 bg-white">
                     <div class="ambuImage d-flex align-items-center justify-content-center">
                         <img class="" src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $key->ambulance_category_icon }}" alt="ambulance" />
                     </div>

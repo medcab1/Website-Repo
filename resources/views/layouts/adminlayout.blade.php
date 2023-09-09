@@ -36,9 +36,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url('assets/image/title_icon.png') }}">
     <!-- Latest compiled and minified CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap .min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" referrerpolicy="no-referrer" />
     <link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" />
@@ -49,19 +48,14 @@
 
     <!-- ✅ load jQuery ✅ -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
-        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
     <!-- ✅ load jquery UI ✅ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CM903DJR5V"></script>
@@ -97,6 +91,7 @@
 
     <!-- Bootstrap:added -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+    
     <!-- new css -->
     <link rel="stylesheet" href="{{ url('styles/nav.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/reset.css') }}?<?php echo time(); ?>">
@@ -162,7 +157,7 @@
 </head>
 
 <body>
-    
+
 
     <!-- Navigation Bar -->
     <!-- ***** Header Area Start ***** -->
@@ -176,9 +171,7 @@
                     <!-- <img src="../images/logo.png" class="mb-1" alt="" /> -->
                 </span>
                 MedCab</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -208,13 +201,10 @@
                         <a class="nav-link" href="{{ route('ContactUs') }}">Contact Us</a>
                     </li>
                     <li class="nav-ctn-book">
-                        <a class="nav-link rounded bg-white nav-booknow me-lg-2 mb-2 mb-lg-0 px-3 py-1" href="#"
-                            tabindex="-1" aria-disabled="true">Book Now</a>
+                        <a class="nav-link rounded bg-white nav-booknow me-lg-2 mb-2 mb-lg-0 px-3 py-1" href="#" tabindex="-1" aria-disabled="true">Book Now</a>
                     </li>
                     <li class="nav-ctn-login text-white">
-                        <button type="button" class="btn btn-primary nav-link rounded px-4 py-1 shadow-none"
-                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" tabindex="-1"
-                            aria-disabled="true">
+                        <button type="button" class="btn btn-primary nav-link rounded px-4 py-1 shadow-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" tabindex="-1" aria-disabled="true">
                             Login
                         </button>
                     </li>
@@ -226,18 +216,15 @@
     <!-- ***** Header Area End ***** -->
     <!-- Login Modal start -->
 
-    <div class="modal varification-model p-4" id="login" data-bs-keyboard="false" data-bs-backdrop="static"
-        tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal varification-model p-4" id="login" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <div class="login-header">
-                        <img alt="Medcab Logo" src="{{ env('APP_BASE_URL') }}assets/image/logo.png"
-                            id="popup-header" style="height:30px; width:auto">
+                        <img alt="Medcab Logo" src="{{ env('APP_BASE_URL') }}assets/image/logo.png" id="popup-header" style="height:30px; width:auto">
                         <h6 class="modal-title text-secondary"></h6>
                     </div>
-                    <button type="button" class="modal-close close" style="font-size:1.5rem;"
-                        data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="modal-close close" style="font-size:1.5rem;" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true" style="color:white;font-size:1.rem!important;">&times;</span>
                     </button>
                 </div>
@@ -246,33 +233,26 @@
                         <input type="text" name="tokens" id="tokens" hidden content="{{ csrf_token() }}">
                         <div class="form-group p-relative w-100">
                             <label for="exampleDropdownFormPassword1">Log in to Proceed</label>
-                            <input type="tel" id="phone" class="form-control " maxlength="10"
-                                onkeypress="return onlyNumberKey(event)" name="phoneNO"
-                                onload="focusInputElement('phone')" placeholder="Enter Your Mobile number" autofocus>
+                            <input type="tel" id="phone" class="form-control " maxlength="10" onkeypress="return onlyNumberKey(event)" name="phoneNO" onload="focusInputElement('phone')" placeholder="Enter Your Mobile number" autofocus>
                             <span class="text-danger error-message" id="login-message">
                                 @error('phone')
-                                    {{ $message }}
+                                {{ $message }}
                                 @enderror
                             </span>
                         </div>
                         <div class="modal-footer p-0 flex-nowrap border-0 w-100 justify-content-center">
-                            <input type="submit" class="sub-btn  nextBTn disable-item" id="verify-btn"
-                                Value="Verify">
+                            <input type="submit" class="sub-btn  nextBTn disable-item" id="verify-btn" Value="Verify">
                         </div>
                     </form>
                     <form method="post" class="login-form" id="registerForm">
                         <input type="text" name="tokens" id="reg_tokens" hidden content="{{ csrf_token() }}">
                         <div class="form-group p-relative w-100">
                             <label for="exampleDropdownFormPassword1">Log in to Proceed</label>
-                            <input type="text" id="name" class="form-control "
-                                oninput="inputCharacterOnly(this)" name="name"
-                                onkeypress="return onlyCharacters(event)" placeholder="Enter Your Name"
-                                onload="focusInputElement('name')">
+                            <input type="text" id="name" class="form-control " oninput="inputCharacterOnly(this)" name="name" onkeypress="return onlyCharacters(event)" placeholder="Enter Your Name" onload="focusInputElement('name')">
                             <span class="text-danger error-message" id="register-message"></span>
                         </div>
                         <div class="modal-footer p-0 flex-nowrap border-0 w-100 justify-content-center">
-                            <input type="submit" class="sub-btn  nextBTn disable-item" id="proceed-btn"
-                                Value="Proceed">
+                            <input type="submit" class="sub-btn  nextBTn disable-item" id="proceed-btn" Value="Proceed">
                         </div>
                     </form>
                     <form method="post" class="login-form" id="otpForm">
@@ -284,15 +264,13 @@
                                 Message</span>
                         </div>
                         <div class="m-auto" style="width:fit-content;">
-                            <label for="exampleDropdownFormPassword1"
-                                class="text-center font-18 font-700 d-block mb-3">
+                            <label for="exampleDropdownFormPassword1" class="text-center font-18 font-700 d-block mb-3">
                                 Please enter OTP sent to
                             </label>
-                            <label for="exampleDropdownFormPassword1"
-                                class="text-center font-16 font-600 d-block mb-3">
+                            <label for="exampleDropdownFormPassword1" class="text-center font-16 font-600 d-block mb-3">
 
                                 @if (Session::has('consumer_mob'))
-                                    {{ '+91 ' . Session::get('consumer_mob') }}
+                                {{ '+91 ' . Session::get('consumer_mob') }}
                                 @endif
                             </label>
                             <div class="otp-input-container input-field" style="">
@@ -311,8 +289,7 @@
                                                         <input type="number" disabled /> -->
 
                             </div>
-                            <label for="" id="wrong-otp-mess"
-                                class=" font-400 font-16 mt-3 d-block text-danger">
+                            <label for="" id="wrong-otp-mess" class=" font-400 font-16 mt-3 d-block text-danger">
                             </label>
                             <a id="resend-otp" class=" font-400 font-16 mt-3 d-block text-danger">
 
@@ -347,35 +324,28 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="{{ url('vendors/OwlCarousel/owl.carousel.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
 </script>
 <script src="{{ url('js/custom.js') }}?<?php echo time(); ?>"></script>
 
 
 
 <!-- footer -->
-    <script src="{{ url('js/footer.js') }}?<?php echo time(); ?>"></script>
-
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url('js/footer.js') }}?<?php echo time(); ?>"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"> -->
+<!-- </script> -->
 
 <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <!-- Owl Crousel -->
 <script src="{{ url('js/carousel.js') }}" ?<?php echo time(); ?>"></script>

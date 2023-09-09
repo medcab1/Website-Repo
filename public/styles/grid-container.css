@@ -32,7 +32,7 @@
   width: 100%;
   display: grid;
   /* grid-template-columns: auto auto auto auto; */
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   gap: 3rem;
 }
@@ -44,16 +44,20 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1em;
+  gap: 2em;
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  max-width: 25rem;
+  height: auto;
 }
 
 .grid-container-box .grid-item h5 {
   font-size: var(--fs-primary-text);
+  font-weight: 700;
 }
 .grid-container-box .grid-item p {
-  font-size: var(--fs-secondary-text);
+  /* font-size: var(--fs-primary-text); */
+  font-size: 1.5rem;
 }
 
 @media all and (max-width: 420px) {

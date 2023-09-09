@@ -101,8 +101,11 @@
 .ourServices .section-3 .label {
   font-size: var(--fs-main-heading);
 }
-.ourServices .section-3 .content p {
+.ourServices .section-3 .left-content p {
   font-size: var(--fs-secondary-text);
+}
+.ourServices .section-3 .right-content p {
+  font-size: var(--fs-primary-text);
 }
 .ourServices .section-3 .right-content .one {
   font-size: var(--fs-primary-text);
@@ -110,7 +113,7 @@
 .ourServices .section-3 .right-content .two,
 .ourServices .section-3 .right-content .three {
   margin: 1em 0;
-  font-size: var(--fs-secondary-text);
+  font-size: var(--fs-primary-text);
 }
 .ourServices .section-3 .left-content {
   display: grid;
@@ -119,10 +122,16 @@
   /* padding: 0 5rem 0 0 !important; */
 }
 
+@media all and (max-width: 450px) {
+  .ourServices .section-3 .left-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .ourServices .section-3 .left-content .ambuCard {
   height: 100%;
   /* width: fit-content; */
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .ourServices .section-3 .right-content > div {
@@ -175,11 +184,6 @@
 .ourServices .section-3 .download-button button {
   background: var(--primary-clr);
 }
-
-/* @media all and (max-width: 1150px) {
-    
-
-} */
 
 @media all and (max-width: 1050px) {
  
@@ -246,9 +250,6 @@
   }
 }
 
-/* @media all and (max-width: 430px) {
-    
-} */
 
 @media all and (max-width: 360px) {
   .ourServices .section-3 .content .left-content {

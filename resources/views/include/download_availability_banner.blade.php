@@ -9,16 +9,16 @@
                  <h1 class="main-heading text-start">
                      To Check Hospitals' Facilities Availability Online
                  </h1>
-                 <h4 class="">Download MedCab App</h4>
+                 <h4 class="primary-text fw-bold">Download MedCab App</h4>
                  <div class="btns d-flex gap-3">
                      <a href="https://play.google.com/store/apps/details?id=com.medcab.consumer" target="_blank">
                          <button class="btn px-0">
-                             <img src="{{asset('assets/website-images/Google Play.png')}}" alt="" />
+                             <img src="{{asset('assets/website-images/google-play.png')}}" alt="" />
                          </button>
                      </a>
                      <a href="https://apps.apple.com/in/app/medcab/id6449100704" target="_blank">
                          <button class="btn px-0">
-                             <img src="{{asset('assets/website-images/app-store.png')}}" alt="" />
+                             <img src="{{asset('assets/website-images/App Store.png')}}" alt="" />
                          </button>
                      </a>
                  </div>
