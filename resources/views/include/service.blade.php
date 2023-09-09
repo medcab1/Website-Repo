@@ -6,7 +6,7 @@
   <section class="our-services w-100 padding">
       <h1 class="our-services-heading text-center">Our Services</h1>
       <div
-        class="our-servicesCards owl-carousel owl-carousel-services owl-theme"
+        class="our-servicesCards owl-carousel owl-carousel-services owl-themez"
       >
         <div class="our-servicesCard item">
           <h2>Air Ambulace</h2>

@@ -24,7 +24,7 @@ ambulance booking app
 
 
 <!-- Header -->
-<header class="header">
+<header class="header mt-5">
     <div class="header-small-hero">
         <h1 class="header-text">
             <span>One Stop Solution</span><br />

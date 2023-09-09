@@ -29,14 +29,14 @@ in India and become our partner in serving humanity.")
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-around align-items-lg-center py-5 gy-3 join-as-row">
+            <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center py-5 gy-3 join-as-row">
                 <div class="col-lg-4 col-md-8 col-sm-10 d-flex-center join-as-col">
                     <div class="join-info-box">
                         <div class="join-info-img">
                             <img src="{{asset('assets/website-images/Frame 31843.png')}}" alt="" />
                         </div>
                         <div class="join-info-detail">
-                            <h3 class="p-text">Join as <br />Ambulance Driver</h3>
+                            <h3 class="">Join as <br />Ambulance Driver</h3>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@ in India and become our partner in serving humanity.")
                     </h3>
                 </div>
             </div>
-            <button class="button mt-5">Contact Us</button>
+            <button class="button mt-5 w-auto">Contact Us</button>
         </div>
     </div>
 </section>

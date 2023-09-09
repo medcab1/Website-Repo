@@ -28,12 +28,12 @@ ambulance? Call MedCab at 18008-908-208.")
                     <h3>Our Latest Articles</h3>
                 </div>
                 <div class="articles d-flex flex-column">
-                    <?php for ($i = 0; $i < 5; $i++) { ?>
+                    <?php for ($i = 0; $i < 4; $i++) { ?>
                         <div class="article d-flex">
                             <div class="image">
                                 <img src="{{$base_url.$blogs[$i]->blog_thumbnail}}" alt="article" />
                             </div>
-                            <div class="desc d-flex flex-column align-items-start justify-content-evenly">
+                            <div class="desc d-flex flex-column align-items-start justify-content-between">
                                 <h4>{{$blogs[$i]->blog_title}}</h4>
                                 <p>
                                     {{$blogs[$i]->blog_meta_desc}}
@@ -46,7 +46,7 @@ ambulance? Call MedCab at 18008-908-208.")
 
                 </div>
             </div>
-            <div class="right d-flex flex-column">
+            <div class="right d-flex flex-column justify-content-between">
                 <div class="most-read">
                     <div class="label">
                         <p>Most Read</p>

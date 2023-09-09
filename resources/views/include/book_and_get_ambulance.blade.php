@@ -7,7 +7,7 @@
    -> get());
    @endphp
    <!-- Book & Get Ambulance -->
-   <section class="app-preview">
+   <section class="app-preview get-ambulance">
        <div class="app-previewTop d-flex justify-content-center py-4 px-2 cards">
            <div class="bg-white card shadow-lg text-center">
                <h1 class="counter-count">{{$get_cities_count}}+</h1>
