@@ -92,6 +92,10 @@ ambulance booking app
     </div>
 </header>
 
+
+<!-- Booking Preview -->
+@include('include.book_and_get_ambulance')
+
 <!-- Our Services -->
 @include('include.service')
 <!-- Our Services -->
