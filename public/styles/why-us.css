@@ -11,6 +11,12 @@
 .why-usCards .why-usCard {
   width: 25%;
 }
+
+.why-usCard .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .why-usCard h2 {
   font-size: var(--fs-primary-text);
   color: var(--heading-clr);

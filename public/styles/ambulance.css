@@ -49,9 +49,10 @@
 .customer-support .grid-item {
   background-color:var(--light-card-clr);
   padding: 2rem;
-  gap: 1rem;
+  gap: 2rem;
   border-radius: 2rem;
   width: 90%;
+  height: 45rem;
 }
 
 .customer-support .grid-item img {

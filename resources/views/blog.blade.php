@@ -39,7 +39,7 @@ ambulance? Call MedCab at 18008-908-208.")
                                     {{$blogs[$i]->blog_meta_desc}}
                                 </p>
                                 <p>{{$blogs[$i]->blog_post_date}}</p>
-                                <a class="more">Read more...</a>
+                                <a href="{{URL::route('Blog-Detail',['title'=>$blogs[$i]->blog_sku])}}" class="more">Read more...</a>
                             </div>
                         </div>
                     <?php } ?>
@@ -52,18 +52,19 @@ ambulance? Call MedCab at 18008-908-208.")
                         <p>Most Read</p>
                     </div>
                     <div class="news">
-                        <div class="news-item d-flex gap-3 p">
-                            <div class="dp">
-                                <img src="{{asset('assets/website-images/dp-blog.png')}}" alt="dp" />
+                        <?php for ($i = 4; $i < 9; $i++) { ?>
+                            <div class="news-item d-flex gap-3 p">
+                                <div class="dp">
+                                    <img class="rounded-circle border border-dark mt-2" src="{{$base_url.$blogs[$i]->blog_thumbnail}}" alt="dp" />
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        {{$blogs[$i]->blog_title}}
+                                    </p>
+                                    <p>&rarr;</p>
+                                </div>
                             </div>
-                            <div class="content">
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Esse, adipisci?
-                                </p>
-                                <p>&rarr;</p>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
                 <div class="news-letter shadow px-5 py-5">
@@ -80,56 +81,50 @@ ambulance? Call MedCab at 18008-908-208.")
                 </div>
             </div>
         </div>
-        <div class="article-section article-section-more d-flex">
+        <div class="article-section article-section-more d-flex flex-column align-items-center justify-content-center">
             <div class="articles d-flex flex-row">
-                <div class="article d-flex">
-                    <div class="image">
-                        <img src="{{asset('assets/website-images/article.png')}}" alt="article" />
+                <?php for ($i = count($blogs) - 1; 0 <= $i; $i--) { ?>
+                    <div class="article d-flex">
+                        <div class="image">
+                            <img src="{{$base_url.$blogs[$i]->blog_thumbnail}}" alt="article" />
+                        </div>
+                        <div class="desc d-flex flex-column align-items-start justify-content-evenly">
+                            <h4>{{$blogs[$i]->blog_title}}</h4>
+                            <p>
+                                {{$blogs[$i]->blog_meta_desc}}
+                            </p>
+                            <p>Posted on {{$blogs[$i]->blog_post_date}}</p>
+                            <a class="more">Read more...</a>
+                        </div>
                     </div>
-                    <div class="desc d-flex flex-column align-items-start justify-content-evenly">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Voluptatibus, voluptates repudiandae explicabo architecto quo
-                            quos ullam illum. Aut praesentium aliquid accusamus
-                            architecto, libero nulla cum ipsam.
-                        </p>
-                        <p>Posted on 14 February, 2022</p>
-                        <a class="more">Read more...</a>
-                    </div>
-                </div>
-                <div class="article d-flex">
-                    <div class="image">
-                        <img src="{{asset('assets/website-images/article.png')}}" alt="article" />
-                    </div>
-                    <div class="desc d-flex flex-column align-items-start justify-content-evenly">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Voluptatibus, voluptates repudiandae explicabo architecto quo
-                            quos ullam illum. Aut praesentium aliquid accusamus
-                            architecto, libero nulla cum ipsam.
-                        </p>
-                        <p>Posted on 14 February, 2022</p>
-                        <a class="more">Read more...</a>
-                    </div>
-                </div>
-                <div class="article d-flex">
-                    <div class="image">
-                        <img src="{{asset('assets/website-images/article.png')}}" alt="article" />
-                    </div>
-                    <div class="desc d-flex flex-column align-items-start justify-content-evenly">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Voluptatibus, voluptates repudiandae explicabo architecto quo
-                            quos ullam illum. Aut praesentium aliquid accusamus
-                            architecto, libero nulla cum ipsam.
-                        </p>
-                        <p>Posted on 14 February, 2022</p>
-                        <a class="more">Read more...</a>
-                    </div>
-                </div>
+                <?php
+                    if (count($blogs) - 3 == $i) {
+                        break;
+                    }
+                }
+                ?>
+            </div>
+            <div class="read-more-blog d-flex-center mt-5 d-done">
+                <!-- <a href="" class="more-blog">Load More..</a> -->
+                <!-- {{$blogs->links()}} -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <!-- <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a> -->
+                        </li>
+                        @foreach($links as $link)
+                        <li class="page-item"><a class="page-link" href="{{$link['url']}}">{!!$link['label']!!}</a></li>
+                        @endforeach
+
+                        <li class="page-item">
+                            <!-- <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a> -->
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>

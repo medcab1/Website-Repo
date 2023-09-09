@@ -118,9 +118,9 @@ $CategoryData = DB::table('ambulance_category')->get();
                 </div>
             </div>
             <div class="contact d-flex justify-content-center w-100 py-4 border-bottom">
-                <p class=""><span><a href="">Contact Us |</a><a href=""> Terms of Use |</a><a href=""> Privacy
-                            Policy |</a><a href=""> Refund
-                            Policy |</a><a href=""> Service Legal Agreement for Vendor/ Driver
+                <p class=""><span><a href="{{URL::route('ContactUs')}}">Contact Us |</a><a href="{{URL::route('Term&Condition')}}"> Terms of Use |</a><a href="{{URL::route('Customer.Privacy&Policy')}}"> Privacy
+                            Policy |</a><a href="{{URL::route('Customer.Cancel&Refund')}}"> Refund
+                            Policy |</a><a href="{{URL::route('Service_Level_Agreement')}}"> Service Legal Agreement for Vendor/ Driver
                             |</a><a href="">
                             Career |</a><a href=""> Mobile
                             App |</a><a href=""> Media
