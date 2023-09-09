@@ -14,9 +14,9 @@
   gap: 6em; */
   padding: 5em 4em;
 }
-.our-servicesCards .owl-item.active:nth-child(2) {
+/* .our-servicesCards .owl-item.active:nth-child(2) {
   margin-top: -1.5em;
-}
+} */
 .our-servicesCards .our-servicesCard {
   width: 90%;
   margin: auto;
@@ -28,9 +28,9 @@
   text-align: center;
   font-size: var(--fs-secondary-text);
 }
-.our-servicesCard > *:not(:last-child) {
+/* .our-servicesCard > *:not(:last-child) {
   margin-bottom: 1em;
-}
+} */
 .our-servicesCard h2 {
   font-size: var(--fs-primary-text);
   color: var(--section-heading-clr);
@@ -168,4 +168,9 @@
   .our-services .service-icons img{
     width: 80%;
   }
+}
+
+
+.our-servicesCard img {
+  height: 6rem;
 }
