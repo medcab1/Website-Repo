@@ -33,7 +33,6 @@
     /* border: 1px solid black; */
     /* width: 75%; */
     display: block;
-    border: 2px solid;
     /* grid-template-columns: auto auto auto auto; */
     /* grid-template-columns: repeat(4, 1fr); */
 
@@ -51,7 +50,6 @@
     padding: 4rem;
     border-radius: 1rem;
     font-size: 1rem;
-    border: 5px solid green;
 }
 
 .hospital-availability a {
