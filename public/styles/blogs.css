@@ -76,11 +76,11 @@
 }
 
 .article-section .left {
-    width: 75%;
+    width: 70%;
 }
 
 .article-section .right {
-    width: 25%;
+    width: 30%;
 }
 
 
@@ -162,7 +162,7 @@
 }
 
 .blog-one .right .most-read .news-item .dp {
-    width: 15%;
+    width: 35px ;
     height: 35px;
 }
 
@@ -189,6 +189,10 @@
 
 .blog-one .right .news-letter form>div label {
     font-weight: 700;
+}
+
+.blog-one .right form button {
+    height: 5rem;
 }
 
 /* read more blogs */
@@ -292,6 +296,11 @@
 
     .blog-one .article {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .blog-one .article .desc {
+        gap: 2rem;
     }
 
     .article-section .left .article .desc,

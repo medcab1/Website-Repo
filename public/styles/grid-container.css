@@ -42,13 +42,18 @@
   background-color: #e5f1ff;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   gap: 2em;
-  padding: 2rem;
+  padding: 4rem 2rem;
   border-radius: 2rem;
   max-width: 25rem;
-  height: auto;
+  height: 100%;
+}
+
+.grid-container-box .grid-item img {
+  mix-blend-mode: multiply;
 }
 
 .grid-container-box .grid-item h5 {
