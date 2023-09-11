@@ -32,5 +32,6 @@
           @endforeach
         </div>
       </div>
+      <div class="blue-circle"></div>
     </section>
   </section>
