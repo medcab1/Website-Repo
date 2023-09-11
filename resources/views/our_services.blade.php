@@ -36,6 +36,8 @@ services to hospitals with 24/7 customer support in all over India.")
     @include('include.hospital_availability_main')
     <!-- hospital availability main -->
 
+    
+
     <!-- download availability banner -->
     @include('include.download_availability_banner')
     <!-- download availability banner -->

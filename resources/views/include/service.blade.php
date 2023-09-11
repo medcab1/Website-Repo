@@ -17,14 +17,15 @@
 
         <div class="our-servicesCard item">
           <h2>{{$ser_cat->ambulance_category_name}}</h2>
-          <img src="{{url($ser_cat->ambulance_category_icon)}}" alt="" />
+          <div class="our-servicesCard-image">
+            <img src="{{url($ser_cat->ambulance_category_icon)}}" alt="" />
+          </div>
           <p>
             {{$ser_cat->ambulance_catagory_desc}}
           </p>
           <div class="service-icons">
-            <div class="icon border border-2">
+            <div class="icon">
               <?php if (Session::has('ambu_equips')) {
-
                 foreach (Session::get('ambu_equips') as $ambu_equip) {
                   if ($ser_cat->ambulance_category_type == $ambu_equip->ambulance_facilities_category_type) {
               ?>

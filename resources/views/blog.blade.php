@@ -72,7 +72,7 @@ ambulance? Call MedCab at 18008-908-208.")
                         <div class="mb-3 d-flex flex-column gap-5">
                             <h2 class="text-center primary-text fw-bold">Stay Updated</h2>
                             <label for="exampleInputEmail1" class="form-label text-center w-100 primary-text">Subscribe to Medcab newsletter</label>
-                            <input type="email" class="form-control primary-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email id" />
+                            <input type="email" class="form-control secondary-text" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email id" />
                         </div>
                         <button type="submit" class="btn btn-danger w-100 primary-text text-white">
                             Subscribe

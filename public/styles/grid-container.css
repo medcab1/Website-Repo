@@ -4,6 +4,7 @@
 .grid-container-box {
   width: 100%;
   background-color: #e5f1ff;
+  position: relative;
 }
 
 .grid-container-box a {
@@ -42,13 +43,19 @@
   background-color: #e5f1ff;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   gap: 2em;
-  padding: 2rem;
+  padding: 4rem 2rem;
   border-radius: 2rem;
   max-width: 25rem;
-  height: auto;
+  height: 100%;
+  margin: auto;
+}
+
+.grid-container-box .grid-item img {
+  mix-blend-mode: multiply;
 }
 
 .grid-container-box .grid-item h5 {
@@ -102,4 +109,17 @@
   .grid-container-box .grid-item {
     transform: scale(0.8);
   }
+}
+
+
+.blue-circle {
+  background-color: #E5F1FF;
+  height: 30rem;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  z-index: -5;
+  top: 100%;
+  transform: translateY(-50%)
 }
