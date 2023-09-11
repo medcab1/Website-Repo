@@ -69,14 +69,18 @@ ambulance booking app
                 </form>
             </div>
             <div class="header-cta">
-                <div class="header-ctaBox mt-4">
-                    <span><img src="{{asset('assets/website-images/call.png')}}" alt="" /></span>
-                    <a href="#">Call Emergency 18008-908-208</a>
-                </div>
-                <div class="header-ctaBox mt-4">
-                    <span><img src="{{asset('assets/website-images/hospital-cehck.png')}}" alt="" /></span>
-                    <a href="#">Check Hospitals Availability</a>
-                </div>
+                <a href="tel:18008908208">
+                    <div class="header-ctaBox mt-4">
+                        <span><img src="{{asset('assets/website-images/call.png')}}" alt="" /></span>
+                        <p>Call Emergency 18008-908-208</p>
+                    </div>
+                </a>
+                <a href="{{route('check-hospital-service')}}">
+                    <div class="header-ctaBox mt-4">
+                        <span><img src="{{asset('assets/website-images/hospital-cehck.png')}}" alt="" /></span>
+                        <p>Check Hospitals Availability</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="header-right">

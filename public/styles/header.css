@@ -88,6 +88,12 @@
     padding: 1rem 0;
     flex-grow: 6;
 }
+
+.header-cta {
+    color: var(--primary-clr);
+    font-weight: 700;
+}
+
 .header-ctaBox {
     box-shadow: -3px 3px 4px 0px #ffd4d4;
     border: 2px solid #e5dddd;

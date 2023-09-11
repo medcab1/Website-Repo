@@ -1,0 +1,53 @@
+.hospital-availability-already {
+    font-size: 180.180%;
+}
+
+.hospital-availability-already .facilities {
+    padding: 0;
+}
+
+.hospital-availability-already .search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    padding: 4rem 2rem;
+}
+
+.hospital-availability-already .search-container .search-bar {
+    border: 1px solid var(--border-light-clr);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.hospital-availability-already .search-container .fa-solid {
+    color: var(--border-clr)
+}
+
+.hospital-availability-already .search-container .fa-arrow-left-long {
+    font-size: var(--fs-title)
+}
+
+.hospital-availability-already .search-container .search-bar input {
+    border: none;
+}
+
+@media all and (max-width: 770px) {
+    .hospital-availability-already .search-container {
+        padding: 2rem;
+    }
+
+    .hospital-availability-already .search-container .search-bar {
+        width: 100%;
+    }
+
+    .hospital-availability-already .search-container .search-bar input {
+        width: 100%;
+    }
+}

@@ -96,8 +96,9 @@
 .white-curve {
   width: 100%;
   position: absolute;
-  margin-top: -10em;
+  /* margin-top: -10em !important; */
   bottom: 0;
+  margin-bottom: 5rem;
 }
 .white-curve img {
   width: 100%;
@@ -179,4 +180,9 @@
   .app-preview .preview-image {
     width: 80%;
   }
+}
+
+
+.get-ambulance {
+  padding: 5rem 0;
 }
