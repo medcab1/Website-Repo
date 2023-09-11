@@ -1,347 +1,347 @@
-
 @extends('layouts.adminlayout')
 @section('title',"Privacy & Policy | MedCab")
 @section('main')
 <style>
-   .text-section >ul>li{
-        list-style: disc!important;
+    .text-section>ul>li {
+        list-style: disc !important;
+
     }
 </style>
 
 <!-- Term and Condition section  start-->
-    <section class="header-top-margin py-5">
-        <div class="container">
-            <h1 class="title-text text-center mb-2">
-                Privacy & Policy
-            </h1>
-            <div class="text-section">
-                <p class="p-text text-center">
-                    This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-                    information when You use the Service and tells You about Your privacy rights and how the law protects You.
-                    We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-                    collection and use of information in accordance with this Privacy Policy. 
-                <br/>
-                <br/>
-                </p>
-                <p class="p-heading">Interpretation and Definitions</p>
-                <p class="p-text">
-                <b>Interpretation</b><br/>
+<section class="header-top-margin py-5">
+    <div class="container">
+        <h1 class="main-heading text-center mb-2">
+            Privacy & Policy
+        </h1>
+        <div class="text-section">
+            <p class="p-text text-center">
+                This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
+                information when You use the Service and tells You about Your privacy rights and how the law protects You.
+                We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
+                collection and use of information in accordance with this Privacy Policy.
+                <br />
+                <br />
+            </p>
+            <p class="p-heading">Interpretation and Definitions</p>
+            <p class="p-text">
+                <b>Interpretation</b><br />
                 The words of which the initial letter is capitalized have meanings defined under the following conditions.
                 The following definitions shall have the same meaning regardless of whether they appear in singular or in
                 plural.
-                <br/><br/>
-                <b>Definitions</b><br/>
-                For the purposes of this Privacy Policy:<br/>
-                <ul>
-                    <li>"Account" means a unique account created for You to access our Service or parts of our Service.<br/>
-                    </li>
-                    <li>
+                <br /><br />
+                <b>Definitions</b><br />
+                For the purposes of this Privacy Policy:<br />
+            <ul>
+                <li>"Account" means a unique account created for You to access our Service or parts of our Service.<br />
+                </li>
+                <li>
                     "Application" means the software program provided by the Company downloaded by You on any
                     electronic device, named MedCab.
-                    </li>
-                    <li>
-                    "Company" (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Med Cab care pvt ltd <br/>
-                    </li>
-                    <li> "Country" refers to India and others.</li>
-                    <li>"Cookies" are small files that are placed on Your computer, mobile device or any other device by a
+                </li>
+                <li>
+                    "Company" (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Med Cab care pvt ltd <br />
+                </li>
+                <li> "Country" refers to India and others.</li>
+                <li>"Cookies" are small files that are placed on Your computer, mobile device or any other device by a
                     website, containing the details of Your browsing history on that website among its many uses.
-                    </li>
-                    <li>"Device" means any device that can access the Service such as a computer, a cell phone or a
+                </li>
+                <li>"Device" means any device that can access the Service such as a computer, a cell phone or a
                     digital tablet.</li>
-                    <li>
-                    "Personal Data" is any information that relates to an identified or identifiable individual.<br/>
-                    </li>
-                    <li>
-                        "Service" refers to the Website.Service Provider" means any natural or legal person who processes the data on behalf of the
-                        Company. It refers to third-party companies or individuals employed by the Company to facilitate the
-                        Service, to provide the Service on behalf of the Company, to perform services related to the Service
-                        or to assist the Company in analyzing how the Service is used.
-                    </li>
-                    <li>"Usage Data" refers to data collected automatically, either generated by the use of the Service or
-                        from the Service infrastructure itself (for example, the duration of a page visit).
-                    </li>
-                    <li>"You" means the individual accessing or using the Service, or the company, or other legal entity on
-                        behalf of which such individual is accessing or using the Service, as applicable.</li>
-                </ul><br/>
-                <b class="p-heading">Collecting and Using Your Personal Data</b>
-                Types of Data Collected:<br/>
-                <b>Personal Data</b><br/>
-                While using Our Service, We may ask You to provide Us with certain personally identifiable information that
-                can be used to contact or identify You. Personally identifiable information may include, but is not limited to:<br/>
-                <ul>
-                    <li>Email address</li>
-                    <li>First name and last name</li>
-                    <li> Phone number</li>
-                    <li>Address, State, Province, ZIP/Postal code, City</li>
-                </ul>
-                <br/>
-                <b> Medcab consumer App</b>
-                <br/>
-                <ul>
-                    <li> User’s Mobile number .</li>
-                    <li>User’s precise current location, search location for booking.</li>
-                    <li>User First name , Last Name, mobile number.</li>
-                    <li>Payment details.</li>
-                    <li>Permission</li>
-                    <li>Image</li>
-                    <li>Storage</li>
-                    <li>Location</li> 
-                    <li> Push notifications</li>
-                </ul>
-                <br/>
+                <li>
+                    "Personal Data" is any information that relates to an identified or identifiable individual.<br />
+                </li>
+                <li>
+                    "Service" refers to the Website.Service Provider" means any natural or legal person who processes the data on behalf of the
+                    Company. It refers to third-party companies or individuals employed by the Company to facilitate the
+                    Service, to provide the Service on behalf of the Company, to perform services related to the Service
+                    or to assist the Company in analyzing how the Service is used.
+                </li>
+                <li>"Usage Data" refers to data collected automatically, either generated by the use of the Service or
+                    from the Service infrastructure itself (for example, the duration of a page visit).
+                </li>
+                <li>"You" means the individual accessing or using the Service, or the company, or other legal entity on
+                    behalf of which such individual is accessing or using the Service, as applicable.</li>
+            </ul><br />
+            <b class="p-heading">Collecting and Using Your Personal Data</b>
+            Types of Data Collected:<br />
+            <b>Personal Data</b><br />
+            While using Our Service, We may ask You to provide Us with certain personally identifiable information that
+            can be used to contact or identify You. Personally identifiable information may include, but is not limited to:<br />
+            <ul>
+                <li>Email address</li>
+                <li>First name and last name</li>
+                <li> Phone number</li>
+                <li>Address, State, Province, ZIP/Postal code, City</li>
+            </ul>
+            <br />
+            <b> Medcab consumer App</b>
+            <br />
+            <ul>
+                <li> User’s Mobile number .</li>
+                <li>User’s precise current location, search location for booking.</li>
+                <li>User First name , Last Name, mobile number.</li>
+                <li>Payment details.</li>
+                <li>Permission</li>
+                <li>Image</li>
+                <li>Storage</li>
+                <li>Location</li>
+                <li> Push notifications</li>
+            </ul>
+            <br />
 
-               <b> Medcab Driver App</b><br/>
-                <ul>
-                    <li>Background permission for battery optimisation, location</li>
-                    <li>Currents location</li>
-                    <li>Push notifications</li>
-                    <li>Driver photo,Aadhar card, Pan ,Rc ,Vehicle fitness ,Vehicle image , Police 
-                verification.</li>
-                    <li>Mobile no.</li> 
-                </ul>
-                <br/>
+            <b> Medcab Driver App</b><br />
+            <ul>
+                <li>Background permission for battery optimisation, location</li>
+                <li>Currents location</li>
+                <li>Push notifications</li>
+                <li>Driver photo,Aadhar card, Pan ,Rc ,Vehicle fitness ,Vehicle image , Police
+                    verification.</li>
+                <li>Mobile no.</li>
+            </ul>
+            <br />
 
-                <b>Medcab Partner App</b><br/>
-                <ul>
-                    <li>Mobile number.</li>
-                    <li>First name , last name </li>
-                    <li>Driver Photo, Aadhar, Driving License</li>
-                    <li>Permission- Push notification, </li>
-                </ul>
-                <br/>
+            <b>Medcab Partner App</b><br />
+            <ul>
+                <li>Mobile number.</li>
+                <li>First name , last name </li>
+                <li>Driver Photo, Aadhar, Driving License</li>
+                <li>Permission- Push notification, </li>
+            </ul>
+            <br />
 
-                <b class="p-heading">Driver Application Permissions</b>
+            <b class="p-heading">Driver Application Permissions</b>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style="">To provide you with the best possible experience, our app may require certain permissions to access various features on your device. We understand the importance of your privacy and want to be transparent about the information we collect and how we use it. We will only collect the data that is necessary to provide you with our services and will not use it for any other purpose without your consent.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">To provide you with the best possible experience, our app may require certain permissions to access various features on your device. We understand the importance of your privacy and want to be transparent about the information we collect and how we use it. We will only collect the data that is necessary to provide you with our services and will not use it for any other purpose without your consent.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Location</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Location</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your location to track driver while ON Duty.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your location to track driver while ON Duty.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>User Personal Information</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>User Personal Information</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may request permission to access your personal information such as name, email address and phone number to allow you to create an account and use our services.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may request permission to access your personal information such as name, email address and phone number to allow you to create an account and use our services.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Camera</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Camera</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your camera to enable you to take photos of document like Driving licence, Pan card, Police verification and ect. to verify driver Id within the app.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your camera to enable you to take photos of document like Driving licence, Pan card, Police verification and ect. to verify driver Id within the app.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Background Location</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Background Location</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your location even when the app is not in use to provide you with location-based notifications or to improve our services. We require background location permission for our driver app to enhance the user service . When the driver is On-duty or booked, our app needs to access their current location to offer them the nearest available booking. During the booking process, we also need to display the real-time location of the ambulance driver to our customers. Rest assured that we respect the privacy of our users and the location data is only used for providing the best service possible, after finishing rider consumer will not able to see driver live location , We show driver live location to consumer only during a ongoing booking.&nbsp;</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may require permission to access your location even when the app is not in use to provide you with location-based notifications or to improve our services. We require background location permission for our driver app to enhance the user service . When the driver is On-duty or booked, our app needs to access their current location to offer them the nearest available booking. During the booking process, we also need to display the real-time location of the ambulance driver to our customers. Rest assured that we respect the privacy of our users and the location data is only used for providing the best service possible, after finishing rider consumer will not able to see driver live location , We show driver live location to consumer only during a ongoing booking.&nbsp;</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Battery Optimization</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Battery Optimization</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may require permission to optimize battery usage on your device to set the permanent location update so that the driver can get/find the nearest booking. Here are the different permission options that you may encounter when using our app:</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may require permission to optimize battery usage on your device to set the permanent location update so that the driver can get/find the nearest booking. Here are the different permission options that you may encounter when using our app:</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Open Battery Optimization</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Open Battery Optimization</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">If you have enabled battery optimization on your device and wish to allow our app to continue running in the background, this will help us to get your permanent location update so that you can get/find the nearest available booking. </span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">If you have enabled battery optimization on your device and wish to allow our app to continue running in the background, this will help us to get your permanent location update so that you can get/find the nearest available booking. </span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Disable Battery Optimization</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Disable Battery Optimization</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">If you do not wish to allow battery optimization on your device, you may disable this feature entirely in your device settings. Please note that this may have an impact on your device&#39;s battery life. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">If you do not wish to allow battery optimization on your device, you may disable this feature entirely in your device settings. Please note that this may have an impact on your device&#39;s battery life. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Battery Optimization Disabled</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Battery Optimization Disabled</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">If battery optimization is disabled on your device, our app may continue running in the background, even when the device is not in use. This may impact your device&#39;s battery life but it will ensure that you receive timely notifications and updates from our app. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">If battery optimization is disabled on your device, our app may continue running in the background, even when the device is not in use. This may impact your device&#39;s battery life but it will ensure that you receive timely notifications and updates from our app. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>All Battery Optimization Disabled</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>All Battery Optimization Disabled</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">If all battery optimization features are disabled on your device, our app will continue running in the background and may have a significant impact on your device&#39;s battery life. Please be aware of this when using our app. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">If all battery optimization features are disabled on your device, our app will continue running in the background and may have a significant impact on your device&#39;s battery life. Please be aware of this when using our app. This will help us to get your permanent location update so that you can get/find the nearest available booking.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style=""><strong>Auto Start (Enable)</strong></span></span></p>
+            <p style="text-align:justify"><span style=""><span style=""><strong>Auto Start (Enable)</strong></span></span></p>
 
-<p style="text-align:justify"><span style=""><span style="">Our app may request permission to automatically start when your device is turned on to ensure that you receive timely notifications and updates.</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">Our app may request permission to automatically start when your device is turned on to ensure that you receive timely notifications and updates.</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-<p style="text-align:justify"><span style=""><span style="">We take your privacy seriously and will only use the information collected to provide you with our services. If you have any questions or concerns about our app permissions, please do not hesitate to contact us.&nbsp;</span></span></p>
+            <p style="text-align:justify"><span style=""><span style="">We take your privacy seriously and will only use the information collected to provide you with our services. If you have any questions or concerns about our app permissions, please do not hesitate to contact us.&nbsp;</span></span></p>
 
-<p style="text-align:justify">&nbsp;</p>
+            <p style="text-align:justify">&nbsp;</p>
 
-                <p class="p-heading"> Usage Data</p>
-                Usage Data is collected automatically when using the Service.<br/>
-                Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address),
-                browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the
-                time spent on those pages, unique device identifiers and other diagnostic data.<br/>
-                When You access the Service by or through a mobile device, We may collect certain information
-                automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID,
-                the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser
-                You use, unique device identifiers and other diagnostic data.
-                <br/>
-                We may also collect information that Your browser sends whenever You visit our Service or when You
-                access the Service by or through a mobile device.
-                <br/><br/>
-                <span class="p-heading">Information Collected while Using the Application</span>
-                While using Our Application, in order to provide features of Our Application, We may collect, with Your prior
-                permission.
-                <br/><br/>
-                <span class="p-heading">Information regarding your location</span>
-                We use this information to provide features of Our Service, to improve and customize Our Service.
-                The information may be uploaded to the Company's servers and/or a Service Provider's server or it
-                may be simply stored on Your device.
-                You can enable or disable access to this information at any time, through Your Device settings.<br/><br/>
-                <b>Use of Your Personal Data</b>
-                <br/>
-                The Company may use Personal Data for the following purposes:<br/>
-                <ul>
-                    <li>
+            <p class="p-heading"> Usage Data</p>
+            Usage Data is collected automatically when using the Service.<br />
+            Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address),
+            browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the
+            time spent on those pages, unique device identifiers and other diagnostic data.<br />
+            When You access the Service by or through a mobile device, We may collect certain information
+            automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID,
+            the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser
+            You use, unique device identifiers and other diagnostic data.
+            <br />
+            We may also collect information that Your browser sends whenever You visit our Service or when You
+            access the Service by or through a mobile device.
+            <br /><br />
+            <span class="p-heading">Information Collected while Using the Application</span>
+            While using Our Application, in order to provide features of Our Application, We may collect, with Your prior
+            permission.
+            <br /><br />
+            <span class="p-heading">Information regarding your location</span>
+            We use this information to provide features of Our Service, to improve and customize Our Service.
+            The information may be uploaded to the Company's servers and/or a Service Provider's server or it
+            may be simply stored on Your device.
+            You can enable or disable access to this information at any time, through Your Device settings.<br /><br />
+            <b>Use of Your Personal Data</b>
+            <br />
+            The Company may use Personal Data for the following purposes:<br />
+            <ul>
+                <li>
                     To provide and maintain our Service, including to monitor the usage of our Service.
-                    </li>
-                    <li>
-                     To manage Your Account: to manage Your registration as a user of the Service. The PersonalData You provide can give You access to different functionalities of the Service that are available to You as a registered user.<br/>
-                    </li>
-                
+                </li>
+                <li>
+                    To manage Your Account: to manage Your registration as a user of the Service. The PersonalData You provide can give You access to different functionalities of the Service that are available to You as a registered user.<br />
+                </li>
+
                 <li> For the performance of a contract: the development, compliance and undertaking of the purchase
-                contract for the products, items or services You have purchased or of any other contract with Us
-                through the Service.</li>
+                    contract for the products, items or services You have purchased or of any other contract with Us
+                    through the Service.</li>
                 <li> To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of
-                electronic communication, such as a mobile application's push notifications regarding updates or
-                informative communications related to the functionalities, products or contracted services, including
-                the security updates, when necessary or reasonable for their implementation.</li>
+                    electronic communication, such as a mobile application's push notifications regarding updates or
+                    informative communications related to the functionalities, products or contracted services, including
+                    the security updates, when necessary or reasonable for their implementation.</li>
                 <li>To provide You with news, special offers and general information about other goods, services and
-                events which we offer that are similar to those that you have already purchased or enquired about
-                unless You have opted not to receive such information.</li>
+                    events which we offer that are similar to those that you have already purchased or enquired about
+                    unless You have opted not to receive such information.</li>
                 <li> To manage Your requests: To attend and manage Your requests to Us.</li>
                 <li> For business transfers: We may use Your information to evaluate or conduct a merger, divestiture,
-                restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets,
-                whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which
-                Personal Data held by Us about our Service users is among the assets transferred.</li>
+                    restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets,
+                    whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which
+                    Personal Data held by Us about our Service users is among the assets transferred.</li>
                 <li> For other purposes: We may use Your information for other purposes, such as data analysis,
-                identifying usage trends, determining the effectiveness of our promotional campaigns and to
-                evaluate and improve our Service, products, services, marketing and your experience.</li>
+                    identifying usage trends, determining the effectiveness of our promotional campaigns and to
+                    evaluate and improve our Service, products, services, marketing and your experience.</li>
                 We may share Your personal information in the following situations:</li>
                 <li> With Service Providers: We may share Your personal information with Service Providers to
-                monitor and analyze the use of our Service, for payment processing, to contact You.</li>
+                    monitor and analyze the use of our Service, for payment processing, to contact You.</li>
                 <li> For business transfers: We may share or transfer Your personal information in connection with, or
-                during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a
-                portion of Our business to another company.</li>
+                    during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a
+                    portion of Our business to another company.</li>
                 <li> With Affiliates: We may share Your information with Our affiliates, in which case we will require
-                those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other
-                subsidiaries, joint venture partners or other companies that We control or that are under common
-                control with Us.</li>
+                    those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other
+                    subsidiaries, joint venture partners or other companies that We control or that are under common
+                    control with Us.</li>
                 <li> With business partners: We may share Your information with Our business partners to offer You
-                certain products, services or promotions.</li>
-                <li> With other users: when You share personal information or otherwise interact in the public areas.<br/>
+                    certain products, services or promotions.</li>
+                <li> With other users: when You share personal information or otherwise interact in the public areas.<br />
                 <li> with other users, such information may be viewed by all users and may be publicly distributed
-                outside.</li>
+                    outside.</li>
                 <li>With Your consent: We may disclose Your personal information for any other purpose with Your
-                consent.</li>
-                </ul><br/>
-                <span class="p-heading">Retention of Your Personal Data</span>
-                The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this
-                Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
-                obligations (for example, if we are required to retain your data to comply with applicable laws), resolve
-                disputes, and enforce our legal agreements and policies.<br/>
-                The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained
-                for a shorter period of time, except when this data is used to strengthen the security or to improve the
-                functionality of Our Service, or We are legally obligated to retain this data for longer time periods.<br/><br/>
-               <span class="p-heading"> Transfer of Your Personal Data</span>
-                Your information, including Personal Data, is processed at the Company's operating offices and in any
-                other places where the parties involved in the processing are located. It means that this information may be
-                transferred to — and maintained on — computers located outside of Your state, province, country or other
-                governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.<br/>
-                Your consent to this Privacy Policy followed by Your submission of such information represents Your
-                agreement to that transfer.<br/>
-                The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in
-                accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization
-                or a country unless there are adequate controls in place including the security of Your data and other
-                personal information.<br/><br/>
-                <span class="p-heading">Disclosure of Your Personal Data</span>
-                <b>Business Transactions</b><br/>
-                If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.
-                We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy
-                Policy.<br/><br/>
-                <span class="p-heading">Law Enforcement</span>
-                Under certain circumstances, the Company may be required to disclose Your Personal Data if required to
-                do so by law or in response to valid requests by public authorities (e.g. a court or a government agency)
-                <br/>
-                <b>Other legal requirements:</b><br/>
-                The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:<br/>
-                <ul>
-                    <li>Comply with a legal obligation</li>
-                    <li>Protect and defend the rights or property of the Company</li>
-                    <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                    <li>Protect the personal safety of Users of the Service or the public</li>
-                    <li>Protect against legal liability</li>
-                </ul>
-               <br/>
-                <span class="p-heading">Security of Your Personal Data</span>
-                The security of Your Personal Data is important to Us, but remember that no method of transmission over
-                the Internet, or method of electronic storage is 100% secure. While We strive to use commercially
-                acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
-                Detailed Information on the Processing of Your Personal Data<br/>
-                The Service Providers We use may have access to Your Personal Data. These third-party vendors collect,
-                store, use, process and transfer information about Your activity on Our Service in accordance with their
-                Privacy Policies.<br/><br/>
-                <span class="p-heading">Analytics</span>
-                We may use third-party Service providers to monitor and analyze the use of our Service.
-                <br/><br/>
+                    consent.</li>
+            </ul><br />
+            <span class="p-heading">Retention of Your Personal Data</span>
+            The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this
+            Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal
+            obligations (for example, if we are required to retain your data to comply with applicable laws), resolve
+            disputes, and enforce our legal agreements and policies.<br />
+            The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained
+            for a shorter period of time, except when this data is used to strengthen the security or to improve the
+            functionality of Our Service, or We are legally obligated to retain this data for longer time periods.<br /><br />
+            <span class="p-heading"> Transfer of Your Personal Data</span>
+            Your information, including Personal Data, is processed at the Company's operating offices and in any
+            other places where the parties involved in the processing are located. It means that this information may be
+            transferred to — and maintained on — computers located outside of Your state, province, country or other
+            governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.<br />
+            Your consent to this Privacy Policy followed by Your submission of such information represents Your
+            agreement to that transfer.<br />
+            The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in
+            accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization
+            or a country unless there are adequate controls in place including the security of Your data and other
+            personal information.<br /><br />
+            <span class="p-heading">Disclosure of Your Personal Data</span>
+            <b>Business Transactions</b><br />
+            If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred.
+            We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy
+            Policy.<br /><br />
+            <span class="p-heading">Law Enforcement</span>
+            Under certain circumstances, the Company may be required to disclose Your Personal Data if required to
+            do so by law or in response to valid requests by public authorities (e.g. a court or a government agency)
+            <br />
+            <b>Other legal requirements:</b><br />
+            The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:<br />
+            <ul>
+                <li>Comply with a legal obligation</li>
+                <li>Protect and defend the rights or property of the Company</li>
+                <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+                <li>Protect the personal safety of Users of the Service or the public</li>
+                <li>Protect against legal liability</li>
+            </ul>
+            <br />
+            <span class="p-heading">Security of Your Personal Data</span>
+            The security of Your Personal Data is important to Us, but remember that no method of transmission over
+            the Internet, or method of electronic storage is 100% secure. While We strive to use commercially
+            acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+            Detailed Information on the Processing of Your Personal Data<br />
+            The Service Providers We use may have access to Your Personal Data. These third-party vendors collect,
+            store, use, process and transfer information about Your activity on Our Service in accordance with their
+            Privacy Policies.<br /><br />
+            <span class="p-heading">Analytics</span>
+            We may use third-party Service providers to monitor and analyze the use of our Service.
+            <br /><br />
 
-                <span class="p-heading">Email Marketing</span>
-                We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and
-                other information that may be of interest to You. You may opt-out of receiving any, or all, of these
-                communications from Us by following the unsubscribe link or instructions provided in any email We send or
-                by contacting Us.
-                <br/><br/>
+            <span class="p-heading">Email Marketing</span>
+            We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and
+            other information that may be of interest to You. You may opt-out of receiving any, or all, of these
+            communications from Us by following the unsubscribe link or instructions provided in any email We send or
+            by contacting Us.
+            <br /><br />
 
-                <span class="p-heading">Children's Privacy</span>
-                Our Service does not address anyone under the age of 13. We do not knowingly collect personally
-                identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware
-                that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have
-                collected Personal Data from anyone under the age of 13 without verification of parental consent, We take
-                steps to remove that information from Our server.<br/>
+            <span class="p-heading">Children's Privacy</span>
+            Our Service does not address anyone under the age of 13. We do not knowingly collect personally
+            identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware
+            that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have
+            collected Personal Data from anyone under the age of 13 without verification of parental consent, We take
+            steps to remove that information from Our server.<br />
 
-                If We need to rely on consent as a legal basis for processing Your information and Your country requires
-                consent from a parent, We may require Your parent's consent before We collect and use that information.
-                <br/><br/>
-                <span class="p-heading">Links to Other Websites</span>
-                Our Service may contain links to other websites that are not operated by Us. If You click on a third party
-                link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of
-                every site You visit.<br/>
-                We have no control over and assume no responsibility for the content, privacy policies or practices of any
-                third party sites or services.<br/><br/>
-                <span class="p-heading"> Changes to this Privacy Policy</span>
-                We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new
-                Privacy Policy on this page.<br/>
-                We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming
-                effective and update the "Last updated" date at the top of this Privacy Policy.<br/>
-                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
-                are effective when they are posted on this page.
-                <br/><br/>
-                <span class="p-heading">Contact Us</span>
-                If you have any questions about this Privacy Policy, You can contact us:<br/>
-                <ul>
-                    <li>By visiting this page on our website: <a href="https://medcab.in/">Medcab.in</a></li>
-                    <li>By sending us an email: <a href="mailto:contact@medcab.in">contact@medcab.in</a></li>
-                </ul>
-                </p><br/>
-                <span class="text-center my-3 d-block">Our Privacy Policy was last updated on 22 May 2023.</span>
-            </div>
+            If We need to rely on consent as a legal basis for processing Your information and Your country requires
+            consent from a parent, We may require Your parent's consent before We collect and use that information.
+            <br /><br />
+            <span class="p-heading">Links to Other Websites</span>
+            Our Service may contain links to other websites that are not operated by Us. If You click on a third party
+            link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of
+            every site You visit.<br />
+            We have no control over and assume no responsibility for the content, privacy policies or practices of any
+            third party sites or services.<br /><br />
+            <span class="p-heading"> Changes to this Privacy Policy</span>
+            We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new
+            Privacy Policy on this page.<br />
+            We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming
+            effective and update the "Last updated" date at the top of this Privacy Policy.<br />
+            You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
+            are effective when they are posted on this page.
+            <br /><br />
+            <span class="p-heading">Contact Us</span>
+            If you have any questions about this Privacy Policy, You can contact us:<br />
+            <ul>
+                <li>By visiting this page on our website: <a href="https://medcab.in/">Medcab.in</a></li>
+                <li>By sending us an email: <a href="mailto:contact@medcab.in">contact@medcab.in</a></li>
+            </ul>
+            </p><br />
+            <span class="text-center my-3 d-block">Our Privacy Policy was last updated on 22 May 2023.</span>
         </div>
-    </section>
+    </div>
+</section>
 <!-- Term and Condition section End -->
 @endsection
