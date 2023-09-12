@@ -36,3 +36,13 @@ const showMoreInfo = () => {
 
 };
 
+
+
+// faqs js
+
+// var header = document.querySelector('.accordian-item');
+// var button = document.querySelector('.accordion-button');
+
+// const border = () => {
+//     button.className = "accordion-button shadow-none collapsed rounded-top-4 d-flex justify-content-between"
+// }

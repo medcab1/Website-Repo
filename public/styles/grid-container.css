@@ -113,13 +113,17 @@
 
 
 .blue-circle {
+  background-image: url(../assets/website-images/Vector\ 2277.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
   background-color: #E5F1FF;
-  height: 30rem;
+  height: 20rem;
   width: 100%;
   position: absolute;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* border: 2px solid black; */
   z-index: -5;
   top: 100%;
-  transform: translateY(-50%)
+  /* transform: translateY(-50%) */
 }

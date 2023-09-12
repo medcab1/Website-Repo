@@ -1,6 +1,11 @@
 /* JOin Us */
 .join-us {
-    padding: 4em 2em;
+    padding-right: 0 !important;
+}
+
+.join-us .trinity {
+    padding-right: 15rem;
+    margin-top: 5rem;
 }
 
 .join-top-left {
@@ -48,10 +53,42 @@
     /* border: 2px solid green; */
 }
 
+@media all and (max-width: 1150px)
+{
+    .join-us .trinity {
+        padding-right: 10rem ;
+    }
+}
+
 @media all and (max-width: 1100px)
 {
+    
     .join-info-box {
         font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1000px)
+{
+
+    .join-us .trinity {
+        padding-right: 5rem;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+    .join-us .trinity {
+        padding-right: 3rem;
+        margin-top: 2rem;
+
+    }
+}
+
+@media all and (max-width: 400px)
+{
+    .join-us .trinity {
+        padding-right: 1rem;
     }
 }
 

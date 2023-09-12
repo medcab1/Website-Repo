@@ -3446,3 +3446,19 @@
 	}
 
 })(window.Zepto || window.jQuery, window, document);
+
+
+if(window.innerWidth < 480)
+{
+
+	
+	$(".owl-carousel").owlCarousel({
+		loop: true,
+		nav: false,
+		dots: false,
+		items: 1
+	});
+	
+	var owlCarousel = $('.owl-carousel').data('owl.carousel');
+	owlCarousel.remove(1);
+}

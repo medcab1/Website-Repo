@@ -2,7 +2,14 @@
   position: relative;
   font-weight: 700;
   margin-top: 6rem;
+  
 }
+
+
+.get-ambulance {
+  padding: 10rem 0;
+}
+
 .app-previewTop {
   height: 20rem;
   background: url("../assets/website-images/wave-bg.png");
@@ -20,16 +27,19 @@
   font-size: var(--fs-main-heading);
 }
 .app-preview .card {
-  height: 15rem;
-  width: 15rem;
+  height: 18rem;
+  width: 18rem;
   border-radius: 4rem;
   display: grid;
+  gap: 2rem;
   place-items: center;
   place-content: center;
 }
 .app-preview .card h1 {
   font-size: var(--fs-sub-heading);
   font-weight: 700;
+  font-size: 4rem;
+  font-weight: bold;
 }
 .app-preview .card p {
   font-size: var(--fs-primary-text);
@@ -41,7 +51,14 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding-top: 5rem;
+  padding-top: 10rem;
+}
+
+@media all and (max-width: 980px)
+{
+  .app-previewBottom {
+    padding-top: 8rem;
+  }
 }
 
 @media all and (max-width: 580px)
@@ -98,7 +115,7 @@
   position: absolute;
   /* margin-top: -10em !important; */
   bottom: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .white-curve img {
   width: 100%;
@@ -107,8 +124,12 @@
 
 @media all and (max-width: 1025px) {
   .app-preview .card {
-    height: 14rem;
-    width: 14rem;
+    height: 16rem;
+    width: 16rem;
+  }
+  
+  .app-preview .card h1 {
+    font-size: 3rem;
   }
 }
 @media all and (min-width: 480px) {
@@ -120,9 +141,7 @@
     transition: none !important;
     width: auto !important;
   }
-  /* .app-preview .owl-item {
-    width: auto !important;
-  } */
+
 }
 @media all and (max-width: 780px) {
   .app-previewTop {
@@ -142,8 +161,12 @@
 }
 @media all and (max-width: 580px) {
   .app-preview .card {
-    height: 10rem;
-    width: 10rem;
+    height: 12rem;
+    width: 12rem;
+    gap: 1rem;
+  }
+  .app-preview .card h1 {
+    font-size: 3rem;
   }
   .app-preview .preview-image:nth-child(2) {
     transform: scale(1);
@@ -163,6 +186,15 @@
   }
 }
 
+@media all and (max-width: 450px) {
+  .get-ambulance {
+    padding: 5rem 0;
+  }
+  .white-curve {
+    margin-bottom: 5rem;
+  }
+}
+ 
 @media all and (max-width: 360px) {
   .app-preview .cards {
     gap: 1rem;
@@ -182,7 +214,3 @@
   }
 }
 
-
-.get-ambulance {
-  padding: 5rem 0;
-}

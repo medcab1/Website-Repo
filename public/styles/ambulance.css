@@ -1,6 +1,7 @@
 .ambulance-header {
-  padding: 5rem;
+  padding: 8rem;
   padding-left: 15rem;
+  padding-right: 0;
   gap: 8rem;
 }
 
@@ -9,6 +10,10 @@
   .ambulance-header {
     flex-direction: column-reverse;
     padding-left: 5rem; 
+  }
+
+  .ambulance-header .left {
+    padding-right: 5rem;
   }
 
   .ambulance-header {
@@ -20,7 +25,11 @@
 @media all and (max-width: 400px) {
   .ambulance-header {
     padding: 2rem;
+    padding-right: 0;
     gap: 2rem;
+  }
+  .ambulance-header .left {
+    padding-right: 2rem;
   }
 
   .ambulance-header p {

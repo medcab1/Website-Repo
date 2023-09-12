@@ -7,8 +7,8 @@
   <section class="ourServices w-100">
 
     <section class="section-4 grid-container-box d-flex justify-content-center">
-      <div class="facilities gap-3">
-        <div class="label mb-md-5 mb-sm-3">
+      <div class="facilities gap-5">
+        <div class="label mb-md-5 mb-sm-3 d-flex flex-column gap-4">
           <h3 class="text-center fw-bold mb-4">
             Check Hospital Availability
           </h3>

@@ -12,7 +12,7 @@ in India and become our partner in serving humanity.")
 <section class="join-us padding">
     <div class="join-us-container">
         <div class="">
-            <div class="row gy-4 gx-0 d-flex-center">
+            <div class="row gy-4 d-flex-center gap-4 gap-md-0">
                 <div class="col-lg-6 col-md-12">
                     <div class="join-top-left d-flex flex-column gap-5">
                         <h1 class="title-text">
@@ -29,7 +29,7 @@ in India and become our partner in serving humanity.")
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center py-5 gy-3 join-as-row">
+            <div class="trinity d-flex flex-column flex-lg-row justify-content-around align-items-center py-5 gy-3 join-as-row">
                 <div class="col-lg-4 col-md-8 col-sm-10 d-flex-center join-as-col">
                     <div class="join-info-box">
                         <div class="join-info-img">

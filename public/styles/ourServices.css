@@ -97,7 +97,15 @@
 .ourServices .section-3 {
   background-color: #f5f5fa;
   padding: 5rem 0;
+  gap: 3rem;
 }
+
+@media all and (max-width: 768px) {
+  .ourServices .section-3 {
+    gap: 2rem;
+  }
+}
+
 .ourServices .section-3 .label {
   font-size: var(--fs-main-heading);
 }
@@ -149,6 +157,13 @@
   /* border: 2px solid red; */
 }
 
+.ourServices .section-3 .right-content .one {
+  gap: 3rem;
+}
+.ourServices .section-3 .right-content .one img {
+  height: 7rem;
+}
+
 .ourServices .section-3 .right-content .two {
   padding: 0 2rem;
 }
@@ -174,12 +189,7 @@
   width: max-content;
 }
 
-@media all and (max-width: 500px)
-{
-  .ourServices .section-3 .right-content .three .card-three {
-    width: 33% !important;
-  }
-}
+
 
 .ourServices .section-3 .download-button button {
   background: var(--primary-clr);
@@ -194,10 +204,6 @@
 
   .ourServices .section-3 .left-content img {
     height: 3rem;
-  }
-
-  .ourServices .section-3 .content .right-content {
-    padding: 1rem;
   }
 
   .ourServices .section-3 .content .right-content .three img {
@@ -224,6 +230,9 @@
     width: 100%;
   }
 
+  .ourServices .section-3 .content .right-content .bg-white {
+    padding: 5rem 0 !important;
+  }
 
 
   .ourServices .section-3 .content .right-content {
@@ -250,6 +259,14 @@
   }
 }
 
+@media all and (max-width: 500px) {
+  .ourServices .section-3 .right-content .three .card-three {
+    width: 33% !important;
+  }
+  .ourServices .section-3 .content .right-content .bg-white {
+    padding: 3rem 0 !important;
+  }
+}
 
 @media all and (max-width: 360px) {
   .ourServices .section-3 .content .left-content {

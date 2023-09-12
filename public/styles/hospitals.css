@@ -1,6 +1,9 @@
-
+.hospitals {
+  padding-right: 0 !important;
+}
 
 .hospitals .text {
+  text-align: justify;
   gap: 6rem;
 }
 
@@ -36,6 +39,10 @@
     flex-direction: column-reverse;
   }
 
+  .hospitals .text {
+    padding-right: 5rem;
+  }
+
   .hospitals .section-1 .text,
   .hospitals .section-1 .image {
     width: 100% !important;
@@ -52,8 +59,17 @@
   .hospitals .section-1 {
     padding: 2rem;
   }
+  .hospitals .text {
+    padding-right: 3rem;
+  }
   .hospitals .grid-container-box .grid-item h5 {
     font-size: var(--fs-primary-text);
   }
   
+}
+
+@media all and (max-width: 400px) {
+  .hospitals .text {
+    padding-right: 2rem;
+  }
 }

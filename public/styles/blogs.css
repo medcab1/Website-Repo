@@ -96,6 +96,7 @@
     gap: 3rem;
 }
 
+
 .article-section .article .image {
     width: 30%;
     height: 20rem;
@@ -107,8 +108,15 @@
     object-fit: fill;
 }
 
+
 .article-section .article .desc {
-    width: 70%;
+    width: 50%;
+}
+
+@media all and (max-width: 1260px) {
+    .article-section .article .desc {
+        width: 100%;
+    }
 }
 
 .article-section .article .desc h4 {
@@ -119,6 +127,10 @@
 .article-section .article .desc p {
     font-size: var(--fs-primary-text);
     color: var(--light-text-clr)
+}
+
+.article-section .article .desc .secondary-text {
+    font-size: var(--fs-secondary-text);
 }
 
 .article-section .article .desc a {
@@ -177,6 +189,15 @@
 
 
 /* news letter */
+
+.blog-one .right .news-letter {
+    position: relative;
+}
+.blog-one .right .news-letter img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 .blog-one .right .news-letter form>div {
     color: var(--light-text-clr);

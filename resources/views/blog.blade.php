@@ -38,8 +38,10 @@ ambulance? Call MedCab at 18008-908-208.")
                                 <p>
                                     {{$blogs[$i]->blog_meta_desc}}
                                 </p>
-                                <p>{{$blogs[$i]->blog_post_date}}</p>
-                                <a href="{{URL::route('Blog-Detail',['title'=>$blogs[$i]->blog_sku])}}" class="more">Read more...</a>
+                                <div class="d-flex flex-column gap-1">
+                                    <p class="secondary-text">{{$blogs[$i]->blog_post_date}}</p>
+                                    <a href="{{URL::route('Blog-Detail',['title'=>$blogs[$i]->blog_sku])}}" class="more">Read more...</a>
+                                </div>
                             </div>
                         </div>
                     <?php } ?>
@@ -68,6 +70,7 @@ ambulance? Call MedCab at 18008-908-208.")
                     </div>
                 </div>
                 <div class="news-letter shadow px-5 py-5">
+                    <img src="{{asset('assets/website-images/newsletter-design.png')}}" alt="">
                     <form class="d-flex flex-column gap-5">
                         <div class="mb-3 d-flex flex-column gap-5">
                             <h2 class="text-center primary-text fw-bold">Stay Updated</h2>

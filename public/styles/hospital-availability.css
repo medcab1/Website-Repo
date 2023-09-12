@@ -1,7 +1,6 @@
 .hospital-availability {
     background-color: #e5f1ff;
     margin-top: 5em;
-
 }
 
 
@@ -33,14 +32,19 @@
     /* border: 1px solid black; */
     /* width: 75%; */
     display: block;
-<<<<<<< Updated upstream
-=======
     /* border: 2px solid; */
->>>>>>> Stashed changes
     /* grid-template-columns: auto auto auto auto; */
     /* grid-template-columns: repeat(4, 1fr); */
 
     /* gap: 3rem; */
+    padding: 0 5rem;
+}
+
+@media all and (max-width: 1250px)
+{
+    .hospital-availability .grid-container {
+        padding: 0 0;
+    }
 }
 
 .hospital-availability .grid-item {
@@ -50,9 +54,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
     /* width: 15rem; */
-    padding: 4rem;
-    border-radius: 1rem;
+    padding: 5rem 4rem;
+    border-radius: 4rem;
     font-size: 1rem;
 }
 
