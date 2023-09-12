@@ -1,8 +1,13 @@
 .cityPage .header-wrapper {
     padding: 0;
-    padding-bottom: 2em;
+    /* padding-bottom: 5em; */
     gap: 2em;
+    padding-left: 5rem;
+    /* height: 100vh; */
 }
+
+
+
 .cityPage .city-HeaderImage img {
     width: 100%;
     /* height: 100%; */
@@ -16,8 +21,49 @@
     display: flex;
     flex-direction: column;
     /* padding-right: 5em; */
+    align-items: center;
     gap: 2em;
+    padding: 10rem 0;
+    padding-right: 15rem;
 }
+
+.topRoutes {
+    padding-left: 15rem;
+    padding-right: 0;
+}
+
+@media all and (max-width: 1200px)
+{
+    .cityPage .header-wrapper {
+        padding-left: 0;
+    }
+
+    .cityAbout {
+        padding-right: 5rem;
+    }
+
+    .topRoutes {
+        padding-left: 5rem;
+    }
+}
+
+@media all and (max-width: 780px)
+{
+    
+
+    .cityAbout {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .topRoutes {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+
 .cityAbout-image {
     height: max(50vw, 40vh);
     width: 100%;
@@ -28,7 +74,7 @@
 }
 .cityAbout-text {
     width: 100%;
-    padding: 0 2em;
+    /* padding: 0 2em; */
 }
 .cityAbout-text p {
     font-size: var(--fs-secondary-text);
@@ -74,7 +120,7 @@
 /* How to Book Ambulance */
 .bookAmbulance {
     width: 90%;
-    margin: 5em auto;
+    margin: 5em 15rem;
 }
 .bookAmbulance h2 {
     margin: 1.2em 0;
@@ -108,6 +154,7 @@
 /* Emergency Number in City */
 .emergency_ambulance_city {
     justify-content: center;
+    align-items: center;
     margin: 2em auto;
     padding: 4em 2em;
     gap: 1em;

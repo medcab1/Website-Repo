@@ -105,23 +105,18 @@ ambulance? Call MedCab at 18008-908-208.")
                 ?>
             </div>
             <div class="read-more-blog d-flex-center mt-5 d-done">
-                <!-- <a href="" class="more-blog">Load More..</a> -->
-                <!-- {{$blogs->links()}} -->
+
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                         <li class="page-item">
-                            <!-- <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a> -->
+
                         </li>
                         @foreach($links as $link)
                         <li class="page-item"><a class="page-link" href="{{$link['url']}}">{!!$link['label']!!}</a></li>
                         @endforeach
 
                         <li class="page-item">
-                            <!-- <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a> -->
+
                         </li>
                     </ul>
                 </nav>
