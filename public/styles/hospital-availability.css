@@ -1,6 +1,14 @@
 .hospital-availability {
     background-color: #e5f1ff;
     margin-top: 5em;
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+}
+
+@media all and (max-width: 480px) {
+    .hospital-availability {
+        margin-bottom: 5rem !important; 
+    }
 }
 
 

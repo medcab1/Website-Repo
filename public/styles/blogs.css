@@ -192,6 +192,7 @@
 
 .blog-one .right .news-letter {
     position: relative;
+    border-radius: 2rem;
 }
 .blog-one .right .news-letter img {
     position: absolute;
