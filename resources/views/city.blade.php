@@ -8,12 +8,14 @@
 <!-- City page top section -->
 <!-- City Header -->
 
+
+
 <section class="header cityPage">
     <div class="header-wrapper">
         <div class="header-left">
             <div class="cityPage-title">
-                <h1 class="main-heading  text-start m-0">Ambulance Services</h2>
-                    <h1 class="main-heading  text-start m-0 mb-4 fw-light">in {!!$city->city_name!!}</h2>
+                <h1 class="main-heading text-start m-0">Ambulance Services</h2>
+                    <h1 class="main-heading text-start m-0 mb-4 fw-light">in {!!$city->city_name!!}</h2>
 
             </div>
             <div class="header-booking p-4">
@@ -92,34 +94,34 @@
             <a href="#">
                 <div class="route active">
                     <p class="">Taxi from</p>
-                    <p>Rishikesh to Delhi</p>
+                    <p>{{$route[0]->city_route_from}} to Delhi</p>
                 </div>
             </a>
             <a href="#">
                 <div class="route ">
                     <p class="">Taxi from</p>
-                    <p>Rishikesh to Lucknow</p>
+                    <p>{{$route[0]->city_route_from}} to Lucknow</p>
                 </div>
             </a>
             <a href="#">
                 <div class="route ">
                     <p class="">Taxi from</p>
-                    <p>Rishikesh to Kanpur</p>
+                    <p>{{$route[0]->city_route_from}} to Kanpur</p>
                 </div>
             </a>
         </div>
         <div class="routeData">
             <p class="distance">
                 <span>Distance:</span>
-                <span>225.5 km</span>
+                <span>{{$route[0]->city_route_distance}} kms</span>
             </p>
             <p class="time">
                 <span>Estimated Time:</span>
-                <span>4 hr 46 min</span>
+                <span>{{$route[0]->city_route_duration}} hrs</span>
             </p>
         </div>
         <div class="hospitalLists">
-            <span>Hospitals Avialiable in Delhi : </span>
+            <span>Hospitals Available in Delhi : </span>
             <span>Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital |Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital</span>
         </div>
         <div class="primary-cta">Book Now</div>
@@ -171,7 +173,7 @@
 <section class="row bg-light emergency_ambulance_city">
     <div class="col-12 col-lg-4 left-section">
         <h1 class="text-start main-heading">Emergency Ambulance Number in {!!$city->city_name!!}</h1>
-        <p class="mb-4">MedCab has become the go-to ambulance service in {!!$city->city_name!!}, known for its reliable and timely services. With our fleet of fully-equipped ambulances and experienced medical staff, MedCab has been catering to the medical needs of Rishikesh residents and tourists for quite some time now. Due to our exceptional service, +91xxxxxxxxxx has become the most used ambulance number in Rishikesh.</p>
+        <p class="mb-4">MedCab has become the go-to ambulance service in {!!$city->city_name!!}, known for its reliable and timely services. With our fleet of fully-equipped ambulances and experienced medical staff, MedCab has been catering to the medical needs of {!!$city->city_name!!} residents and tourists for quite some time now. Due to our exceptional service, 18008-908-208 has become the most used ambulance number in {!!$city->city_name!!}.</p>
 
         <p class="mb-4">Our emergency response team is trained to handle critical situations with efficiency and compassion, ensuring that patients receive the best possible care. If you or a loved one requires medical assistance, it is crucial to call an ambulance immediately. By dialing MedCab's number, you can be assured of prompt and reliable medical assistance.</p>
 
@@ -181,7 +183,7 @@
     <div class="col-12 col-lg-6 bg-white right-section mt-4 mt-sm-0 ">
         <h2 class="secondary-heading">Ambulance Charges</h2>
         <p class="mt-3">MedCab accepts multiple payment modes for booking an ambulance such as cash, credit/debit cards and online wallets. You can also choose to pay through our app or website using a secure payment gateway. MedCab accepts multiple payment modes for booking an ambulance such as cash, credit/debit cards and online wallets. You can also choose to pay through our app or website using a secure payment gateway.</p>
-        <div class="row gy-4 text-center">
+        <div class="row gy-4">
             @include('include.faqs')
         </div>
 </section>

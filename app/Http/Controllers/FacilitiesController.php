@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Redirect;
@@ -20,24 +21,45 @@ class FacilitiesController extends Controller
 
   public function AmbulanceData(Request $request)
   {
-    $categoryId = $request->input('categoryId');
-     // Query the database based on the $category_id
-     $ambulanceData = DB::table('ambulance_category')
-     ->leftJoin('ambulance_facilities', 'ambulance_facilities.ambulance_facilities_category_type', '=', 'ambulance_category.ambulance_category_type')
-     ->where('ambulance_category.ambulance_category_name', '=', $categoryId) // Replace 'some_column_name' with the actual column to filter by
-     ->get(); //0. Corrected 'first()' method
-     
-     if(count($ambulanceData)>0){
-      
-     }
-
- // Return the ambulance data as a JSON response
-  return response()->json($ambulanceData);
-    
+      $categoryId = $request->input('categoryId');
+  
+      // Query the database based on the $categoryId
+      $ambulanceData = DB::table('ambulance_category')
+          ->leftJoin('ambulance_facilities', 'ambulance_facilities.ambulance_facilities_category_type', '=', 'ambulance_category.ambulance_category_type')
+          ->where('ambulance_category.ambulance_category_name', '=', $categoryId)
+          ->get();
+  
+      // Initialize arrays to store category and emergency kit data
+      $categoryData = [];
+      $emergencyKits = [];
+  
+      foreach ($ambulanceData as $value) {
+          // Extract category data (assuming it's the same for all rows)
+          $categoryData = [
+              'category_name' => $value->ambulance_category_name,
+              'category_image' => $value->ambulance_category_icon,
+              'category_desc' => $value->ambulance_catagory_desc ?? '',
+          ];
+  
+          // Extract emergency kit data for each row and store it in an array
+          $emergencyKit = [
+              'emergency_kit' => $value->ambulance_facilities_name,
+              'emergency_kit_image' => $value->ambulance_facilities_image,
+          ];
+  
+          // Add the emergency kit data to the array of emergency kits
+          $emergencyKits[] = $emergencyKit;
+      }
+  
+      // Create an array to hold the final response data
+      $responseData = [
+          'category_data' => $categoryData,
+          'emergency_kits' => $emergencyKits,
+      ];
+  
+      // Return the response data as a JSON response
+      return response()->json($responseData);
   }
+  
+  
 }
-
-
-
-
-

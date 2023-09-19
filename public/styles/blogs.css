@@ -17,7 +17,9 @@
     /* border: 1px solid green; */
     height: fit-content;
     padding: 10rem 0;
+    margin-bottom: 5rem;
 }
+
 
 .blog-one .first-image h3 {
     font-size: var(--fs-main-heading);
@@ -33,6 +35,7 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     margin: auto;
+    display: none; 
 }
 
 @media all and (max-width: 840px) {
@@ -47,6 +50,8 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
 
 @media all and (max-width: 330px) {
     .blog-one .filter-blogs {
@@ -344,6 +349,8 @@
 }
 
 @media all and (max-width: 480px) {
+
+
     .blog-one .filter-blogs button{
         font-size: var(--fs-secondary-text);
     }

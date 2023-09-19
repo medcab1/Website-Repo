@@ -1,8 +1,11 @@
 <!-- footer -->
 @php
-$cityData = DB::table('city')->get();
+$cityData = DB::table('city_content')
+->get();
 
-$CategoryData = DB::table('ambulance_category')->get();
+
+$CategoryData = DB::table('ambulance_category')
+->get();
 @endphp
 <footer class="footer">
     <section class="d-flex flex-column align-items-center">
@@ -13,9 +16,9 @@ $CategoryData = DB::table('ambulance_category')->get();
 
 
                         <p class="secondary-text text-justify"><span class="secondary-text fw-bold">AVAILABLE IN </span>
-                            @foreach ($cityData as $city)
-                            <a href="{{route('CityContent',['title'=>$city->city_name])}}" target="_blank">
-                                {{ $city->city_name }} |
+                            @foreach ($cityData as $city_data)
+                            <a href="{{route('CityContent',['title'=>$city_data->city_name])}}" target="_blank">
+                                {{ $city_data->city_name }} |
                             </a>
                             @endforeach
                         </p>
@@ -37,70 +40,16 @@ $CategoryData = DB::table('ambulance_category')->get();
         </div>
         <div class="info w-100 d-flex flex-column py-4 border-bottom">
             <div class="show mb-2">
+                @foreach ($cityData as $city_data)   
                 <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
+                    <h6 class="primary-text fw-bold">Ambulances in {{$city_data->city_name}}</h6>
                     <p>Privacy Policy</p>
                     <p>Refund Policy</p>
                     <p>Cancellation Policy</p>
                     <p>Guidelines</p>
                     <p>Terms & Conditions</p>
                 </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">INFO</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
+                @endforeach
             </div>
             <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button>
         </div>

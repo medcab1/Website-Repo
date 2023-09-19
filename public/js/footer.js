@@ -32,8 +32,6 @@ const showMoreInfo = () => {
         btn.innerHTML = "Show more";
     }
 
-
-
 };
 
 
@@ -46,3 +44,4 @@ const showMoreInfo = () => {
 // const border = () => {
 //     button.className = "accordion-button shadow-none collapsed rounded-top-4 d-flex justify-content-between"
 // }
+
