@@ -1,0 +1,20 @@
+.blog-detail .title-text {
+    font-size: var(--fs-main-heading)
+}
+
+.blog-detail h1 {
+    font-size: 36px;
+    margin: 1rem;
+}
+.blog-detail h2 {
+    font-size: 24px;
+    margin: 1rem;
+}
+.blog-detail h3 {
+    font-size: 21px;
+    margin: 1rem;
+}
+.blog-detail p, .blog-detail li {
+    font-size: 14px;
+    
+}

@@ -130,6 +130,8 @@ Route::get('/city',function(){
     // Includes page data show saurabh .....//
     Route::controller(FacilitiesController::class)->group(function () {
         Route::get('hospital-availability','GetHospitalAvailableData')->name('get-hospital-data');
+        Route::post('ambulance-services','AmbulanceData')->name('get-ambulance');
+        Route::get('ambulance-services-data','AmbulanceDataPages')->name('show-ambulance');
 
     });
 

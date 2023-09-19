@@ -116,6 +116,7 @@
     <link rel="stylesheet" href="{{ url('styles/why-us.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/city_page.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/hosp-service-detail.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('styles/blog-detail .css') }}?<?php echo time(); ?>">
 
 
 

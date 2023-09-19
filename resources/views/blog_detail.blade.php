@@ -4,7 +4,7 @@
 @section('keywords', $blog->blog_meta_keyword)
 @section('main')
 <!-- Start Blog Banner Section -->
-<section class="blog-section">
+<section class="blog-section blog-detail">
     <div class="container">
 
         <h1 class="title-text text-center">{{ $blog->blog_title }}</h1>
@@ -14,10 +14,8 @@
         <div class="blog-content-text">
             {!! $blog->blog_desc !!}
         </div>
-
         <!-- read more blogs -->
         <!-- read more blogs -->
-
     </div>
 </section>
 <!-- download banner -->

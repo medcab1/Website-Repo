@@ -14,7 +14,7 @@ $CategoryData = DB::table('ambulance_category')->get();
 
                         <p class="secondary-text text-justify"><span class="secondary-text fw-bold">AVAILABLE IN </span>
                             @foreach ($cityData as $city)
-                            <a href="{{URL::route('CityContent',['title'=>$city->city_name])}}">
+                            <a href="{{route('CityContent',['title'=>$city->city_name])}}" target="_blank">
                                 {{ $city->city_name }} |
                             </a>
                             @endforeach
