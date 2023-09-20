@@ -12,17 +12,17 @@ $get_ambulance_categories = DB::table('ambulance_category')
         </div>
         <div class="content px-md-5 w-100 d-flex gap-5 mt-5 mb-5">
             <div class="left-content w-50">
-            @foreach($get_ambulance_categories as $category)
-            <div class="ambuCard d-flex flex-column justify-content-between align-items-center text-center justify-content-around gap-3 py-4 py-sm-3 rounded-4 bg-white">
-                <!-- Wrap both image and category name in an anchor tag -->
-                <a href="javascript:void(0);" class="category-link" data-category-id="{{ $category->ambulance_category_name }}">
-                    <div class="ambuImage d-flex align-items-center justify-content-center">
-                        <img src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $category->ambulance_category_icon }}" alt="ambulance" />
-                    </div>
-                    <p>{{ $category->ambulance_category_name }}</p>
-                </a>
-            </div>
-        @endforeach
+                @foreach($get_ambulance_categories as $category)
+                <div class="ambuCard d-flex flex-column justify-content-between align-items-center text-center justify-content-around gap-3 py-4 py-sm-3 rounded-4 bg-white">
+                    <!-- Wrap both image and category name in an anchor tag -->
+                    <a href="javascript:void(0);" class="category-link" data-category-id="{{ $category->ambulance_category_name }}">
+                        <div class="ambuImage d-flex align-items-center justify-content-center">
+                            <img src="{{ env('DYNAMIC_IMAGE_URL') . '/' . $category->ambulance_category_icon }}" alt="ambulance" />
+                        </div>
+                        <p class="mt-3">{{ $category->ambulance_category_name }}</p>
+                    </a>
+                </div>
+                @endforeach
             </div>
 
             <div id="data-container" class="right-content w-50 rounded-4 d-flex flex-column justify-content-evenly gap-4" class="hide-div">
@@ -39,29 +39,17 @@ $get_ambulance_categories = DB::table('ambulance_category')
                             stabilize patients until more advanced care arrives.
                         </p>
                     </div>
-                    <div class="three">
-                    <h4 id="kit-name-0" class="kit-name primary-text"></h4>
-                    <img id="kit-image-0" class="kit-image" src="" alt="" />
-                    <p id="kit-description-0" class="kit-description"></p>
-                    <h4 id="kit-name-1" class="kit-name primary-text"></h4>
-                    <img id="kit-image-1" class="kit-image" src="" alt="" />
-                    <p id="kit-description-1" class="kit-description"></p>
-                    <h4 id="kit-name-2" class="kit-name primary-text"></h4>
-                    <img id="kit-image-2" class="kit-image" src="" alt="" />
-                    <p id="kit-description-2" class="kit-description"></p>
-                    <h4 id="kit-name-3" class="kit-name primary-text"></h4>
-                    <img id="kit-image-3" class="kit-image" src="" alt="" />
-                    <p id="kit-description-3" class="kit-description"></p>
-                    <h4 id="kit-name-4" class="kit-name primary-text"></h4>
-                    <img id="kit-image-4" class="kit-image" src="" alt="" />
-                    <p id="kit-description-4" class="kit-description"></p>
-
+                    <div class="three" id="category-kits">
+                        <div id="category-kit-0" class="d-flex flex-column align-items-center">
+                            <img id="kit-image-0" class="mb-2 kit-image" src="{{asset('assets/website-images/suitcase.png')}}" alt="" />
+                            <h4 id="kit-name-0" class="secondary-text kit-name primary-text">Emergency Kit</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-          
+
         </div>
-        <div class="download-button d-flex justify-c ontent-center">
+        <div class="download-button d-flex justify-content-center">
             <a href="#" class="text-decoration-none shadow-lg my-2 primary-cta text-white">Download MedCab App</a>
         </div>
     </section>
@@ -98,17 +86,39 @@ $get_ambulance_categories = DB::table('ambulance_category')
                     var categoryData = response.category_data;
                     var emergencyKits = response.emergency_kits;
 
+                    console.log(emergencyKits.length);
+
                     // Update your existing HTML elements with the retrieved data
                     $('#category-title').text(categoryData.category_name);
                     $('#category-image').attr('src', categoryData.category_image);
-                    $('#category-description').text(categoryData.category_desc);
-
+                    // $('#category-description').text(categoryData.category_desc);
+                    
                     // Iterate through the emergency kits and update your HTML elements accordingly
+                    var thelist = document.getElementById("category-kits");  
+                    while (thelist.hasChildNodes()){
+                        thelist.removeChild(thelist.lastChild);
+                    }
+
+                    
+
                     $.each(emergencyKits, function(index, kit) {
                         // Update existing HTML elements with the data
-                        $('#kit-name-' + index).text(kit.emergency_kit);
+
+
+                        var image = $("<img>", {id:"kit-image-"+index, class:"mb-2 kit-image", src:""});
+                        var head = $("<h4>", {id:"kit-name-"+index, class:"kit-name primary-text secondary-text"});
+
+                        var category_kit = $("<div>", {id:"category-kit-"+index, class:"d-flex flex-column align-items-center"});
+                        $('#category-kits').append(category_kit);
+
+                        $('#category-kit-'+index).append(image);
+                        $('#category-kit-'+index).append(head);
+
+                        
+                        console.log(category_kit)
+
                         $('#kit-image-' + index).attr('src', kit.emergency_kit_image);
-                        $('#kit-description-' + index).text(kit.emergency_kit_description);
+                        $('#kit-name-' + index).text(kit.emergency_kit);
                     });
 
                     // Remove the 'd-none' class to show the data container
@@ -121,9 +131,3 @@ $get_ambulance_categories = DB::table('ambulance_category')
         });
     });
 </script>
-
-
-
-
-
-

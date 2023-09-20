@@ -130,3 +130,10 @@
         font-size: var(-fs-secondary-text) !important;
     }
 }
+
+
+.home-ha-card {
+    height: 28rem;
+    justify-content: space-around;
+
+}

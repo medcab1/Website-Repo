@@ -15,7 +15,7 @@
 .our-servicesCards .our-servicesCard {
   width: 90%;
   margin: auto;
-  height: 100%;
+  height: 50rem;
   padding: 5rem 2.5rem;
   border-radius: 2rem;
   background: var(--white-clr);
@@ -25,6 +25,13 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+@media all and (max-width: 460px) {
+  .our-servicesCards .our-servicesCard {
+    /* height: 55rem; */
+    gap: 1rem;
+  }
 }
 
 .our-servicesCard .our-servicesCard-image {

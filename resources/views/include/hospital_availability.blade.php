@@ -17,7 +17,7 @@ $get_hospital_data = DB::table('hospital_service_category')
     <div class="grid-container owl-carousel owl-carousel-facilities owl-theme">
       @foreach($get_hospital_data as $key)
       <a href="#" class="item">
-        <div class="grid-item shadow border border-2">
+        <div class="home-ha-card grid-item shadow border border-2">
           <div>
             <img src="{{env('DYNAMIC_IMAGE_URL') . '/' . $key->hospital_serv_cat_icon}}" class="mb-lg-4 mb-sm-2" alt="x-ray" />
           </div>

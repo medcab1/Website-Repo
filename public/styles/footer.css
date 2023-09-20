@@ -51,18 +51,47 @@ footer * {
 
 .footer section .info .show {
     width: 100%;
-    display: block;
-    white-space: nowrap !important;
+    /* display: block; */
+    /* white-space: nowrap !important; */
     /* justify-content: space-between; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
 }
 
 .footer section .infoCard {
-    width: 25%;
+    /* border: 2px solid white; */
+    text-align: center;
+    /* width: 25%; */
     /* border: 1px solid greenyellow; */
-    display: inline-block !important;
-    margin-bottom: 2rem;
+    /* display: inline-block !important; */
+    margin-bottom: 1rem;
 
+}
+
+@media all and (max-width: 1140px)
+{
+    .footer section .info .show {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+@media all and (max-width: 780px)
+{
+    .footer section .info .show {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+@media all and (max-width: 580px)
+{
+    .footer section .info .show {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media all and (max-width: 340px)
+{
+    .footer section .info .show {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
 
 .footer section .info .infoCard p {
@@ -154,25 +183,16 @@ button:focus:not(:focus-visible) {
         padding: 5rem;
     }
 
-    .footer section .infoCard {
-        width: 50%;
-    }
+    
 
-    .footer section .info .show {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 
-    .footer section .info .show {
-        gap: 1em;
-    }
+    
 
 }
 
 @media all and (max-width: 580px) {
-    .footer section .infoCard {
-        width: 50%;
-        /* margin: 0 2em; */
-    }
+    
 
     .footer section .downloadApp .buttons {
         flex-direction: row;
@@ -188,19 +208,13 @@ button:focus:not(:focus-visible) {
         padding: 2rem 3rem;
     }
 
-    .footer section .infoCard {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
+    
 
     .footer .address .elem:last-child {
         flex-direction: column;
     }
 
-    .footer section .info .show {
-        grid-template-columns: 1fr;
-    }
+    
 }
 
 @media all and (max-width: 360px) {

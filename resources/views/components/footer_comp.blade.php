@@ -40,18 +40,13 @@ $CategoryData = DB::table('ambulance_category')
         </div>
         <div class="info w-100 d-flex flex-column py-4 border-bottom">
             <div class="show mb-2">
-                @foreach ($cityData as $city_data)   
-                <div class="infoCard">
-                    <h6 class="primary-text fw-bold">Ambulances in {{$city_data->city_name}}</h6>
-                    <p>Privacy Policy</p>
-                    <p>Refund Policy</p>
-                    <p>Cancellation Policy</p>
-                    <p>Guidelines</p>
-                    <p>Terms & Conditions</p>
-                </div>
+                @foreach ($cityData as $city_data)  
+                <h6 class="infoCard secondary-text">Ambulances in {{$city_data->city_name}}
+                    
+                </h6>
                 @endforeach
             </div>
-            <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button>
+            <!-- <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button> -->
         </div>
         <div class="downloadApp d-flex w-100 py-4 border-bottom justify-content-between">
             <div class="buttons">

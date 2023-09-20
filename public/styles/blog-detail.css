@@ -15,6 +15,9 @@
     margin: 1rem 0;
 }
 .blog-detail p, .blog-detail li {
-    font-size: 14px;
-    
+    font-size: 14px;   
+}
+
+.blog-detail .blog-detail-img img {
+    height: 80%;
 }

@@ -45,3 +45,44 @@ const showMoreInfo = () => {
 //     button.className = "accordion-button shadow-none collapsed rounded-top-4 d-flex justify-content-between"
 // }
 
+// active class js
+
+// console.log(window.location.pathname.split("/").pop());
+
+var active;
+
+switch(window.location.pathname.split("/").pop()) {
+    case "" : 
+        active = document.querySelector('.home-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "ourservices" :
+        active = document.querySelector('.ourServices-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "Ambulances" :
+        active = document.querySelector('.ambulances-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "hospitals" :
+        active = document.querySelector('.hospitals-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "joinUs" :
+        active = document.querySelector('.join-us-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "blog" :
+        active = document.querySelector('.blogs-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "about" :
+        active = document.querySelector('.about-us-nav');
+        active.classList = active.classList+" active";
+        break;
+    case "contact-us" :
+        active = document.querySelector('.contact-us-nav');
+        active.classList = active.classList+" active";
+        break;
+    
+}

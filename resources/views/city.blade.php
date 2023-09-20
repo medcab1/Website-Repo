@@ -173,12 +173,7 @@
 <section class="row bg-light emergency_ambulance_city">
     <div class="col-12 col-lg-4 left-section">
         <h1 class="text-start main-heading">Emergency Ambulance Number in {!!$city->city_name!!}</h1>
-        <p class="mb-4">MedCab has become the go-to ambulance service in {!!$city->city_name!!}, known for its reliable and timely services. With our fleet of fully-equipped ambulances and experienced medical staff, MedCab has been catering to the medical needs of {!!$city->city_name!!} residents and tourists for quite some time now. Due to our exceptional service, 18008-908-208 has become the most used ambulance number in {!!$city->city_name!!}.</p>
-
-        <p class="mb-4">Our emergency response team is trained to handle critical situations with efficiency and compassion, ensuring that patients receive the best possible care. If you or a loved one requires medical assistance, it is crucial to call an ambulance immediately. By dialing MedCab's number, you can be assured of prompt and reliable medical assistance.</p>
-
-        <p>Don't hesitate to call MedCab in case of a medical emergency. We are always ready to serve and ensure that you receive the best medical attention.</p>
-        </p>
+        <p>{!!$city->city_emergency_desc!!}</p>
     </div>
     <div class="col-12 col-lg-6 bg-white right-section mt-4 mt-sm-0 ">
         <h2 class="secondary-heading">Ambulance Charges</h2>

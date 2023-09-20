@@ -117,12 +117,6 @@
     <link rel="stylesheet" href="{{ url('styles/city_page.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/hosp-service-detail.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/blog-detail.css') }}?<?php echo time(); ?>">
-
-
-
-
-
-
     <style>
         #login-solid-btn {
             display: flex !important;
@@ -180,28 +174,28 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ URL::route('Home') }}">Home</a>
+                        <a class="nav-link home-nav" aria-current="page" href="{{ URL::route('Home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('OurServices') }}">Our Services</a>
+                        <a class="nav-link ourServices-nav" href="{{ route('OurServices') }}">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('Ambulances') }}">Ambulances</a>
+                        <a class="nav-link ambulances-nav" href="{{ route('Ambulances') }}">Ambulances</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link hospitals-nav" href="{{ route('Hospitals') }}">Hospitals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('Hospitals') }}">Hospitals</a>
+                        <a class="nav-link join-us-nav" href="{{ route('JoinUs') }}">Join Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('JoinUs') }}">Join Us</a>
+                        <a class="nav-link blogs-nav" href="{{ route('Blogs') }}">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('Blogs') }}">Blogs</a>
+                        <a class="nav-link about-us-nav" href="{{ route('AboutUs') }}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('AboutUs') }}">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('ContactUs') }}">Contact Us</a>
+                        <a class="nav-link contact-us-nav" href="{{ route('ContactUs') }}">Contact Us</a>
                     </li>
                     <li class="nav-ctn-book">
                         <a class="nav-link rounded bg-white nav-booknow me-lg-2 mb-2 mb-lg-0 px-3 py-1" href="#" tabindex="-1" aria-disabled="true">Book Now</a>
