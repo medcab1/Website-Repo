@@ -1,0 +1,76 @@
+#login {
+    font-size: 16px;
+    border-radius: 2rem !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#login input::-webkit-outer-spin-button,
+#login input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login .modal-content {
+    border-radius: 1rem !important;
+    
+}
+
+#login #registerForm {
+    display: none;
+}
+
+#login #otpForm {
+    display: none;
+}
+
+#login .modal-header {
+    background-color: var(--primary-clr);
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+#login .modal-footer {
+    width: 100% !important;
+}
+#login .modal-footer input {
+    width: 100% !important;
+    background-color: var(--primary-clr);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+#login .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#login label {
+    font-weight: 700;
+    color: var(--border-clr)
+}
+#login input {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#login .otp-input-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+#login .otp-input-container input {
+    width: 5rem;
+    height: 5rem;
+}
+
+.login-bookings {
+    color: var(--nav-link-clr);
+}

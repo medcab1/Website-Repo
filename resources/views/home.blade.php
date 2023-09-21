@@ -315,7 +315,7 @@ ambulance booking app
                     <input type="text" name="tokens" id="tokens" hidden content="{{csrf_token()}}">
                     <div class="form-group p-relative w-100">
                         <label for="exampleDropdownFormPassword1">Log in to Proceed</label>
-                        <input type="tel" id="phone" class="form-control " maxlength="10" onkeypress="return onlyNumberKey(event)" name="phoneNO" onload="focusInputElement('phone')" placeholder="Enter Your Mobile number" autofocus>
+                        <input type="tel" id="phone" class="form-control" maxlength="10" onkeypress="return onlyNumberKey(event)" name="phoneNO" onload="focusInputElement('phone')" placeholder="Enter Your Mobile number" autofocus>
                         <span class="text-danger error-message" id="login-message">
                             @error('phone')
                             {{ $message }}

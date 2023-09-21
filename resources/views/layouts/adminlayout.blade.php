@@ -117,6 +117,7 @@
     <link rel="stylesheet" href="{{ url('styles/city_page.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/hosp-service-detail.css') }}?<?php echo time(); ?>">
     <link rel="stylesheet" href="{{ url('styles/blog-detail.css') }}?<?php echo time(); ?>">
+    <link rel="stylesheet" href="{{ url('styles/login.css') }}?<?php echo time(); ?>">
     <style>
         #login-solid-btn {
             display: flex !important;
@@ -204,8 +205,9 @@
                     <!-- added from previous code -->
                     <?php if (Session::has('consumer_name')) { ?>
 
-                        <li class="scroll-to-section menu-item"><a href="{{URL::route('Booking.History')}}">Bookings</a></li>
-                        <li class="scroll-to-section d-flex justify-content-center align-items-center"><a href="#kids">
+                        <li class="scroll-to-section menu-item login-bookings nav-item"><a href="{{URL::route('Booking.History')}}">Bookings</a></li>
+                        <li class="scroll-to-section d-flex justify-content-center align-items-center">
+                            <a href="#kids">
                                 <?php
                                 $name = Session()->get('consumer_name');
                                 $words = explode(" ", trim($name));
@@ -215,9 +217,8 @@
                                         $initials .= $w[0];
                                     }
                                 } ?>
-                                <span style="background-color:white;border-radius:50%;color:black;height:40px;width:40px;" class="d-flex-center">
-                                    <?php echo strtoupper($initials);
-                                    ?>
+                                <span style="background-color:white;border-radius:50%;color:black;height:40px;width:40px;" class="ms-3 d-flex-center p-3">
+                                    <?php echo strtoupper($initials); ?>
                                 </span>
                             </a>
                             <a href="{{route('logout_page')}}" class="d-flex justify-content-start gap-3 align-items-center"><i class="fa-solid fa-power-off  p-3 fa-2x"></i></a>
