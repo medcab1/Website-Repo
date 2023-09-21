@@ -19,6 +19,21 @@ ambulance booking app
         opacity: .6 !important;
         pointer-events: none !important;
     }
+
+    .login-form,
+    .forms {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .login-form>label {
+        font-weight: 800;
+        letter-spacing: .4px;
+    }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/geolocator/dist/geolocator.min.js"></script>
 
@@ -38,33 +53,133 @@ ambulance booking app
     <div class="header-wrapper">
         <div class="header-left">
             <div class="header-booking">
-                <div class="booking-option text-white mb-3">
-                    <a href="#" class="border-1 rounded-5 active">Emergency</a>
-                    <a href="#" class="'border-1 rounded-5">Bulk</a>
-                    <a href="#" class="'border-1 rounded-5">Rent</a>
-                </div>
-                <form class="header-bookingForm">
-                    <div class="mb-4 mt-4">
-                        <label for="exampleInputEmail1" class="form-label">Pickup Location</label>
-                        <div class="input-wrapper">
-                            <span>
-                                <img src="{{asset('assets/website-images/location.png')}}" alt="" />
-                            </span>
-                            <input type="text" class="form-control shadow-none outline-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Pickup Address Here" />
+
+                <form method="post" action="{{URL::to('/search')}}" id="loc-form">
+                    @csrf
+                    <div class="booking-option text-white mb-3">
+                        <div class="border-1 rounded-pill form-checkbox" onclick="toggleRadio('normal')">
+                            <input type="radio" name="booking-type" id="normal" value="0" class="booking-type-radio d-none" checked>
+                            <label class="form-check-label booking-type-btn rounded-pill booking-type-active">
+                                Emergency
+                            </label>
+                        </div>
+                        <div class="border-1 rounded-pill form-checkbox" onclick="toggleRadio('rental')">
+                            <input type="radio" name="booking-type" value="1" class="booking-type-radio d-none" id="rental">
+                            <label class="form-check-label booking-type-btn rounded-pill" data-bs-toggle="modal" data-bs-target="#rentalTimePeriod">
+                                Rental
+                            </label>
+                        </div>
+                        <div class="border-1 rounded-pill form-checkbox" onclick="toggleRadio('bulk')">
+                            <input type="radio" name="booking-type" value="2" class="booking-type-radio d-none" id="bulk">
+                            <label class="form-check-label booking-type-btn rounded-pill">
+                                Bulk
+                            </label>
                         </div>
                     </div>
-                    <div class="mb-5">
-                        <label for="exampleInputPassword1" class="form-label">Drop Location</label>
-                        <div class="input-wrapper">
-                            <span><img src="{{asset('assets/website-images/drop-locatino.png')}}" alt="" /></span>
-                            <input type="text" class="form-control shadow-none outline-none" id="exampleInputPassword1" placeholder="Enter Destination Adress here" />
+                    <!-- <form class="header-bookingForm"> -->
+                    <div class="header-bookingForm">
+
+                        <div class="form-group mb-4 mt-4">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Pickup Location</label>
+                            <div class="input-group pick-group input-wrapper">
+                                <span>
+                                    <img src="{{asset('assets/website-images/location.png')}}" alt="" />
+                                </span>
+                                <input type="text" name="pick" class="form-control shadow-none outline-none pick" id="pickup" aria-describedby="emailHelp" placeholder="Enter Pickup Address Here" />
+                                <i class="fa-solid fa-location-crosshairs control-icon" id="current_location"></i>
+                                <i class="fa-solid fa-xmark reset-input control-icon pick-cross" style="display: none"></i>
+                                <input type="hidden" id="lat" name="pick_lat" value="lat">
+                                <input type="hidden" id="lng" name="pick_lng" value="lng">
+                            </div>
                         </div>
-                    </div>
-                    <div class="mt-3 booking-submit">
-                        <button class="border rounded p-1 booking-time">
-                            <span><img src="{{asset('assets/website-images/Access time.png')}}" alt="" /></span>
-                        </button>
-                        <button type="submit" class="btn">Search Ambulance</button>
+                        <div class="form-group mb-5 drop-form-group p-relative">
+                            <label for="" class="form-label">Drop Location</label>
+                            <div class="input-group drop-group input-wrapper">
+                                <span><img src="{{asset('assets/website-images/drop-locatino.png')}}" alt="" /></span>
+                                <input type="text" class="form-control input-focus-none shadow-none outline-none" id="drop" name="drop" placeholder="Enter Destination Address here" disabled />
+                                <i class="fa-solid fa-xmark drop-reset-input control-icon"></i>
+                            </div>
+                            <input type="hidden" name="drop_lat" id="drop_lat" value="lat">
+                            <input type="hidden" name="drop_lng" id="drop_lng" value="lng">
+                            <div class="suggestion shadow secondary-text" id="popup_sugg" style="display:none">
+                                <p style="color:gray;font-style:italic; margin:10px;margin-bottom:0px;">Nearest Hospitals:</p>
+                                <hr class="m-0">
+                                <div class="suggestion-box popup-box rounded secondary-text"></div>
+                            </div>
+                        </div>
+                        <div class="form-group p-relative duration-group" style="display:none;">
+                            <label for="">Booking Period</label>
+                            <input type="text">
+                        </div>
+                        <input type="text" name="distance" id="distance" hidden>
+                        <div class="input-group  " id="schedule-box" style="border:1px solid gray;border-radius:.375rem;border-color:#ced4da;display:none;">
+                            <label class="input-group-btn" for="txtDate">
+                                <span class="btn btn-default">
+                                    <i class="fa-regular fa-clock text-color"></i>
+                                </span>
+                            </label>
+
+                            <input id="txtDate" name="schedule-time" type="text" class="form-control date-input b-none " title="date" style="border:none;display:none" value='<?php echo time(); ?>' />
+                        </div>
+
+                        <!--Schedule Rental booking time Modal start -->
+                        <div class="modal" id="rentalTimePeriod" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content m-auto" style="width:361px!important;">
+                                    <div class="modal-header border-0 bg-danger w-100">
+                                        <h6 class="modal-title text-secondary text-white" id="exampleModalCenterTitle">Select Booking Time Period</h6>
+
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="schedule-box">
+                                            <p class="text-secondary">Select no. of hours/ days you want to book an ambulance for</p>
+                                            <div class="book-time-period-type w-100">
+                                                <div class="w-100 d-flex align-items-center" style="gap:20px;">
+                                                    <div class="form-checkbox d-flex justify-content-center gap-3 w-50 border py-2">
+                                                        <input type="radio" name="booking-period" id="by-hour" data-id="hours" value="24" class="booking-period-radio" checked>
+                                                        <label class="form-check-label text-gray">
+                                                            Hours
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-checkbox d-flex justify-content-center gap-3 w-50 border py-2">
+                                                        <input type="radio" name="booking-period" value="31" data-id="days" class="booking-period-radio" id="by-day">
+                                                        <label class="form-check-label text-gray">
+                                                            Days
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- hours select box -->
+                                            <div class="duration-select-box select-hours w-100" data-class="select-hours" id="hours">
+                                                <select name="sel-hours" class="border border-none w-100 py-2" required>
+                                                    <option value="1">Select Hours</option>
+                                                </select>
+                                            </div>
+                                            <!-- Hourse select box -->
+
+                                            <!-- Days select box -->
+                                            <div class="duration-select-box select-days w-100" data-class="select-days" id="days">
+                                                <select name="sel-days" class="border border-none w-100 py-2" required>
+                                                    <option value="1">Select Days</option>
+                                                </select>
+                                            </div>
+                                            <!-- Days select box -->
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer flex-nowrap border-0 w-100">
+                                        <button type="button" class="m-btn medcab-btn-transparent border border-danger w-100 rounded py-2" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="m-btn w-100 medcab-btn border border-danger w-100 bg-danger text-white rounded py-2" id="duration-btn">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Schedule Rental booking time Modal end -->
+                        <div class="mt-3 booking-submit search-btn-outer">
+                            <button class="border rounded p-1 booking-time book-now-watch currDateTime">
+                                <span><img src="{{asset('assets/website-images/Access time.png')}}" alt="" /></span>
+                            </button>
+                            <button type="submit" id="submit-btn" class="btn">Search Ambulance</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -280,11 +395,10 @@ ambulance booking app
 <!-- Login Modal end -->
 <div id="map" style="height:300px;width:100%;display:none;"></div>
 
-<div id="toastContainer">
-    <div id="toast" class="alert alert-success hidden">
-        This is a notification message.
-    </div>
-</div>
+
+
+
+
 
 <script>
     $(document).ready(function() {
@@ -948,6 +1062,5 @@ ambulance booking app
         }
     }
 </script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAP_KEY') }}&libraries=places&callback=initMap">
-</script>
-@endsection                                 
+
+@endsection

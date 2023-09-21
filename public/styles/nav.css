@@ -64,3 +64,13 @@
     font-size: var(--fs-secondary-text);
   }
 }
+
+@media all and (max-width: 992px) {
+  .navbar .nav-ctn-login a {
+    margin: 0 !important;
+  }
+
+  .navbar .nav-ctn-book a {
+    margin-bottom: 0.5rem !important; 
+  }
+}

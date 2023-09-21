@@ -86,3 +86,5 @@ switch(window.location.pathname.split("/").pop()) {
         break;
     
 }
+
+

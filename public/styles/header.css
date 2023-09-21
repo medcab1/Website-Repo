@@ -28,19 +28,53 @@
     border-radius: 1rem;
     background: white;
     padding: 2em;
+    position: relative;
+    /* width: 40rem; */
 }
-.header .booking-option a {
+
+
+/* nearest hospitals section */
+.header-booking .suggestion { 
+    width: 100%;
+    position: absolute;
+    background: white;
+    z-index: 5;
+}
+
+.header-booking i {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.header-booking .suggestion .suggestion-box .hospital-name{
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-light-clr);
+    cursor: pointer;
+}
+.header-booking .suggestion .suggestion-box .hospital-name img{
+    margin-top: 0.5rem;
+    height: 2rem;
+}
+/* nearest hospitals section end*/
+
+.header .booking-option div {
     display: inline-block;
+    margin-right: 0.6rem;
+
+}
+.header .booking-option label {
     padding: 0.6rem 1.5rem;
     color: var(--dark-grey-clr);
-    text-decoration: none;
+    /* text-decoration: none; */
     border: 1px solid var(--border-light-clr);
-    margin-right: 0.6rem;
     font-size: var(--fs-header);
 }
-.booking-option a.active {
+.booking-option .booking-type-active {
+    height: 100%;
     background-color: var(--secondary-clr);
-    color: var(--white-clr);
+    color: var(--white-clr) !important;
 }
 
 .header-bookingForm label {
@@ -237,3 +271,36 @@
     }
 }
 
+
+
+/* rental time period */
+#rentalTimePeriod {
+    font-size: 16px;
+}
+
+#rentalTimePeriod .modal{
+    height: 100vh!important;
+    overflow: scroll!important;
+}
+
+#rentalTimePeriod .modal-content {
+    gap: 2rem;
+    align-items: center;
+}
+
+#rentalTimePeriod .modal-content .schedule-box {
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#rentalTimePeriod select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    outline: none;
+    text-align: center;
+    color: var(--border-clr)
+}

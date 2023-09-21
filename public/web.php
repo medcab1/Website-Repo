@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\teamController;
+use App\Http\Controllers\GoogleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,10 @@ use App\Http\Controllers\teamController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// geolocation route
+Route::get('google-autocomplete', [GoogleController::class, 'index']);
+// geolocation route
 
 Route::get('/', function () {
     return view('home');

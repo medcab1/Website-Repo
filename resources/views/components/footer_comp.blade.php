@@ -40,10 +40,8 @@ $CategoryData = DB::table('ambulance_category')
         </div>
         <div class="info w-100 d-flex flex-column py-4 border-bottom">
             <div class="show mb-2">
-                @foreach ($cityData as $city_data)  
-                <h6 class="infoCard secondary-text">Ambulances in {{$city_data->city_name}}
-                    
-                </h6>
+                @foreach ($cityData as $city_data)
+                <a href="{{route('CityContent',['title'=>$city_data->city_name])}}" target="_blank"><h6 class="infoCard secondary-text">Ambulances in {{$city_data->city_name}}</h6></a>
                 @endforeach
             </div>
             <!-- <button onclick="showMoreInfo()" id="infoBtn" class="btn text-white text-none shadow-none secondary-text" type="button" data-bs-toggle="collapse" data-bs-target="#infoCollapse" aria-expanded="false" aria-controls="infoCollapse">Show more</button> -->

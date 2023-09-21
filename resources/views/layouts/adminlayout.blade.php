@@ -73,10 +73,10 @@
     <meta name="facebook-domain-verification" content="gkmkranozdqpn214pnyc49xieh5zfs" />
 
     <!-- Latest compiled JavaScript -->
-    <!-- <link rel="stylesheet" href="{{ url('css/custom.css') }}?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{ url('css/utill.css') }}?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{ url('css/responsive.css') }}?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{ url('css/style.css') }}?<?php echo time(); ?>"> -->
+    <!-- <link rel="stylesheet" href="{{ url('css/custom.css') }}?<?php echo time(); ?>"> -->
+    <!-- <link rel="stylesheet" href="{{ url('css/utill.css') }}?<?php echo time(); ?>"> -->
+    <!-- <link rel="stylesheet" href="{{ url('css/responsive.css') }}?<?php echo time(); ?>"> -->
+    <!-- <link rel="stylesheet" href="{{ url('css/style.css') }}?<?php echo time(); ?>"> -->
 
 
     <!-- Google Fonts -->
@@ -85,7 +85,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
 
 
-    <!-- Crousel Styles -->
+    <!-- Carousel Styles -->
     <link rel="stylesheet" href="{{ url('styles/owl-styles/owl.carousel.min.css') }}" />
     <link rel="stylesheet" href="{{ url('styles/owl-styles/owl.theme.default.min.css') }}" />
 
@@ -197,14 +197,47 @@
                     <li class="nav-item">
                         <a class="nav-link contact-us-nav" href="{{ route('ContactUs') }}">Contact Us</a>
                     </li>
-                    <li class="nav-ctn-book">
-                        <a class="nav-link rounded bg-white nav-booknow me-lg-2 mb-2 mb-lg-0 px-3 py-1" href="#" tabindex="-1" aria-disabled="true">Book Now</a>
-                    </li>
-                    <li class="nav-ctn-login text-white">
-                        <button type="button" class="btn btn-primary nav-link rounded px-4 py-1 shadow-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#" tabindex="-1" aria-disabled="true">
-                            Login
-                        </button>
-                    </li>
+                    <!-- <li class="nav-ctn-book">
+                        <button class="btn nav-link rounded bg-white nav-booknow me-lg-2 px-3" href="https://play.google.com/store/apps/details?id=com.medcab.consumer" tabindex="-1" aria-disabled="true">Book Now</button>
+                    </li> -->
+
+                    <!-- added from previous code -->
+                    <?php if (Session::has('consumer_name')) { ?>
+
+                        <li class="scroll-to-section menu-item"><a href="{{URL::route('Booking.History')}}">Bookings</a></li>
+                        <li class="scroll-to-section d-flex justify-content-center align-items-center"><a href="#kids">
+                                <?php
+                                $name = Session()->get('consumer_name');
+                                $words = explode(" ", trim($name));
+                                $initials = null;
+                                foreach ($words as $w) {
+                                    if ($w == $words[0] || $words[sizeof($words) - 1] == $w) {
+                                        $initials .= $w[0];
+                                    }
+                                } ?>
+                                <span style="background-color:white;border-radius:50%;color:black;height:40px;width:40px;" class="d-flex-center">
+                                    <?php echo strtoupper($initials);
+                                    ?>
+                                </span>
+                            </a>
+                            <a href="{{route('logout_page')}}" class="d-flex justify-content-start gap-3 align-items-center"><i class="fa-solid fa-power-off  p-3 fa-2x"></i></a>
+
+                        </li>
+
+                    <?php } else { ?>
+
+                        <li class="nav-ctn-login nav-ctn-book">
+                            <a href="https://play.google.com/store/apps/details?id=com.medcab.consumer" class="btn-tranparent me-2 ms-0 bg-white text-danger nav-link rounded shadow-none" data-bs-toggle="" data-bs-target="" id="login-solid-btn">
+                                Book Now
+                            </a>
+                        </li>
+                        <li class="nav-ctn-login">
+                            <button class="btn border me-0 ms-0 btn-tranparent nav-link rounded px-4 shadow-none" data-bs-toggle="modal" data-bs-target="#login" id="login-solid-btn">
+                                Login
+                            </button>
+                        </li>
+                    <?php } ?>
+
                 </ul>
             </div>
         </div>
@@ -330,6 +363,8 @@
 </script> -->
 <!-- <script src="{{ url('js/custom.js') }}?<?php echo time(); ?>"></script> -->
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_KEY')}}&libraries=places&callback=initMap"></script>
+<script src="{{url('js/custom.js')}}?<?php echo time(); ?>"></script>
 
 
 <!-- footer -->
