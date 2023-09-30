@@ -163,7 +163,7 @@
 /* Emergency Number in City */
 .emergency_ambulance_city {
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 2em auto;
     padding: 4em 2em;
     gap: 1em;

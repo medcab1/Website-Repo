@@ -41,8 +41,7 @@ class BlogController extends Controller
     {
         $city = DB::table('city_content')->where('city_name', $title)->get();
         $faq = DB::table('city_faq')->where('city_id', $city[0]->city_id)->get();
-        $route = DB::table('city_route')->where('city_route_id', $city[0]->city_id)->get();
-        return view('city')->with('city', $city[0])->with('faq', $faq)->with('route', $route);
+        return view('city')->with('city', $city[0])->with('faq', $faq);
     }
     public function blog_filter(Request $request, $search_key)
     {
