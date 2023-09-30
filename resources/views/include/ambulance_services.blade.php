@@ -2,7 +2,11 @@
 @php
 $get_ambulance_categories = DB::table('ambulance_category')
 ->get();
+
 @endphp
+
+
+
 <section class="ourServices d-flex flex-column align-items-center">
 
     <section class="ambulance-services section-3 d-flex flex-column align-items-center padding">
@@ -33,7 +37,7 @@ $get_ambulance_categories = DB::table('ambulance_category')
             <div id="data-container" class="right-content w-50 rounded-4 d-flex flex-column justify-content-evenly gap-4" class="hide-div">
                 <div class="bg-white rounded-4 py-4 px-2">
                     <div class="one d-flex flex-column align-items-center">
-                        <img id="category-image" src="{{asset('assets/website-images/Component 11-2.png')}}" alt="" />
+                        <img id="category-image" src="{{asset('assets/website-images/Component 11-2.png')}}" alt="category" />
                         <h4 class="fw-bold text-center" id="category-title">Medical First Responder</h4>
                     </div>
                     <div class="two">
@@ -81,7 +85,7 @@ $get_ambulance_categories = DB::table('ambulance_category')
 
 
 <script>
-    var ambulanceRoute = "{{ route('get-ambulance') }}"; // Define the route URL in your Blade template
+    var ambulanceRoute = "{{ route('get-ambulance') }}";
     $(document).ready(function() {
 
 
@@ -89,18 +93,15 @@ $get_ambulance_categories = DB::table('ambulance_category')
 
         $('.category-link').on('click', function(e) {
             e.preventDefault();
-            // Get the category ID from the data attribute
+
             var categoryId = $(this).data('category-id');
 
 
-
-            // Get the CSRF token from the meta tag
             var csrfToken = $('meta[name="csrf-token"]').attr('content');
 
-            // Make an AJAX POST request with the ambulanceRoute
             $.ajax({
                 type: 'POST',
-                url: ambulanceRoute, // Use the route URL variable here
+                url: ambulanceRoute,
                 data: JSON.stringify({
                     categoryId: categoryId,
                     _token: csrfToken
@@ -108,20 +109,19 @@ $get_ambulance_categories = DB::table('ambulance_category')
                 dataType: 'json',
                 contentType: 'application/json',
                 success: function(response) {
-                    // console.log('Response (success):', response);
 
                     // Access the category data and emergency kits
                     var categoryData = response.category_data;
                     var emergencyKits = response.emergency_kits;
 
-                    // console.log(emergencyKits.length);
 
-                    // Update your existing HTML elements with the retrieved data
+                    // Update existing HTML elements with the retrieved data
                     $('#category-title').text(categoryData.category_name);
-                    $('#category-image').attr('src', categoryData.category_image);
+                    $('#category-image').attr('src', window.location.origin + '/' + categoryData.category_image);
+
                     // $('#category-description').text(categoryData.category_desc);
 
-                    // Iterate through the emergency kits and update your HTML elements accordingly
+                    // Iterate through the emergency kits and update HTML elements accordingly
                     var thelist = document.getElementById("category-kits");
                     while (thelist.hasChildNodes()) {
                         thelist.removeChild(thelist.lastChild);
@@ -153,9 +153,7 @@ $get_ambulance_categories = DB::table('ambulance_category')
                         $('#category-kit-' + index).append(head);
 
 
-                        // console.log(category_kit)
-
-                        $('#kit-image-' + index).attr('src', kit.emergency_kit_image);
+                        $('#kit-image-' + index).attr('src', window.location.origin + '/' + kit.emergency_kit_image);
                         $('#kit-name-' + index).text(kit.emergency_kit);
                     });
 

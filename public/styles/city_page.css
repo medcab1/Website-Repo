@@ -118,12 +118,12 @@
 }
 
 /* How to Book Ambulance */
-.cityPage .bookAmbulance {
+.bookAmbulance_cityPage {
     width: 90%;
     margin: 5em 15rem;
 }
 @media all and (max-width: 1000px) {
-    .bookAmbulance{
+    .bookAmbulance_cityPage{
 
         margin: 3rem;
     }
@@ -131,16 +131,16 @@
 @media all and (max-width: 1000px) {
     
 }
-.bookAmbulance h2 {
+.bookAmbulance_cityPage h2 {
     margin: 1.2em 0;
 }
-.bookAmbulance p,
-.bookAmbulance li {
+.bookAmbulance_cityPage p,
+.bookAmbulance_cityPage li {
     font-size: 1.6rem;
     color: var(--border-clr);
 }
 
-.bookAmbulance ul .step {
+.bookAmbulance_cityPage ul .step {
     margin: 1em 0;
 }
 .bookingSteps .step {
@@ -151,7 +151,7 @@
 .bookingSteps .step .step_num {
     flex-shrink: 0;
 }
-.bookAmbulance .bookingSteps .step_num {
+.bookAmbulance_cityPage .bookingSteps .step_num {
     background: var(--dark-blue-clr);
     font-size: 1.5rem;
     color: var(--white-clr);
@@ -236,11 +236,11 @@
         font-size: var(--fs-primary-text);
     }
 
-    .bookAmbulance {
+    .bookAmbulance_cityPage {
         width: 80%;
     }
 
-    .bookAmbulance ul .step {
+    .bookAmbulance_cityPage ul .step {
         margin: 2.5em 0;
     }
     .emergency_ambulance_city {

@@ -7,6 +7,7 @@ $t_name = [
   3 => '- Ayushi Negi',
   4 => '- Aadesh Yadav',
   5 => '- Praveen Kumar',
+  6 => '- Saurabh Awasthi',
 ];
 $t_img = [
   0 => 'assets/image/zakir.jpeg',
@@ -15,6 +16,7 @@ $t_img = [
   3 => 'assets/image/ayushi.jpeg',
   4 => 'assets/image/aadesh.jpeg',
   5 => 'assets/image/praveen.jpeg',
+  6 => 'assets/image/saurabh.jpeg'
 ];
 $t_desc = [
   0 => "Calling MedCab's ambulance was the best decision I made when my mother-in-law had
@@ -39,7 +41,8 @@ $t_desc = [
   5 => "MedCab's ambulance service is simply outstanding. I booked their service when my colleague
         had an accident and their team was there for us in a flash. The ambulance was well maintained
         and equipped. Thanks to their prompt service, my colleague received timely help. I highly
-        recommend to go for MedCab ambulance in any emergency"
+        recommend to go for MedCab ambulance in any emergency",
+  6 => "The MedCab team demonstrated true professionalism and empathy throughout our journey to the hospital. Their staff went above and beyond in taking care of my loved one, providing reassurance and comfort during a stressful time. MedCab's dedication to patient care truly shone through."
 
 ];
 ?>
@@ -52,7 +55,7 @@ $t_desc = [
   <h1 class="main-heading">Reviews</h1>
   <div class="reviews-carousel owl-carousel-reviews owl-theme owl-carousel">
     <?php $i = 0;
-      while ($i < 6) {?>
+      while ($i <= 6) {?>
     <div class="item">
       <div class="image"><img src="{{ asset($t_img[$i]) }}" alt="images">
       </div>

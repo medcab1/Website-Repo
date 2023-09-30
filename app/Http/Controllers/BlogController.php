@@ -43,6 +43,8 @@ class BlogController extends Controller
         $faq = DB::table('city_faq')->where('city_id', $city[0]->city_id)->get();
         return view('city')->with('city', $city[0])->with('faq', $faq);
     }
+
+
     public function blog_filter(Request $request, $search_key)
     {
 
