@@ -118,7 +118,7 @@
 }
 
 /* How to Book Ambulance */
-.bookAmbulance {
+.cityPage .bookAmbulance {
     width: 90%;
     margin: 5em 15rem;
 }

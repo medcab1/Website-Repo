@@ -52,11 +52,11 @@ $CategoryData = DB::table('ambulance_category')
                 <button class="btn shadow-none"><img src="{{ asset('assets/website-images/appBtn.png') }}" alt="app Store"></button>
             </div>
             <div class="socials d-flex gap-3 align-items-center justify-content-end gap-1 py-4">
-                <img src="{{ asset('assets/website-images/icons/facebook.png') }}" alt="Facebook">
-                <img src="{{ asset('assets/website-images/icons/linkedin.png') }}" alt="linkedin">
-                <img src="{{ asset('assets/website-images/icons/insta.png') }}" alt="insta">
-                <img src="{{ asset('assets/website-images/icons/linkedin.png') }}" alt="linkedin">
-                <img src="{{ asset('assets/website-images/icons/twitter.png') }}" alt="twitter">
+                <a href="#"><img src="{{ asset('assets/website-images/icons/facebook.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ asset('assets/website-images/icons/linkedin.png') }}" alt="linkedin"></a>
+                <a href="#"><img src="{{ asset('assets/website-images/icons/insta.png') }}" alt="insta"></a>
+                <a href="#"><img src="{{ asset('assets/website-images/icons/twitter.png') }}" alt="twitter"></a>
+                <a href="#"><img src="{{ asset('assets/website-images/icons/youtube.png') }}" id="youtube" alt="youtube"></a>
             </div>
         </div>
         <div class="contact d-flex justify-content-center w-100 py-4 border-bottom">

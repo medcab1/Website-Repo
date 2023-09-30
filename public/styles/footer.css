@@ -46,7 +46,7 @@ footer * {
 }
 
 .footer .bookAmbulance-content {
-    text-align: justify;
+    text-align: center;
 }
 
 .footer section .info .show {
@@ -111,6 +111,10 @@ footer * {
 
 .footer section .downloadApp .socials {
     width: 60%;
+}
+
+.footer section .downloadApp .socials #youtube {
+    height: 3rem;
 }
 
 .footer .elem img {
@@ -221,4 +225,10 @@ button:focus:not(:focus-visible) {
     .footer section .downloadApp .buttons {
         flex-direction: column;
     }
+}
+
+
+.cities button {
+    width: fit-content;
+    margin: auto;
 }

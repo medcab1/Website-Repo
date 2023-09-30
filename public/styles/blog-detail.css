@@ -14,10 +14,30 @@
     font-size: 21px;
     margin: 1rem 0;
 }
+
+.blog-detail h4 {
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
 .blog-detail p, .blog-detail li {
     font-size: 14px;   
 }
 
+.blog-detail .blog-detail-img {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
 .blog-detail .blog-detail-img img {
-    height: 80%;
+    height: 80vh;
+    width: auto !important;
+    /* border: 2px solid green; */
+}
+
+@media all and (max-width: 1000px) {
+    .blog-detail .blog-detail-img img {
+        height: auto;
+    }
 }

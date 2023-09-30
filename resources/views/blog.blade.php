@@ -63,7 +63,7 @@ ambulance? Call MedCab at 18008-908-208.")
                                     <p>
                                         {{$blogs[$i]->blog_title}}
                                     </p>
-                                    <p>&rarr;</p>
+                                    <a href="{{URL::route('Blog-Detail',['title'=>$blogs[$i]->blog_sku])}}"><p>&rarr;</p></a>
                                 </div>
                             </div>
                         <?php } ?>
@@ -97,7 +97,7 @@ ambulance? Call MedCab at 18008-908-208.")
                                 {{$blogs[$i]->blog_meta_desc}}
                             </p>
                             <p>Posted on {{$blogs[$i]->blog_post_date}}</p>
-                            <a class="more">Read more...</a>
+                            <a href="{{URL::route('Blog-Detail',['title'=>$blogs[$i]->blog_sku])}}" class="more">Read more...</a>
                         </div>
                     </div>
                 <?php
