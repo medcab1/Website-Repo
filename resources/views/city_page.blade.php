@@ -133,7 +133,7 @@ e-rickshaw ambulance") -->
 <!-- City Top Routes -->
 
 <!-- Steps to book ambulance in city -->
-<section class="bookAmbulance">
+<section class="bookAmbulance_cityPage">
     <h1 class="main-heading text-start">How to Book an Ambulance in Rishikesh</h1>
     <p>
         MedCab is revolutionizing the ambulance booking process by providing an easy-to-use app and website. With just a few clicks, you can book an ambulance and rest assured that we will reach you quickly. Our platform also provides you with all the necessary information about our services, ensuring a hassle-free experience.

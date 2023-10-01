@@ -1,8 +1,7 @@
-
 @extends('layouts.adminlayout')
-@section('title')<?php echo $city->city_meta_title;?>@endsection
+@section('title')<?php echo $city->city_meta_title; ?>@endsection
 @section('description'){!!$city->city_meta_desc!!}@endsection
-@section('keywords')<?php echo $city->city_meta_keyword;?>@endsection
+@section('keywords')<?php echo $city->city_meta_keyword; ?>@endsection
 
 @section('main')
 <!-- City page top section -->
@@ -235,7 +234,40 @@
 <!-- City Top Routes -->
 
 <!-- Steps to book ambulance in city -->
-@include('include.ambulance_services')
+<section class="bookAmbulance_cityPage">
+    <h1 class="main-heading text-start">How to Book an Ambulance in Rishikesh</h1>
+    <p>
+        MedCab is revolutionizing the ambulance booking process by providing an easy-to-use app and website. With just a few clicks, you can book an ambulance and rest assured that we will reach you quickly. Our platform also provides you with all the necessary information about our services, ensuring a hassle-free experience.
+    </p>
+    <h2 class="secondary-heading text-center">
+        Call Us to Book an Ambulance
+    </h2>
+    <p class="my-4">Here's how you can call an ambulance number in Rishikesh with us : </p>
+    <ul class="bookingSteps">
+        <div class="step">
+            <div class='step_num'>Step 1</div>
+            <li>Call our emergency ambulance number in Rishikesh +91xxxxxxxxxx or visit our website Medcab.in</li>
+        </div>
+        <div class="step">
+            <div class='step_num'>Step 2</div>
+            <li>Provide the necessary details, including the patient's name, address and condition.</li>
+        </div>
+        <div class="step">
+            <div class='step_num'>Step 3</div>
+            <li>Our team will assess the situation and dispatch the nearest ambulance equipped with the necessary medical equipment.</li>
+        </div>
+        <div class="step">
+            <div class='step_num'>Step 4</div>
+            <li>Our trained medical staff will provide the patient with the best possible care and transport them safely to the hospital.</li>
+        </div>
+        <div class="step">
+            <div class='step_num'>Step 5</div>
+            <li>Payment can be made through various modes, including cash, debit/credit card and online transfer.</li>
+        </div>
+    </ul>
+    <p>At MedCab, we understand the importance of prompt and efficient medical assistance in an emergency. That's why we ensure that our ambulance services are available 24/7 and our response time is among the quickest in Rishikesh. Trust MedCab for safe and reliable ambulance service Don't hesitate to call MedCab in case of a medical emergency. We are always ready to serve and ensure that you receive the best medical attention.</p>
+    </p>
+</section>
 <!-- Steps to book ambulance in city -->
 
 <!-- Emergency Ambulance Number in City -->
