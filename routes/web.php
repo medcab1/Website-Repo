@@ -98,10 +98,6 @@ Route::get('/service-level-agreement',function(){
     return  View('sla');
  })->name('Service_Level_Agreement');
 
-//  @Uttam 
-Route::get('/city',function(){
-    return view('city_page');
-})->name('City');
 
     //................................ Routes Start For Websites.................................//
 

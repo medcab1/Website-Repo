@@ -37,8 +37,10 @@ class BlogController extends Controller
         return view('blog_detail', compact('blog', 'blogs'));
     }
 
-    public function city_content($title)
+    public function city_content($titleString)
     {
+        $titleBreak = explode("-", $titleString);
+        $title = $titleBreak[3];
         $city = DB::table('city_content')->where('city_name', $title)->get();
         $faq = DB::table('city_faq')->where('city_id', $city[0]->city_id)->get();
         $lucknow_hospitals = DB::table('hospital_lists')->where('hospital_city_name', 4933)->limit(20)->get();

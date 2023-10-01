@@ -235,9 +235,7 @@
 </section>
 
 <!-- city top routes script -->
-<script>
-    $(document).ready
-</script>
+
 <!-- city top routes script end -->
 <!-- City Top Routes -->
 
