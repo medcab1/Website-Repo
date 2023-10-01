@@ -41,8 +41,12 @@ class BlogController extends Controller
     {
         $city = DB::table('city_content')->where('city_name', $title)->get();
         $faq = DB::table('city_faq')->where('city_id', $city[0]->city_id)->get();
-        return view('city')->with('city', $city[0])->with('faq', $faq);
+        $lucknow_hospitals = DB::table('hospital_lists')->where('hospital_city_name', 4933)->limit(20)->get();
+
+        return view('city')->with('city', $city[0])->with('faq', $faq)->with('lucknow_hospitals', $lucknow_hospitals);
     }
+
+
 
 
     public function blog_filter(Request $request, $search_key)

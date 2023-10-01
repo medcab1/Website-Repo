@@ -196,19 +196,19 @@
         <div class="cityRoutes primary-text">
             <a href="#">
                 <div class="route active">
-                    <p class="">Taxi from</p>
+                    <p class="">Ambulance from</p>
                     <p>{!!$city->city_name!!} to Delhi</p>
                 </div>
             </a>
             <a href="#">
                 <div class="route ">
-                    <p class="">Taxi from</p>
+                    <p class="">Ambulance from</p>
                     <p>{!!$city->city_name!!} to Lucknow</p>
                 </div>
             </a>
             <a href="#">
                 <div class="route ">
-                    <p class="">Taxi from</p>
+                    <p class="">Ambulance from</p>
                     <p>{!!$city->city_name!!} to Kanpur</p>
                 </div>
             </a>
@@ -223,7 +223,9 @@
         </div>
         <div class="hospitalLists">
             <span>Hospitals Available in Delhi : </span>
-            <span>Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital |Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital | Jeevan Hospital | Manipal Hospital | Maharaja Agrasen Hospital | Fortis Hospital</span>
+            @foreach ($lucknow_hospitals as $key)
+            <span>{{$key->hospital_name}}|</span>
+            @endforeach
         </div>
         <div class="primary-cta">Book Now</div>
     </div>
@@ -231,22 +233,28 @@
         <img src="{{asset('/assets/website-images/city-image.png')}}" alt="banner" />
     </div>
 </section>
+
+<!-- city top routes script -->
+<script>
+    $(document).ready
+</script>
+<!-- city top routes script end -->
 <!-- City Top Routes -->
 
 <!-- Steps to book ambulance in city -->
 <section class="bookAmbulance_cityPage">
-    <h1 class="main-heading text-start">How to Book an Ambulance in Rishikesh</h1>
+    <h1 class="main-heading text-start">How to Book an Ambulance in {!!$city->city_name!!}</h1>
     <p>
         MedCab is revolutionizing the ambulance booking process by providing an easy-to-use app and website. With just a few clicks, you can book an ambulance and rest assured that we will reach you quickly. Our platform also provides you with all the necessary information about our services, ensuring a hassle-free experience.
     </p>
     <h2 class="secondary-heading text-center">
         Call Us to Book an Ambulance
     </h2>
-    <p class="my-4">Here's how you can call an ambulance number in Rishikesh with us : </p>
+    <p class="my-4">Here's how you can call an ambulance number in {!!$city->city_name!!} with us : </p>
     <ul class="bookingSteps">
         <div class="step">
             <div class='step_num'>Step 1</div>
-            <li>Call our emergency ambulance number in Rishikesh +91xxxxxxxxxx or visit our website Medcab.in</li>
+            <li>Call our emergency ambulance number in {!!$city->city_name!!} 18008-908-208 or visit our website medcab.in</li>
         </div>
         <div class="step">
             <div class='step_num'>Step 2</div>
@@ -265,7 +273,7 @@
             <li>Payment can be made through various modes, including cash, debit/credit card and online transfer.</li>
         </div>
     </ul>
-    <p>At MedCab, we understand the importance of prompt and efficient medical assistance in an emergency. That's why we ensure that our ambulance services are available 24/7 and our response time is among the quickest in Rishikesh. Trust MedCab for safe and reliable ambulance service Don't hesitate to call MedCab in case of a medical emergency. We are always ready to serve and ensure that you receive the best medical attention.</p>
+    <p>At MedCab, we understand the importance of prompt and efficient medical assistance in an emergency. That's why we ensure that our ambulance services are available 24/7 and our response time is among the quickest in {!!$city->city_name!!}. Trust MedCab for safe and reliable ambulance service Don't hesitate to call MedCab in case of a medical emergency. We are always ready to serve and ensure that you receive the best medical attention.</p>
     </p>
 </section>
 <!-- Steps to book ambulance in city -->
@@ -293,9 +301,7 @@
 @include('include.download_banner')
 <!-- download banner -->
 
-<!-- Faqs -->
-@include('include.faqs')
-<!-- Faqs -->
+
 
 <!--Schedule booking time Modal start -->
 <div class="modal" id="ModalCenter" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
