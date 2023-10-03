@@ -1,50 +1,42 @@
-<!-- our services (updated) -->
-<!--  -->
-
-<!--  -->
-
-
 <section class="our-services w-100 padding">
   <h1 class="our-services-heading text-center">Our Services</h1>
-  <?php $i = 9;
+
+  @php
   $ser_caty = DB::table('ambulance_category')->where('ambulance_category_status', '0')->get();
+  @endphp
 
-  ?>
   <div class="our-servicesCards owl-carousel owl-carousel-services owl-themez">
-    <?php if (!empty($ser_caty)) {
-      foreach ($ser_caty as $ser_cat) {
-    ?>
-
+    @if (!empty($ser_caty))
+      @foreach ($ser_caty as $ser_cat)
         <div class="our-servicesCard item">
-          <h2>{{$ser_cat->ambulance_category_name}}</h2>
+          <h2>{{ $ser_cat->ambulance_category_name }}</h2>
           <div class="our-servicesCard-image">
-            <img src="{{url($ser_cat->ambulance_category_icon)}}" alt="" />
+            <img src="{{ url($ser_cat->ambulance_category_icon) }}" alt="{{ $ser_cat->ambulance_category_name }}" />
           </div>
           <p>
-            {{$ser_cat->ambulance_catagory_desc}}
+            {{ $ser_cat->ambulance_catagory_desc }}
           </p>
           <div class="service-icons">
             <div class="icon">
-              <?php if (Session::has('ambu_equips')) {
-                foreach (Session::get('ambu_equips') as $ambu_equip) {
-                  if ($ser_cat->ambulance_category_type == $ambu_equip->ambulance_facilities_category_type) {
-              ?>
-                    <img src="{{url($ambu_equip->ambulance_facilities_image)}}" alt="" />
-              <?php
-                  }
-                }
-              }
-              ?>
+              @if (Session::has('ambu_equips'))
+                @foreach (Session::get('ambu_equips') as $ambu_equip)
+                  @if ($ser_cat->ambulance_category_type == $ambu_equip->ambulance_facilities_category_type)
+                    <img src="{{ url($ambu_equip->ambulance_facilities_image) }}" alt="{{ $ambu_equip->ambulance_facilities_name }}" />
+                  @endif
+                @endforeach
+              @endif
             </div>
           </div>
+          @if(!empty($ser_cat->ambulance_category_sku))
+          <a href="{{ route('Services-Detail', ['title' => $ser_cat->ambulance_category_sku]) }}" class="read-more">Read More</a>
+          @else
           <a href="#" class="read-more">Read More</a>
+          @endif
         </div>
-    <?php
-        $i--;
-      }
-    }
-    ?>
+      @endforeach
+    @endif
   </div>
+
   <div class="btn-view">
     <a href="{{ route('OurServices') }}">View All
       <svg class="mb-1 ms-1" width="18" height="14" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">

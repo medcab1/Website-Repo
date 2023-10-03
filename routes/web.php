@@ -105,6 +105,8 @@ Route::get('/service-level-agreement',function(){
     Route::get('/blog',[BlogController::class, 'blogs_View'])->name('Blogs');
     Route::get('/blog-detail/{title}',[BlogController::class, 'blog_detail'])->name('Blog-Detail');
     Route::any('/blog/blog-filter/{search_key}',[BlogController::class, 'blog_filter'])->name('Blog-Filter');
+    Route::get('/ambulance-detail/{title}',[BlogController::class, 'OurservicesDetails'])->name('Services-Detail');
+
 
     // City Page Route
     Route::any('/city/{title}',[BlogController::class, 'city_content'])->name('CityContent');

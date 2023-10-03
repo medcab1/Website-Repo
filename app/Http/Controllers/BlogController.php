@@ -140,4 +140,18 @@ class BlogController extends Controller
             return redirect()->back()->with('blog_error', 'Failed to Update Blog!');
         }
     }
+
+    public function OurservicesDetails($title)
+    {
+        // dd($title);
+        $our_services = DB::table('our_service_contents')->where('our_services_category_sku', $title)->where('our_services_status', 0)->first();
+
+        $services = DB::table('our_service_contents')
+            ->where('our_services_status', 0)
+            ->orderBy('our_services_id', 'DESC')
+            ->select('our_services_id', 'our_services_titles', 'our_services_sku', 'our_services_meta_desc', 'our_Services_thumbnails', 'our_services_post_date')
+            ->paginate(3);
+
+        return view('our-services', compact('our_services', 'services'));
+    }
 }
